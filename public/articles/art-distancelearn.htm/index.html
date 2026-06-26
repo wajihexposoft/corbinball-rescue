@@ -4,54 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keeping Up with Distance Learning — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
 <style>
-  :root { --bg: #fff; --text: #222; --accent: #1a5276; --border: #ddd; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Georgia, serif; color: var(--text); background: var(--bg); line-height: 1.7; }
-  header { background: var(--accent); color: white; padding: 1rem 2rem; }
-  header h1 { font-size: 1.6rem; }
-  header p { font-size: 0.9rem; opacity: 0.8; }
-  nav { background: #154360; padding: 0.5rem 2rem; }
-  nav a { color: #aed6f1; text-decoration: none; margin-right: 1.5rem; font-size: 0.95rem; }
-  nav a:hover { color: white; }
-  main { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  h1, h2, h3 { color: var(--accent); margin: 1rem 0 0.5rem; }
-  p { margin-bottom: 1rem; }
-  .card { border: 1px solid var(--border); border-radius: 6px; padding: 1.2rem 1.5rem; margin-bottom: 1rem; }
-  .card h3 { margin-top: 0; font-size: 1.05rem; }
-  .card a { color: var(--accent); text-decoration: none; }
-  .card a:hover { text-decoration: underline; }
-  .meta { font-size: 0.82rem; color: #666; margin-bottom: 0.5rem; }
-  footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
-  .article-body { white-space: pre-wrap; font-size: 1rem; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  @media (max-width: 768px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>Corbin Ball &amp; Co.</h1>
-  <p>The web's longest-running site about meeting planning, tradeshow and events technology</p>
-</header>
-<nav>
-  <a href="/">Home</a>
-  <a href="/articles/">Articles</a>
-  <a href="/newsletter/">TechTalk Newsletter</a>
-  <a href="/tools/">Software Tools</a>
-  <a href="/links/">Link List</a>
-  <a href="/about/">About Corbin</a>
-</nav>
-<main>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+    <li><a href="/tools/">Software Tools</a></li>
+    <li><a href="/links/">Link List</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Keeping Up with Distance Learning</p>
 <h1>Keeping Up with Distance Learning</h1>
-<p class="meta">Source: <a href="http://corbinball.com:80/articles/art-distancelearn.htm">http://corbinball.com:80/articles/art-distancelearn.htm</a></p>
 <div class="article-body">with Distance Learning �2001 Corbin Ball Associates &quot;The illiterate of the future are not those who cannot read or write, but those who cannot learn, unlearn, and relearn.&quot; -Alvin Toffler We are living in amazing times. People are awash with new technology and the rate of change in getting faster. The world's body of knowledge is said to be doubling every 10 years! With this information overload, the challenge is how do you keep up with it all? People are finding that what they learned in college is simply no longer relevant and that life-long learning is a must to remain competitive in the marketplace. Traditionally, here is where the meetings industry comes in -- associations meetings and corporate training are by far the major educators of adult America - far more in numbers than the traditional university system. However, as the rate of change increases, the demand on our time is as well. We are living in an age when &quot;FedEx is simply not fast enough!&quot; The length of stay at meetings is decreasing and some find that they just don't have the time to attend at all. To answer this, corporations and associations are turning to distance learning as a partial solution. In many cases, distance learning can broaden the reach of traditional meetings and reinforce what is taught there. Advances in technology will allow people to experience just-in-time learning. In the past we have been content with synchronous learning -- with the presenter and the audience or class come together at a specific time and place. Distance learning options will allow people to learn anything, anytime, anywhere -- from the convenience of their computer: just-in-time learning! Other advantages include reduced travel cost and time away from the office, the ability to repeat course segments on demand dramatically increasing retention, online administrative tools to track student progress, and a tremendous depth, breadth and variety of courses coming online to match nearly any training requirement and student personality. Distance learning will not replace meetings -- both should flourish. However, as people become more technologically literate, they will expect more interactive, multimedia components from their online learning experience. As this increases, speakers and trainers will partner with associations to create programs that meet the Learning-On-Demand model. We are seeing a number of companies that are starting to produce these type of models. This article will cover a few of the meeting industry related trends in this area. First of all, what exactly is distance learning? Simply stated, it is learning from a distance, usually from home or office setting. It involves a student and instructor, separated by time and distance, using technology to complete the instruction. Fortunately, technology has helped to make major strides since the old days of the correspondence course. What are the trends in this area? Technology Technology is providing tools to increase interactivity, increase visual imagery, and place the learner as an active participant. The Web and the Internet allow on-demand video, discussion groups, video conferencing, and a whole range of collaboration tools at the convenience of the learner's home or business work station. The Expansion of the University Traditional education institutions are recognizing the competition and the larger market out there and are providing an increasingly wide range of online courses. An excellent directory of online courses can be found at: www.mindedge.com . The major universities providing distance learning programs in hospitality and meeting management can be found at my web site: http://www.corbinball.com/tips.list.corbinslist.htm#p2 and scroll down to &quot;Distance Learning - Hospitality Universities.&quot; Meeting Industry Initiatives The major meeting industry organizations are also beginning to provide online content for distance learning applications. PCMA (www.pcma.org ) has had a CMP self-study course for more than a year and has recently added on other courses as well. MPI
 ( www.mpiweb.org ) also has a range of general course as well In a broader sense, companies such as SeminarSource ( www.seminarsource.com ) are using technology to take the content presented at meetings and deliver it to non-attendees on demand using steaming video, audio and high-resolution PowerPoint slides to the desktop. This very much extends the life and range of the meeting and can apply to nearly everyone sponsoring or managing meetings. In some cases, when the visuals are the emphasis, these products can be nearly as good as sitting in the back of the room watching the program in real time. Their SeminarCast CE version (CE stands for Continuing Education) allows learners to access online versions of each continuing education session and then even take the required tests and evaluations without leaving their home or office. These are prefect applications to distance learning methods. Eloquent ( www.eloquent.com ) provide an amazing online rich streaming media solution that it has been claimed to have reduced the cost of new product training by Lucent by more than 90%. Like SeminarSource, they provides video, audio, slides on demand to the desktop but, additionally, they provide a searchable automatically scrolling full-text transcript of the delivery. One can attach documents, polls, URLs, and other communications content to existing streaming and rich media. Learners can initiate and participate in threaded discussions. There is even a speed control that you can listen to a speaker at twice the normal rate without the &quot;chipmunk-like&quot; increase in pitch. Oh to have that capability with many live presentations! Innovative Resources and Recordings ( www.irri.com ) provide CD-ROM and steaming video recordings of sessions that make standard audio recording seem as modern as the Teletype. This CD-ROM solution is lower tech and less costly than the companies mentioned above as it usually forgoes the video (talking head) portion of the presentation. Instead, the CDs provide audio, high resolution slides and searchable scrolling text of the presentation. Unlike audio recordings usually sold at the meetings, it takes some turnaround time to produce the text transcript for the CD version, but the final product is a much richer in visual and textual content - an makes a much better distance learning application. Blackboard ( www.blackboard.com ) provides an extensive set of tools for web-based instruction that replicates many aspects of the traditional school setting. Features include a customizable home page, personalized calendars for all participants, email management and communication center, course catalog, course announcements, course notes/documents/syllabus, a student drop box and online grade checker, online testing and surveys, class chat rooms/threaded discussion boards, course statistics, course grade book, marketing and lots of academic online resources. I taught an online college course in meetings management two years ago. The state-of-the-art has grown vastly in just that short time. Click2Learn ( www.click2learn.com ) provides a similar set of tools but targeted more toward the corporate environment. They also incorporate live web conferencing tools. ElementK
 ( www.elementk.com ) provides a large range of online office productivity courses as several interesting research articles found in their &quot;Benefits of Online Learning&quot; section including how to screen, evaluate, and select an online education provider and a technology educator's guide to online learning. Also, if you are interested in trying courses for free, Barnes and Noble offers a wide range of online course at www.barnesandnobleuniversity.com (of course they would be happy to sell you the books for course material, but this is not required). Also, Blackboard.com
 ( www.blackboard.com ) offers hundreds of free courses as well. If you need software training, http://freeskills.efront.com/listcourses?cobrand=freeskills covers hundreds of software products. As technology enables these rich media interactive tools to be accessible to anyone with an Internet connect, we will see conferences and meetings increasingly as the content source for distance learning courses. This will not only extend the scope and range of the meetings, it will help train those that were not able to make it that time and, perhaps, build interest in attending the meeting the next time. If you find this article helpful, please let me
 know by signing the Guest Book in the Contact
 Corbin Section.. BACK TO ARTICLES LIST</div>
-</main>
-<footer>
-  &copy; Corbin Ball &amp; Co. | 506 14th Street, Bellingham WA 98225-6107 USA | Ph: 360.734.8756<br>
-  <small>Archived and preserved by Exposoft Solutions. Original site: corbinball.com</small>
-</footer>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
 </body>
 </html>

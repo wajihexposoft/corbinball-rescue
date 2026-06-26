@@ -4,53 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Do We Really &quot;Need&quot; This Much Technology — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
 <style>
-  :root { --bg: #fff; --text: #222; --accent: #1a5276; --border: #ddd; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Georgia, serif; color: var(--text); background: var(--bg); line-height: 1.7; }
-  header { background: var(--accent); color: white; padding: 1rem 2rem; }
-  header h1 { font-size: 1.6rem; }
-  header p { font-size: 0.9rem; opacity: 0.8; }
-  nav { background: #154360; padding: 0.5rem 2rem; }
-  nav a { color: #aed6f1; text-decoration: none; margin-right: 1.5rem; font-size: 0.95rem; }
-  nav a:hover { color: white; }
-  main { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  h1, h2, h3 { color: var(--accent); margin: 1rem 0 0.5rem; }
-  p { margin-bottom: 1rem; }
-  .card { border: 1px solid var(--border); border-radius: 6px; padding: 1.2rem 1.5rem; margin-bottom: 1rem; }
-  .card h3 { margin-top: 0; font-size: 1.05rem; }
-  .card a { color: var(--accent); text-decoration: none; }
-  .card a:hover { text-decoration: underline; }
-  .meta { font-size: 0.82rem; color: #666; margin-bottom: 0.5rem; }
-  footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
-  .article-body { white-space: pre-wrap; font-size: 1rem; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  @media (max-width: 768px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>Corbin Ball &amp; Co.</h1>
-  <p>The web's longest-running site about meeting planning, tradeshow and events technology</p>
-</header>
-<nav>
-  <a href="/">Home</a>
-  <a href="/articles/">Articles</a>
-  <a href="/newsletter/">TechTalk Newsletter</a>
-  <a href="/tools/">Software Tools</a>
-  <a href="/links/">Link List</a>
-  <a href="/about/">About Corbin</a>
-</nav>
-<main>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+    <li><a href="/tools/">Software Tools</a></li>
+    <li><a href="/links/">Link List</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Do We Really &quot;Need&quot; This Much Technology</p>
 <h1>Do We Really &quot;Need&quot; This Much Technology</h1>
-<p class="meta">Source: <a href="http://www.corbinball.com:80/articles/art-toomuchtech.htm">http://www.corbinball.com:80/articles/art-toomuchtech.htm</a></p>
 <div class="article-body">&quot;Need&quot; This Much Technology? -- 5 &quot;Tech&quot; Tips to Help You Manage Your Personal and Work Lives Better �2001 Robin Craven and Lynn Johnson Golabowski , Alliance LLC Published with permission of the authors. The new millennium is here. You have voice mail, e-mail, pagers, cell phones, fax machines, one or more computers, a personal handheld thingy-do, maybe even more stuff. Now to the question, are you really more efficient? Are you managing and using your technology? Or is it becoming more of a drain on your time, energy and budget? Part of the problem stems from the fact that electronic technology is still growing at lightening speed and it's hard to keep up, not to mention just plain overwhelming. And when faced with more projects, fewer resources and less time, people tend to tune out. It is important to think about how your purchases will help you before you buy them. For example, cell phones and home offices have increased the demand for more phone numbers/lines and today, most people have multiple phone numbers. However, this increase may be peaking because now people are canceling their &quot;land lines&quot; in droves. Are you paying for phone service that you really don't use much? This is a trend to watch - how many phones do you need? It could be an area to consolidate and save money too. Another part of the problem is that there is a lot of redundancy in the technology. Do you really need a laptop and a personal computer or a pager and a cell phone? Laptops are convenient if you do a lot of traveling, but more and more facilities provide high speed Internet access at little or no cost. If checking e-mail is your primary concern, then you don't need to lug a laptop around. Then there is the integration of wireless technology with handheld tools. You're already seeing commercials that describe your cell phone as an &quot;information engine&quot; (we're not making this up) so you can check e-mail and trade stocks from anywhere (of course, we do that all the time). But seriously, as technology improves and costs decrease, there will come a day when your single handheld electronic device will provide communication, information, and yes, even entertainment.. In the meantime, ask yourself how many devices do you really need? A recent commercial for a leading computer manufacturer illustrates another point. A man just bought a new personal computer, version 5 and is on his way home with it sitting next to him in the front seat of his convertible. At a stoplight, he looks up to see workmen putting up a billboard for personal computer version 6! Can you relate? You don't even have your new equipment out of the box and there is a new and improved version available. Urgh! No matter what you buy, it will soon be obsolete. Maybe manufacturers like it that way; it helps sustain the economy. But wait, maybe obsolete isn't so bad. If your technology works, and you use it efficiently then why would you consider buying, installing, and learning something new? An interesting and predictable trend is that people are letting go of technology - a bit. People are just finding it too time consuming and confusing to keep up with, so many are saying &quot;enough already&quot;. However, that won't last forever. As the younger generation, who are growing up on technology, fills our workforce, acceptance and use of technology will be much easier for everyone. In the meantime, here are 5 &quot;tech&quot; tips to help you manage your personal/work lives
 better: 1. Use technology for repetitive, frequently performed tasks . Not those you perform once in a while or you'll have to &quot;re-learn&quot; the process each time. 2. Review your data and telecommunication
 bills. Cancel and/or reduce services you rarely use. Do this at least 2x per year. 3. Learn and understand the basics - word processing, spreadsheets, or whatever is integral in your work. You can always use it and fall back on it if need be. 4. Get your arms around e-mail. Use filters, file folders, auto-responders, attachments and other ways to help you manage your inflow/outflow. 5. If you use laptops, handhelds or other data transmission devices, make sure they are compatible with home, office and colleagues. Non-compatibility is a huge time-waster. It's human nature to fall prey to the marketing pressures, especially with the idea that the latest new technology will make our tasks and chores easier, but do we really need to keep with the Gates's? We don't know about you, but we'd like to slow down before we reach technology overload. Robin E. Craven and Lynn Johnson Golabowski are partners in MeetingsCoach SM a division of Alliance LLC, based in Milwaukee, WI. They share their meetings industry knowledge and experience with anyone needing help in the field by providing timely, constructive and affordable assistance. Robin and Lynn can be reached through their Web site at www.meetingscoach.com or at 262-251-5001. Look for their new book, The Complete Idiot's Guide to Meeting and Event Planning in bookstores now. If you find this article helpful, please let me
 know by signing the Guest Book in the Contact
 Corbin Section.. BACK TO ARTICLES LIST</div>
-</main>
-<footer>
-  &copy; Corbin Ball &amp; Co. | 506 14th Street, Bellingham WA 98225-6107 USA | Ph: 360.734.8756<br>
-  <small>Archived and preserved by Exposoft Solutions. Original site: corbinball.com</small>
-</footer>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
 </body>
 </html>

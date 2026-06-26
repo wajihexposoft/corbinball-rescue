@@ -4,48 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meeting Planning Software Tools — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
 <style>
-  :root { --bg: #fff; --text: #222; --accent: #1a5276; --border: #ddd; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Georgia, serif; color: var(--text); background: var(--bg); line-height: 1.7; }
-  header { background: var(--accent); color: white; padding: 1rem 2rem; }
-  header h1 { font-size: 1.6rem; }
-  header p { font-size: 0.9rem; opacity: 0.8; }
-  nav { background: #154360; padding: 0.5rem 2rem; }
-  nav a { color: #aed6f1; text-decoration: none; margin-right: 1.5rem; font-size: 0.95rem; }
-  nav a:hover { color: white; }
-  main { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  h1, h2, h3 { color: var(--accent); margin: 1rem 0 0.5rem; }
-  p { margin-bottom: 1rem; }
-  .card { border: 1px solid var(--border); border-radius: 6px; padding: 1.2rem 1.5rem; margin-bottom: 1rem; }
-  .card h3 { margin-top: 0; font-size: 1.05rem; }
-  .card a { color: var(--accent); text-decoration: none; }
-  .card a:hover { text-decoration: underline; }
-  .meta { font-size: 0.82rem; color: #666; margin-bottom: 0.5rem; }
-  footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
-  .article-body { white-space: pre-wrap; font-size: 1rem; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  @media (max-width: 768px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>Corbin Ball &amp; Co.</h1>
-  <p>The web's longest-running site about meeting planning, tradeshow and events technology</p>
-</header>
-<nav>
-  <a href="/">Home</a>
-  <a href="/articles/">Articles</a>
-  <a href="/newsletter/">TechTalk Newsletter</a>
-  <a href="/tools/">Software Tools</a>
-  <a href="/links/">Link List</a>
-  <a href="/about/">About Corbin</a>
-</nav>
-<main>
-<h1>Meeting Planning Software Tools</h1><div class="card"><h3>Excel Spreadsheets</h3><div class="article-body">Meetings Technology Headquarters The Web's most comprehensive site about meeting planning , tradeshow and events technology . Read More Presentations Informative, thought-provoking, inspiring and fun programs. Read More Consulting Boost your company's technology with Corbin’s consulting services. Read More Corbin’s Link List The web’s most extensive list of industry categorized links! Read More Articles Hundreds of free articles on meetings technology and event planning. Read More TechTalk Subscribe to Corbin's Free High-Content Bi-Monthly Newsletter. Read More Software Tools Free planning tools, spreadsheets, templates, handbooks, &amp; more. Read More 1 News The July/August 2016 Issue of Corbin's TechTalk Newsletter Blog is out! + The July/August issue of TechTalk is packed with new meetings technology articles, links and ideas. This issue is being sent to nearly 11,000 subscribers in over 70 countries. In this issue: NEW ARTICLE: Event Data Analytics -- New Options for Events and Tradeshows NEW VIDEO/ARTICLE: The Lowdown on Location-Based Event Technology and More NEW VIDEO INTERVIEW: Mobile and Social's Impact … Read More Corbin Ranked Fifth in the 60 Most Influential Event Professionals To Follow + I feel honored to be included in this illustrious list of event professionals! Bizzabo used an interesting methodology in creating this list of the top 60 event planning experts on Twitter that planners should follow. They looked at several quantifiable factors for each candidate including: Klout Score Moz Page Authority Twitter Follower to Following ratio Qualifications (whether … Read More Corbin Named as One of the Top 30 CMP Influencers by the CIC + I am very happy and honored to be included with 29 other colleagues in this first peer-nominated influencers campaign celebrating the 30th anniversary of the Certified Meeting Professionals (CMP) program. The press release is listed below. As the 30th anniversary year of the Certified Meeting Professional Program began, t</div></div>
-<div class="card"><h3>Corbin's Favorites List</h3><div class="article-body">Corbin's Favorite List The most complete events and tradeshow technology listing on the web (1,700 links and growing) Send link suggestions to This email address is being protected from spambots. You need JavaScript enabled to view it. Updated January 1, 2016. Event Technology Abstract-Content-Speaker Management All Academic Inc All4Conference.com Attendee Interactive Axaco Event System B-Com Event Management Platform BusyConf CadmiumCD Chance2Speak Coe-Truman Technologies - Call4Abstracts Conference Exchange - Abstract Management Services Conference Harvester Conference Manager Conference Online Abstracts Manager ConfMaster COVR EventAct EventInterface EventPoint - Speaker Tools EventRebels Eventresult Eventsforce Ex Ordo G2Planet GLOBIT GmbH Hermes Conference Center InControl Productions JMARQUARDT - The m-anage solution Key4Events M Events Cross Media GmbH MIRA Smart Conferencing OASIS - Online Abstract Submission and Invitation System One World Presentation Management Oxford Abstracts Pharma Service phpAbstracts - Free Open-Source preseria presentation software ProposalSpace ScholarOne Abstracts - Thomson Reuters shocklogic Sierra Bay Tech Group - Precis Abstract Management Slidebox SlidePresenter Streamline Data Ltd TFI Group Webges Association and Member Management 123Signup - Association Manager ACGI Software Advanced Solutions International, Inc. - iMIS Affiniscape Altai Systems AM Guard AMO - Association Management Online Aptean â€“ gomembers Aptify Artegis Association Management Online Avectra- NetFORUM B-Com Event Management Platform Biz-Zone BizRelations - Association Portal Manager CitySoft, Inc Cobalt Computer Solutions Engineering COVR Daxko e-Mango ebase- Community Relationship ESX Engineering Euclid Technology Extreme Member - Membership Software eXware Solutions Impact Solutions, Inc. - MemberMax Integrated Software Solutions internet4Associations - Continuum ISG Solutions - iMIS ISSI Integrated Software Solutions, Inc JL Systems, Inc.- Noah Linked</div></div>
-</main>
-<footer>
-  &copy; Corbin Ball &amp; Co. | 506 14th Street, Bellingham WA 98225-6107 USA | Ph: 360.734.8756<br>
-  <small>Archived and preserved by Exposoft Solutions. Original site: corbinball.com</small>
-</footer>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+    <li><a href="/tools/">Software Tools</a></li>
+    <li><a href="/links/">Link List</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<h2 style="margin-bottom:16px">Meeting Planning Software Tools</h2><div class="rt-grid-2"><div class="rt-block"><div class="rt-block-content"><h3>Excel Spreadsheets</h3><div class="article-body" style="font-size:0.88rem">Meetings Technology Headquarters The Web's most comprehensive site about meeting planning , tradeshow and events technology . Read More Presentations Informative, thought-provoking, inspiring and fun programs. Read More Consulting Boost your company's technology with Corbin’s consulting services. Read More Corbin’s Link List The web’s most extensive list of industry categorized links! Read More Articles Hundreds of free articles on meetings technology and event planning. Read More TechTalk Subscribe to Corbin's Free High-Content Bi-Monthly Newsletter. Read More Software Tools Free planning tools, spreadsheets, templates, handbooks, &amp; more. Read More 1 News The July/August 2016 Issue of Corbin's TechTalk Newsletter Blog is out! + The July/August issue of TechTalk is packed with new meetings technology articles, links and ideas. This issue is being sent to nearly 11,000 subscribers in over 70 countries. In this issue: NEW ARTICLE: Event Data Analytics -- New Options for Events and Tradeshows NEW VIDEO/ARTICLE: The Lowdown on Location-Based Event Technology and More NEW VIDEO INTERVIEW: Mobile and Social's Impact … Read More Corbin Ranked Fifth in the 60 Most Influential Event Professionals To Follow + I feel honored to be included in this illustrious list of event professionals! Bizzabo used an interesting methodology in creating this list of the top 60 event planning experts on Twitter that planners should follow. They looked at several quantifiable factors for each candidate including: Klout Score Moz Page Authority Twitter Follower to Following ratio Qualifications (whether … Read More Corbin Named as One of the Top 30 CMP Influencers by the CIC + I am very happy and honored to be included with 29 other colleagues in this first peer-nominated influencers campaign celebrating the 30th anniversary of the Certified Meeting Professionals (CMP) program. The press release is listed below. As the 30th anniversary year of the Certified Meeting Professional Program began, t</div></div></div>
+<div class="rt-block"><div class="rt-block-content"><h3>Corbin's Favorites List</h3><div class="article-body" style="font-size:0.88rem">Corbin's Favorite List The most complete events and tradeshow technology listing on the web (1,700 links and growing) Send link suggestions to This email address is being protected from spambots. You need JavaScript enabled to view it. Updated January 1, 2016. Event Technology Abstract-Content-Speaker Management All Academic Inc All4Conference.com Attendee Interactive Axaco Event System B-Com Event Management Platform BusyConf CadmiumCD Chance2Speak Coe-Truman Technologies - Call4Abstracts Conference Exchange - Abstract Management Services Conference Harvester Conference Manager Conference Online Abstracts Manager ConfMaster COVR EventAct EventInterface EventPoint - Speaker Tools EventRebels Eventresult Eventsforce Ex Ordo G2Planet GLOBIT GmbH Hermes Conference Center InControl Productions JMARQUARDT - The m-anage solution Key4Events M Events Cross Media GmbH MIRA Smart Conferencing OASIS - Online Abstract Submission and Invitation System One World Presentation Management Oxford Abstracts Pharma Service phpAbstracts - Free Open-Source preseria presentation software ProposalSpace ScholarOne Abstracts - Thomson Reuters shocklogic Sierra Bay Tech Group - Precis Abstract Management Slidebox SlidePresenter Streamline Data Ltd TFI Group Webges Association and Member Management 123Signup - Association Manager ACGI Software Advanced Solutions International, Inc. - iMIS Affiniscape Altai Systems AM Guard AMO - Association Management Online Aptean â€“ gomembers Aptify Artegis Association Management Online Avectra- NetFORUM B-Com Event Management Platform Biz-Zone BizRelations - Association Portal Manager CitySoft, Inc Cobalt Computer Solutions Engineering COVR Daxko e-Mango ebase- Community Relationship ESX Engineering Euclid Technology Extreme Member - Membership Software eXware Solutions Impact Solutions, Inc. - MemberMax Integrated Software Solutions internet4Associations - Continuum ISG Solutions - iMIS ISSI Integrated Software Solutions, Inc JL Systems, Inc.- Noah Linked</div></div></div>
+<div class="rt-block"><div class="rt-block-content"><h3>Meeting Planning Software Tools</h3><div class="article-body" style="font-size:0.88rem">Corbin's Meetings Technology Software Tools Send me your meeting planning spreadsheets, sample database files, checklists, and any other tools you have developed using standard off-the-shelf software. I will review and post the best ones here and include your name as the author and other contact information if desired. Let's share from each other's experiences! Excel Spreadsheets The spreadsheets below (unless otherwise noted) were developed and honed over years of planning international, city-wide technology meetings. Although designed for large, association meetings, many of them are applicable to many types and sizes of meetings. All are fully functional Excel files -- just click on the hyperlink and save if you wish to keep for your own use. Thanks to my colleagues at SPIE who assisted or advised in their creation. Downloading notes : On some browsers, a username and password is requested. Simply hit &quot;cancel&quot; and the spreadsheet will load. In order to save the document, click &quot;File&quot; and then &quot;SaveAs&quot; and name and place the document on your hard drive where desired. Meeting Specifications Spreadsheets: Conference Matrix Grid View This provides a one-page view of a large, multi-session, multi-day meeting. This works especially well for meeting room assignments and finding out at a glance what is happening where. Conference Resume Answer all the questions the hotel may have even before they have a chance to ask them! Convention Services Managers (CSMs) will love you for providing this information before they have to track it down. This document should be the opening pages of the Specifications Document and it addresses most of the department of the hotel. Complete Conference Specifications This spreadsheet contains an example of the full specifications that are sent to the hotel CSM. This should follow the Conference Resume listed above. Included in this are numerous ideas on how to streamline and improve your communication with the hotel. Many CSMs have mentioned </div></div></div>
+<div class="rt-block"><div class="rt-block-content"><h3>Corbin's Favorites List</h3><div class="article-body" style="font-size:0.88rem">Corbin's Favorite List The most complete events and tradeshow technology listing on the web (1,700 links and growing) Send link suggestions to This email address is being protected from spambots. You need JavaScript enabled to view it. Updated January 1, 2016. Event Technology Abstract-Content-Speaker Management All Academic Inc All4Conference.com Attendee Interactive Axaco Event System B-Com Event Management Platform BusyConf CadmiumCD Chance2Speak Coe-Truman Technologies - Call4Abstracts Conference Exchange - Abstract Management Services Conference Harvester Conference Manager Conference Online Abstracts Manager ConfMaster COVR EventAct EventInterface EventPoint - Speaker Tools EventRebels Eventresult Eventsforce Ex Ordo G2Planet GLOBIT GmbH Hermes Conference Center InControl Productions JMARQUARDT - The m-anage solution Key4Events M Events Cross Media GmbH MIRA Smart Conferencing OASIS - Online Abstract Submission and Invitation System One World Presentation Management Oxford Abstracts Pharma Service phpAbstracts - Free Open-Source preseria presentation software ProposalSpace ScholarOne Abstracts - Thomson Reuters shocklogic Sierra Bay Tech Group - Precis Abstract Management Slidebox SlidePresenter Streamline Data Ltd TFI Group Webges Association and Member Management 123Signup - Association Manager ACGI Software Advanced Solutions International, Inc. - iMIS Affiniscape Altai Systems AM Guard AMO - Association Management Online Aptean â€“ gomembers Aptify Artegis Association Management Online Avectra- NetFORUM B-Com Event Management Platform Biz-Zone BizRelations - Association Portal Manager CitySoft, Inc Cobalt Computer Solutions Engineering COVR Daxko e-Mango ebase- Community Relationship ESX Engineering Euclid Technology Extreme Member - Membership Software eXware Solutions Impact Solutions, Inc. - MemberMax Integrated Software Solutions internet4Associations - Continuum ISG Solutions - iMIS ISSI Integrated Software Solutions, Inc JL Systems, Inc.- Noah Linked</div></div></div></div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
 </body>
 </html>

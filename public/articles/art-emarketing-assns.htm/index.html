@@ -4,51 +4,78 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Opting in for Sales and Services — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
 <style>
-  :root { --bg: #fff; --text: #222; --accent: #1a5276; --border: #ddd; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Georgia, serif; color: var(--text); background: var(--bg); line-height: 1.7; }
-  header { background: var(--accent); color: white; padding: 1rem 2rem; }
-  header h1 { font-size: 1.6rem; }
-  header p { font-size: 0.9rem; opacity: 0.8; }
-  nav { background: #154360; padding: 0.5rem 2rem; }
-  nav a { color: #aed6f1; text-decoration: none; margin-right: 1.5rem; font-size: 0.95rem; }
-  nav a:hover { color: white; }
-  main { max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; }
-  h1, h2, h3 { color: var(--accent); margin: 1rem 0 0.5rem; }
-  p { margin-bottom: 1rem; }
-  .card { border: 1px solid var(--border); border-radius: 6px; padding: 1.2rem 1.5rem; margin-bottom: 1rem; }
-  .card h3 { margin-top: 0; font-size: 1.05rem; }
-  .card a { color: var(--accent); text-decoration: none; }
-  .card a:hover { text-decoration: underline; }
-  .meta { font-size: 0.82rem; color: #666; margin-bottom: 0.5rem; }
-  footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
-  .article-body { white-space: pre-wrap; font-size: 1rem; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  @media (max-width: 768px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>Corbin Ball &amp; Co.</h1>
-  <p>The web's longest-running site about meeting planning, tradeshow and events technology</p>
-</header>
-<nav>
-  <a href="/">Home</a>
-  <a href="/articles/">Articles</a>
-  <a href="/newsletter/">TechTalk Newsletter</a>
-  <a href="/tools/">Software Tools</a>
-  <a href="/links/">Link List</a>
-  <a href="/about/">About Corbin</a>
-</nav>
-<main>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+    <li><a href="/tools/">Software Tools</a></li>
+    <li><a href="/links/">Link List</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Opting in for Sales and Services</p>
 <h1>Opting in for Sales and Services</h1>
-<p class="meta">Source: <a href="http://www.corbinball.com:80/articles/art-emarketing-assns.htm">http://www.corbinball.com:80/articles/art-emarketing-assns.htm</a></p>
 <div class="article-body">Spam for Internet service providers, reports that Spam has almost tripled since last year and now accounts for 12 to 15 percent of total e-mail traffic. Segmenting your database and personalizing messages to target groups is the best way to make your e-mail stand out. �People are three quarters more likely to open an e-mail if it is personalized than if it is blasted,� says Corbin Ball, CMP, president of Corbin Ball Associates, Bellingham, Wash., consultant and professional speaker on meetings technology. He suggests crafting a message that speaks directly to recipient interests based on member profiles. For example, if you track the educational sessions members have attended in the past, you can segment the database by sessions attended and invite each segment to register for sessions on the related topics. Surprisingly, just 43 percent of DMA survey respondents use segmentation techniques on their customer files. But with detailed data on member preferences, associations are well-equipped to get ahead of this trend. The American Academy of Physician Assistants (AAPA), Alexandria, Va., recently targeted members in San Francisco and Los Angeles to promote local continuing education seminars. The e-mail promotion reached about 1,000 members and generated almost instant response, resulting in 150 to 200 registrations. �We have another seminar this fall, in Philly and New York,� says Kevin Bayes, assistant director of information services for AAPA. �Since we�re targeting the same group for each one, we�ll combine the two promotions, so members can get an overview of what�s available.� Continuing education is a core offering for AAPA, and Bayes uses e-mail to deliver as much information as possible. �We have individuals practicing in very rural areas, and I�m able to update them about what�s going on via e-mail,� he says. Monthly e-newsletters distributed to about 24,000 members generate 2,500 clickthroughs to articles on the AAPA Web site (www.aapa.org) each month. Growing local programs E-mail is at its most effective when it delivers information members want, directly into their inboxes. The smaller the organization, the more it can benefit from the cost efficiencies. Even local chapters are getting in on the action. The Heartland Chapter of the Professional Convention Management Association (PCMA) e-mails invitations to 182 members in six states at least three weeks ahead of each program. When preregistration for a Corbin Ball Seminar, June 25, 2002, in Kansas City, Mo., was about half the number expected, the chapter asked the local ASAE and Meeting Professionals International chapters to e-mail their members an invitation, generating 40 percent more registrations. Using Cvent ( www.cvent.com ), an online registration, e-marketing, and data analysis tool, the chapter can send personalized reminders, updates, and evaluations; accept payment online by credit card; and capture e-mail addresses for pass-along recipients. The cost (discounted for PCMA chapters) is about $480 per year, plus $3 per credit card transaction. �It has not only improved our attendance, it has been able to improve our tracking capabilities regarding the attendance history of our members,� says Lori Johnson, president of the Heartland Chapter and meetings manager for the National Association of Insurance Commissioners, Kansas City. Armed with this data, the chapter can plan future programs with broad appeal. Whether they�re using in-house software applications or outsource application services, associations and their affiliates are realizing real cost benefits in marketing educational programs and services to members by e-mail. When you push the envelop with personalization, segmentation, and viral marketing, you�ll see results that outperform traditional offline methods almost every time. Cathy Chatfield-Taylor, a freelance writer/editor based in Lenexa, Kan., was co-managing editor of Professional Meeting Management, 4th Edition (Chicago, Professional Convention Management Association, 2002) and The CIC Manual, 7th Edition (McLean, Va., Convention Industry Council, 2000). E-mail: cathy@cc-tunlimited.com . If you find this article helpful, please let me
 know by signing the Guest Book in the Contact
 Corbin Section.. BACK TO ARTICLES LIST</div>
-</main>
-<footer>
-  &copy; Corbin Ball &amp; Co. | 506 14th Street, Bellingham WA 98225-6107 USA | Ph: 360.734.8756<br>
-  <small>Archived and preserved by Exposoft Solutions. Original site: corbinball.com</small>
-</footer>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
 </body>
 </html>

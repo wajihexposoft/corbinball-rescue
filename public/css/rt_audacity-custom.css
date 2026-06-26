@@ -1,0 +1,52 @@
+.rt-social-buttons .social-button {
+    color: #ffffff;
+    background: #668CFF;
+    margin: 2px;
+    border-radius: 3px;
+    float: left;
+    font-size: 1em;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+  
+.menu-block .gf-menu .dropdown {
+    background: #A50000 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.menu-block .gf-menu .dropdown .menu-item-wrapper {
+    color: #ffffff;
+    padding: 2px;
+}
+
+.menu-block .gf-menu .dropdown .item {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.menu-block .gf-menu.l1 > li > .item .menu-item-wrapper {
+    color: #ffffff;
+}
+
+.fp-roksprocket-stories-showcase .layout-stories .sprocket-features-content {
+  background: rgba(25,25,25,0.25);
+}
+
+#rt-extension .rt-container {
+  color: #919191;
+  background-color: #A50000;
+}
+
+.font-family-helvetica {
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 28.8px;
+font-weight: bold;
+}
