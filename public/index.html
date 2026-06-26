@@ -18,6 +18,11 @@
   #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
   #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
   #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
   #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
   #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
   #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
@@ -39,9 +44,30 @@
   #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
   #rt-footer a { color: #aaa; }
   .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
-  @media (max-width: 768px) {
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
     #rt-nav ul { flex-wrap: wrap; }
     #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
     .rt-grid-2 { grid-template-columns: 1fr; }
   }
 </style>
@@ -55,11 +81,16 @@
 <div id="rt-nav">
   <ul>
     <li><a href="/">Home</a></li>
-    <li><a href="/articles/">Articles</a></li>
-    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
-    <li><a href="/tools/">Software Tools</a></li>
-    <li><a href="/links/">Link List</a></li>
+    <li><a href="/news/">News</a></li>
     <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
   </ul>
 </div>
 
@@ -72,31 +103,93 @@
 <div id="rt-main-body">
 <div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
 
-<h1>Welcome</h1>
-<div class="rt-grid-2">
-  <div class="rt-block">
-    <img src="/images/banners/CorbinBall-keynote-cropped.jpg" alt="Corbin Ball keynote">
-    <div class="rt-block-content"><h3><a href="/articles/">Articles</a></h3><p>Hundreds of articles on events technology, virtual meetings, AI, and meeting planning best practices.</p></div>
+<div class="rt-grid-2" style="margin-bottom:32px">
+  <div class="rt-block"><img src="/images/banners/CorbinBall-keynote-cropped.jpg" alt="Presentations">
+    <div class="rt-block-content"><h3><a href="/about/">Presentations</a></h3><p>Informative, thought-provoking, inspiring and fun programs.</p></div></div>
+  <div class="rt-block"><img src="/images/banners/graphs2.jpg" alt="Consulting">
+    <div class="rt-block-content"><h3><a href="/about/">Consulting</a></h3><p>Boost your company's technology with Corbin's consulting services.</p></div></div>
+  <div class="rt-block"><img src="/images/banners/apple-iphone-smartphone-desk.jpg" alt="Corbin's Link List">
+    <div class="rt-block-content"><h3><a href="/links/">Corbin's Link List</a></h3><p>The web's most extensive list of industry categorized links!</p></div></div>
+  <div class="rt-block"><img src="/images/banners/man-people-space-desk.jpg" alt="Articles">
+    <div class="rt-block-content"><h3><a href="/articles/">Articles</a></h3><p>Hundreds of free articles on meetings technology and event planning.</p></div></div>
+  <div class="rt-block"><img src="/images/banners/man-coffee-cup-pen.png" alt="TechTalk">
+    <div class="rt-block-content"><h3><a href="/newsletter/">TechTalk</a></h3><p>Subscribe to Corbin's Free High-Content Bi-Monthly Newsletter.</p></div></div>
+  <div class="rt-block"><img src="/images/banners/tools-square.jpg" alt="Software Tools">
+    <div class="rt-block-content"><h3><a href="/tools/">Software Tools</a></h3><p>Free planning tools, spreadsheets, templates, handbooks, &amp; more.</p></div></div>
+</div>
+
+<div class="rt-home-columns">
+  <div class="rt-home-main">
+    <h2 class="section-title"><span>News</span></h2>
+    <div class="news-list">
+      <div class="news-item">
+        <img src="/images/CorbinBall.jpeg" alt="Corbin Ball">
+        <div class="news-content">
+          <h4><a href="/news/">Notice of Website Continuation on an Archive Basis</a></h4>
+          <p>I have some good news for the several of you who contacted me regarding my website closure asking about what was going to happen with the content. Bassel Annab, of Exposoft, has graciously offered to host my site on an archive basis. There may be a few days of disruption to port things over, but the content and tools articles will remain available.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="/images/CorbinBall.jpeg" alt="Corbin Ball">
+        <div class="news-content">
+          <h4><a href="/news/">Notice of Website Closure: www.corbinball.com</a></h4>
+          <p>I have decided that it is time to retire and close this website on January 31, 2024. I turn 75 in a couple of months and am planning on travelling, volunteering, auditing classes, exploring new topics and spending more time with friends and family. I started my speaking, consulting and writing business focusing on event technology one year before Google.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="/images/ArticleImages/Eventtex110MostInfluential.JPG" alt="Eventex">
+        <div class="news-content">
+          <h4>Corbin Named by Eventex Vote as One of the Top 100 Most Influential People in the Event Industry</h4>
+          <p>December 7, 2022 — Eventex just released a new addition to their All-stars Index — The 100 Most Influential People in The Event Industry. The list features the 100 people who have influenced the event industry the most with their creativity, vision and capacity for innovation, as voted by the public. This year, a total of 454 professionals were honored from 22 countries with nearly 21,000 votes cast.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="/images/mpi50_logo.jpg" alt="MPI 50">
+        <div class="news-content">
+          <h4>Corbin named as one of the "50 Most Influential Meeting Professionals"</h4>
+          <p>I feel so honored and happy to be included in this amazing group of the 50 of the Most Influential Meeting Professionals from MPI in celebration of their 50th Anniversary!</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top:32px"><span>Latest Articles</span></h2>
+    <ol class="latest-articles">
+      <li><a href="/articles/">How Hotels Are Adapting to Hybrid Event Technology</a></li>
+      <li><a href="/articles/">With A.I. on the Rise, Event Tech Could See Quick Progress</a></li>
+      <li><a href="/articles/">1962-2022: A 60-Year Timeline of Events Technology Innovation</a></li>
+      <li><a href="/articles/">Is the Metaverse the Next Big Thing for Meetings?</a></li>
+      <li><a href="/articles/">Moving from Virtual to Hybrid Events: 37 Tips and Ideas on How to Maximize your Success</a></li>
+      <li><a href="/articles/">Face-to-Face Vs. Virtual Meetings: Which is Better?</a></li>
+      <li><a href="/articles/">Artificial Intelligence: The Upcoming Impact on Events</a></li>
+      <li><a href="/articles/">How to Identify your Target Audience for an Event</a></li>
+      <li><a href="/articles/">Planning an Auction: 4 Best Practices For a Smooth Event</a></li>
+      <li><a href="/articles/">10 Ways to Integrate Trade Shows and Events Into Your Facebook Marketing</a></li>
+      <li><a href="/articles/">Modern Association Management: 6 Tools You Need</a></li>
+      <li><a href="/articles/">How Facial Recognition Will Disrupt the Events Landscape</a></li>
+      <li><a href="/articles/">Event Registration: 4 Best Practices to Increase Attendance</a></li>
+      <li><a href="/articles/">Association Community Building: Offline and Online Engagement</a></li>
+      <li><a href="/articles/">The Next Big Trade Show Attraction Has Arrived: Virtual Reality Video</a></li>
+    </ol>
   </div>
-  <div class="rt-block">
-    <img src="/images/banners/graphs2.jpg" alt="Technology graphs">
-    <div class="rt-block-content"><h3><a href="/newsletter/">TechTalk Newsletter</a></h3><p>Archive of Corbin's technology newsletter, published since 1998.</p></div>
-  </div>
-  <div class="rt-block">
-    <img src="/images/banners/apple-iphone-smartphone-desk.jpg" alt="Software tools">
-    <div class="rt-block-content"><h3><a href="/tools/">Meeting Planning Software Tools</a></h3><p>Curated directory of event technology software and tools.</p></div>
-  </div>
-  <div class="rt-block">
-    <img src="/images/banners/tools-square.jpg" alt="Link list">
-    <div class="rt-block-content"><h3><a href="/links/">Corbin's Link List</a></h3><p>Extensive curated resource directory for meeting professionals.</p></div>
-  </div>
-  <div class="rt-block">
-    <img src="/images/banners/man-people-space-desk.jpg" alt="About Corbin">
-    <div class="rt-block-content"><h3><a href="/about/">About Corbin</a></h3><p>CSP, CMP, DES — 2018 Event Industry Council Hall of Leaders inductee. Speaker &amp; consultant across 35 countries.</p></div>
-  </div>
-  <div class="rt-block">
-    <img src="/images/banners/man-coffee-cup-pen.png" alt="Consulting">
-    <div class="rt-block-content"><h3>About This Archive</h3><p>Corbin retired in January 2024. This archive is preserved by Exposoft Solutions to keep his 27+ years of knowledge available to the events industry.</p></div>
+
+  <div class="rt-home-sidebar">
+    <h2 class="section-title"><span><i class="fa fa-bullhorn"></i> What The Audience Is Saying</span></h2>
+    <div class="testimonial">
+      <p>"Your session blew me away. I could easily listen to your information all day. This was incredibly informative."</p>
+      <strong>Michael McNutt</strong><br><small>Human Capital Manager, Information Experts</small>
+    </div>
+    <div class="testimonial">
+      <p>"Corbin, ALWAYS a homerun presentation of great info!"</p>
+      <strong>Peter O'Brien</strong><br><small>Marriott Global Sales</small>
+    </div>
+    <div class="testimonial">
+      <p>"Sensational session. Worth the entire PCMA registration fee."</p>
+      <strong>Bonnie Wallsh</strong><br><small>Chief Strategist, Bonnie Walsh Associates</small>
+    </div>
+    <div class="testimonial">
+      <p>"Amazing! I have not learned so much in such a short time ever! I want more!"</p>
+      <strong>Rafael Olivares</strong><br><small>Sales Executive, Finnish Tourism Board</small>
+    </div>
   </div>
 </div>
 
