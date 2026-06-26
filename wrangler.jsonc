@@ -2,6 +2,6 @@
   "name": "corbinball-rescue",
   "compatibility_date": "2026-06-26",
   "assets": {
-    "directory": "."
+    "directory": "./public"
   }
 }
