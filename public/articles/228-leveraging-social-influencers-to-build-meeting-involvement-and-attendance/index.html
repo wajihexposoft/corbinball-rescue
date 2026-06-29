@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leveraging Social Influencers to Build Meeting Involvement and Attendance — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Leveraging Social Influencers to Build Meeting Involvement and Attendance</p>
+<h1>Leveraging Social Influencers to Build Meeting Involvement and Attendance</h1>
+<div class="article-body">Leveraging Social Influencers to Build Meeting Involvement and Attendance ©2018, Corbin Ball, CMP, CSP, DES Celebrity endorsements have been around since the start of advertising. The athletes on the Wheaties box, the movie star promoting to the TV cameras, the Nike Swoosh on sports star’s clothing all are part of advertising. Psychologists have long realized that buyers are more likely to purchase things if they are promoted or mentioned by people they know or know of. They are social influencers. Until recently, this has been primarily through main media channels: TV, magazines, other print ads and other tightly controlled options. This is changing. With the advent of social media, nearly everyone can have their social megaphone. To the degree that individuals can accrue a sizable number of followers, they too can be powerful social influencers as well. The good news for event promoters is that targeted influencers don’t need millions of followers. Event promoters can reach very specific market niches with niche ‘celebrities’ with much smaller but dedicated follower numbers (i.e.500-10,000 followers). In fact, they often seem more relevant and authentic than celebrities. They are experienced at communicating to their core demographic. In fact, research indicates that people trust influencers much more than ads. With care and strategy, these niche social influencers can use their social channels to become ambassadors to encourage and build event attendance. Here are some suggestions on how to find and nurture these niche social influencers to build your event attendance as well as some interesting technology options to help in this process. Finding targeted social influencers: The good news is that niche influencers are relatively easy to find. Some of the options are: Search your follower fans in Twitter, Facebook, LinkedIn, Instagram and others: They know of your company/organization and it may be easier to convince them to work with you. Of course, the ones with a greater number of followers will have a greater impact Search hashtags: Look for those who have used your event hashtag in the past. Also search Twitter for specific topics. For example, to find influencers in the event technology space, you may wish to search Twitter for #eventtech or #eventprofs. Look for active engagers that have something to say. Search the blogs : Sites such as BlogSearchEngine can help find the major bloggers in your niche market Search LinkedIn: Simply enter in your search phrase in the search box at the top of the LinkedIn page will yield potential influencers. Look for posts, articles and the number of connections to determine suitability. Use social media influencer search tools: There are many tools to help find and qualify influencers. These include: Scrunch.com , Verve.co , Klear.com , and Ninjaoutreach.com . Engage and nurture these influencers: Although some event marketers may choose to pay influencers, in many cases, developing a collaboration may be the better route. There are a number of ways that this can be accomplished: Reach out to the influencer to explore common interests. Social influencers, by nature, are passionate about connecting to their followers. If there are opportunities to cross-promote through reposting content to increase visibility on both sides can be an attractor. Sharing their content can be a significant plus for them. But offering them material to share (landing page links), and other content. Be sure that they know your event hashtag as well. Engage the influencer to explore and develop content for the upcoming event. Include them into the planning process. Invite the influencer to the event and give them VIP status making sure that they get a fast-line detail about the event. Give them a platform to provide unique postings. Good photo-opportunities at the event, fresh content, and more. Give your influencers tools to help: One interesting new product that can help for a broad range of event ambassadors is Snöball . This web-based tool gives event ambassadors an easy-to-use, automated event marketing tool that allows them to amplify the event reach while tending to their own digital brand. Snöball generates unique, branded landing pages for each speaker, sponsor, exhibitor, and attendee, populated with their custom information to promote their participation at the event. This gives event professionals access to untapped potential participants and helps increase event brand awareness at scale. It allows for incentivization programs such as VIP codes and discounts. Additionally, Snöball provides a fully customized influencer email campaign manager with pre-written personalized social media posts. IT will monitor social mentions, gather data on landing page traffic, track conversions and give the ability to reward the most active influencers. Feathr has recently come out with a similar product for referral campaigns. Influence marketing is proving to be a powerful tool for event promotion. It is more trusted than ads and, often times, much less expensive as well. Corbin Ball, CMP, CSP, DES is a speaker and independent third-party consultant focusing on meetings technology. With 20 years of experience running international citywide technology meetings, he now helps clients worldwide use technology to save time and improve productivity He can be contacted at his extensive web site Corbin Ball Associates - Meetings Technology Headquarters ( www.corbinball.com) and followed at www.twitter.com/corbinball . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Security and Privacy Issues Site Inspections and Evaluation Social Media - Web 2.0 Speakers and Presentation Skills Surveys and Audience Polling Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration WWW -- The Web What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada Your session blew me away. I could easily listen to your information all day. This was incredibly informative. Michael McNutt Human Capital Manager Information Experts Sensational session. Worth the entire PCMA registration fee. Bonnie Wallsh Chief Strategist Bonnie Walsh Associates 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

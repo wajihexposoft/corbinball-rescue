@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Virtual/Augmented/Mixed Reality Is Making Headway at Exhibitions and Events — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; How Virtual/Augmented/Mixed Reality Is Making Headway at Exhibitions and Events</p>
+<h1>How Virtual/Augmented/Mixed Reality Is Making Headway at Exhibitions and Events</h1>
+<div class="article-body">How Virtual/Augmented/Mixed Reality Is Making Headway at Exhibitions and Events ©2017 Corbin Ball, CMP, CSP, DES Google, Facebook, Samsung, Microsoft and other technology companies have each invested billions of dollars in developing Virtual reality (VR- immersive multimedia) and/or augmented/mixed reality (AR - a layering of computer-generated sensory input onto real-world views), Although this will take a few years to fully develop, these tools are blossoming at events and tradeshows. VR is the closest thing we have to the Start Trek “Holodeck” and, as these tools develop, these virtual approximations will become increasingly realistic. Here are some of the ways this will play out for events and tradeshows. Virtual site inspections and tours: Many hotels and destinations are moving to VR to give viewers a more engaging and realistic hotel/venue site inspection experience compared to “old fashioned” hotel websites: Destination BC has created an Oculus Rift VR tour to promote the beauty of their area. The Making of the Wild Within VR Experience video describes the process. Shangri-La Hotels has several downloadable Oculus Rift VR site inspection tours . The Las Vegas Convention Authority has a downloadable VR app Vegas VR for iOS and Android to explore various sites. Best Western has released 360-degree virtual reality tours of nearly 2,000 properties which can be accessed on their YouTube channel bestwesternTV . Marriott is providing “ VRoom Service ” in select hotels allowing guests to order a VR headset to be brought up to the guest room to watch “VR Postcards” videos of different destinations. Booth and attendee engagement: Exhibitors are recognizing that VR can give booth attendees an incredibly immersive and engaging booth experience. VR headsets will be used to demonstrate products at tradeshow in a more realistic, interactive and engaging manner while minimizing the cost to ship physical products to a show and reducing the amount of floorspace needed: Several VR and AR development companies, such as Arch Virtual and VIATehnik , have emerged to fill this need. Companies, such as Kaon , are building AR 3D product models viewable on smartphones, tablets and other devices.. Attendees can spin, zoom, rotate, discover and interact with virtual products. Animations can demonstrate product workflows and process. BMW recently used the Hololens AR platform to engage attendees at recent tradeshows. Using the Hololens headsets, attendees surrounding a i8 BMW, saw the inner workings, the internet connections to the “cloud,” the moving road center strip, and more. See the video and other product examples here . Freeman , one of the major exhibition and brand design firms, provides a range of VR services including the VR Product Explorer. To quote from their website: “Have a product that is too big, unwieldy, dangerous, or expensive to demonstrate to your clients? Use our VR Product Explorer to add a whole new level of interactivity to your products, and enable your audiences to interact and learn in an unparalleled engaging VR experience. Spin, dissect, and demonstrate models in virtual space.” The huge success last summer of Pokémon Go (a AR game) will likely make its way in some form into event gamification. The CEO of Niantic Labs (creators of Pokémon Go), John Hanke, has indicated that events will play are role in their product: “You will see new Pokémon come into the game around special events at certain times in certain parts of the world,&quot; Hanke stated in a Forbes interview . &quot;You’ll see us do some things around events.&quot; Similar augmented reality games would be a natural for engaging attendees at events. Virtual booth design: 3D models of exhibit booths, stage sets and other event setups, will be replaced by 3D virtual walkthroughs. These walkthroughs can be saved and compared to future designs. Freeman provides a “VR Design Explorer” allowing VR tours of exhibit booths before spending the dollars to build it in real life. Companies, such as Zoomifer , are providing 3D interactive tours of exhibit booths to 1. engage potential attendees before the trade show or 2. receive it as a link after visiting the booth so that they can revisit the booth or share with colleagues. Virtual room diagramming: Room diagramming is an indispensable event planning tool. One of the many benefits is the ability to “sell the dream” – to visualize the space before it is actually set according to your specifications. The major room diagramming software firms have developed 3D rendering of diagrammed room sets. It will be a relatively short step to make this available in VR enabling the viewer to put on the VR goggles to virtually walk through the space. One new company in this space, EventForte , is already doing this. Virtual attendance: VR will redefine virtual meetings. Instead of watching a webcast, VR could make it seem to the remote attendee as if he/she were actually in the meeting room (or any other location): The NBA is making significant plans to distribute their games in VR. Other opportunities for “virtual attendance are being consider for music concerts, special events and even major conference events. Mobile, social telepresence robots (such as DORA – Dexterous Observational Roving Automaton ) may eventually become virtual attendees at tradeshows and events. These remote robotic VR sensing units (virtual attendees), on a basic level, are already here We are just scratching the surface in this area. The major hardware is yet to roll out and we will see significant advances in the next couple of years. it seems inevitable that we will VR and AR tools proliferate at events and exhibitions. Corbin Ball, CMP, CSP is a speaker and independent third-party consultant focusing on meetings technology. With 20 years of experience running international citywide technology meetings, he now helps clients worldwide use technology to save time and improve productivity He can be contacted at his extensive web site Corbin Ball &amp; Co. - Meetings Technology Headquarters ( www.corbinball.com) and followed at www.twitter.com/corbinball . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Security and Privacy Issues Site Inspections and Evaluation Social Media - Web 2.0 Speakers and Presentation Skills Surveys and Audience Polling Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration WWW -- The Web What The Audience Is Saying &quot;I've seen Corbin three times. No one works harder to keep his material fresh and relevant to events.&quot; Scott Stubbs President HB Stubbs Company &quot;Way beyond the best I could have imagined!&quot; Russell Clark Environmental Protection Specialist, U.S. Environmental Protection Agency Excellent session! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

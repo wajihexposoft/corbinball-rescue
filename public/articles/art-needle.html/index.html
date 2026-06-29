@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finding the Needle in the Cyber Haystack - Corbin Ball Associates - the Meetings
+Technology Professionals — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Finding the Needle in the Cyber Haystack - Corbin Ball Associates - the Meetings
+Technology Professionals</p>
+<h1>Finding the Needle in the Cyber Haystack - Corbin Ball Associates - the Meetings
+Technology Professionals</h1>
+<div class="article-body">web sites, and thousands of new ones added daily, the Web can be a very confusing place.
+It&amp;#146;s like trying to find a library book without the help of the Dewy Decimal System. Fortunately, there is help out there. Search sites help make
+order out of this chaos. They are web sites that act as electronic card catalogs to help
+you find the information you want. Understanding how to use the different types of search
+sites will help you find your information &quot;needle&quot; in the &quot;haystack&quot;
+of cyberspace information. There are four major types: directories robotic search engines meta search sites gateway sites Directories: Directories are catalogued by a team of human editors (cybrarians), in a
+manner similar to librarians in a library. The oldest and most popular directory on the
+web is Yahoo ( www.yahoo.com ) . Pros: Directories are great for broad topics. You will get
+well-organized results. For example, searching on &quot;CVB&quot; will yield a neatly
+catalogued, alphabetized and hyperlinked list of 284 convention and visitors bureaus that
+have web sites. Cons: A directory site does not work as well for narrow,
+targeted searches. How to use: One of the best ways to use a directory is to
+&quot;drill down&quot; &amp;#150; using the opening page menu which lists many broad topics
+and progressively narrow it in successive screens by clicking on the subject you are
+looking for. For example, to find &quot;Convention and Visitors Bureaus,&quot; the opening
+screen has a category of &quot;Travel.&quot; Clicking on this will lead to a listing of
+&quot;Convention and Visitors Bureaus&quot; on the next page, then you can narrow it to
+bureaus in &quot;U.S. Cities&quot;, and, finally you have &quot;drilled down&quot; an
+extensive, alphabetical list of the CVBs in the U.S. Robotic search engines: Robotic sites gather web information in an entirely different manner
+&amp;#150; they automatically search and catalogue web sites by using special indexing
+software programs. These programs automatically sort many components of a site including
+key words, introductory paragraphs, hidden codes, graphics and more. The major ones index
+100 times more web pages than Yahoo does. Two of the best among the scores of robotic
+search engines are HotBot ( www.hotbot.com ) and AltaVista ( www.altavista.com ). Pros : These sites are the opposite of directories -- they
+are good for narrow, targeted searches. For example, if you are looking for web
+information regarding a person in the meetings industry, these are good sites to use. For
+example, typing in &quot;Anna Lee Chabot&quot; -- the current president of Meeting
+Professionals International &amp;#150; will yield more than a dozen references in HotBot or
+AltaVista. It is also possible to target searches by date, title, location, domain,
+Boolean (and/or/not) searches, and much more. [added Boolean explanation here] Cons : Robotic search engines are not as good for broad
+searches, often resulting in a huge number of responses in a seemingly random manner.
+Searching AltaVista for &quot;meeting planning&quot; with no filtering, you will produce
+more than 800,000 responses including all of the web sites that have mentioned the words
+&quot;meeting&quot; or &quot;planning&quot; in them. How to use: Go to these sites, click on the
+&quot;help&quot; or &quot;advanced search&quot; buttons, and learn how to use the advanced
+search options specific to each site. HotBot is especially user-friendly in helping you
+narrow down and find what you are looking for. Develop a favorite robotic search site and
+practice the advanced search options -- this is the key to finding narrow topics
+information! Meta search sites: Meta search sites &quot;search the search sites.&quot; Typically they
+will check eight or more of the popular search sites simultaneously! These sites collate
+the results from many search sites onto one screen. MetaCrawler ( www.metacrawler . com ) is great for quick basic searches and ProFusion ( www.designlab.ukans.edu/profusion )
+provides more customizing features. Pros: Theses searches will give you a quick, overview of the many
+search sites, often times yielding organized material in a quick and easy manner. They are
+good for a fast look of what is available from many of the good search sites around. Cons: These sites do not have the extensive filtering and
+search options as the robotic search engines, so your searched cannot be narrowed to the
+same degree. How to use : These sites represent a compromise between
+directories and robotic search engines and are good for subject areas between the broad
+and the very narrow. If you were looking for information on &quot;Seattle hotels&quot; --
+these sites would be a good start. These sites also give you a quick overview search of
+what is out there on the net. Gateway Sites: No search site can gather industry specific information in as organized
+of manner as an industry &quot;gateway&quot; site can. Normally, these sites will have
+substantial content, but what makes them a gateway is the multiple links to other related
+sites. There are many gateway sites for the meetings and hospitality industries including
+the Meeting Industry Mall ( www.mim.com ); MeetingsNet (http://www.aip.com); and industry association sites such
+as MPI &amp;#146;s www.mpiweb.org and PCMA &amp;#146;s www.pcma.org [include ASAE&amp;#146; s www.asaenet.org for Association
+Meetings ] &amp;#150; all with numerous links to sites with meetings
+industry content. One of the exciting recent entrants in this field is Plansoft ( www.plansoft.com )
+which contains the most comprehensive database of meeting hotels on the net. It also has
+excellent search and filtering capabilities to narrow your searches. Pros: These sites automatically focus your search to the
+industry you are interested in. They yield high quality, organized information, created by
+people that know the industry. Cons: None except for limitations in individual site
+design. How to use : Explore these sites, and check out their many
+links to other related sites. This is a good way to start your &quot;bookmark&quot; or
+&quot;favorites&quot; files and find out what is available for our industry. Learning the differences and how to use these four types of starting
+point sites will bring you a long way to increasing productivity by helping you find what
+you want quickly and efficiently. If you find this article helpful, please let me know by signing the
+Guest Book in the Contact Us Section. Corbin Ball, CMP Corbin Ball, CMP is an international meeting planner and a technology
+trainer, speaker and consultant. He is MPI&amp;#146;s 1997 Chapter Leader of the Year and
+serves on advisory boards for Sheraton and Sonesta Hotel Corporations. He can be contacted
+at corbin@corbinball.com . Back to the Top Back For More Articles</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artificial Intelligence: The Upcoming Impact on Events — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Artificial Intelligence: The Upcoming Impact on Events</p>
+<h1>Artificial Intelligence: The Upcoming Impact on Events</h1>
+<div class="article-body">Artificial Intelligence: The Upcoming Impact on Events &amp;Acirc;&amp;copy;2020 Corbin Ball The past few decades have seen tremendous technology change and this coming decade will be no different: The 1990s brought us email and basic internet connectivity. The 2000s brought is the widespread adoption of the web The 2010s brought us the widespread adoption of smartphones and other mobile technology. The 2020s, I believe, will see artificial intelligence as the most significant technology change agent of this decade. Artificial Intelligence (AI) is the use of computer systems to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision-making, problem solving and translation between languages. . Already, AI is having a significant impact on society in general: Voice recognitions systems such as Amazon Alexa, Google Home, Siri and Cortana are in significant adoption with more than 200 million smart speakers sold in the U.S. in 2019 alone! Tesla and other companies are bringing autonomous driving into reality. Although not perfect, tests indicate the computer-driven drivers are substantially safer than human drivers. This decade will undoubtedly see a major expansion of this technology. Smart devices are making huge headway into our homes with smart thermostats, lighting, home security systems, door locks and much more seeing substantial growth. In subtle ways not immediately apparent to the average consumer, AI is transforming marketing, customer service, medical research, entertainment delivery, shipping/product delivery and much more. We are also seeing significant impacts of AI on events. Here are few examples: . Simultaneous interpretation with more capability at a fraction of the cost : Wordly is a simultaneous interpretation system that uses artificial intelligence (AI) voice recognition to instantly translate an event presentation into fifteen languages. All that is required is a patch from the sound system into the internet-based application. Attendees access the information via their mobile devices using Wi-Fi. These services are at a small fraction of the cost of providing human interpreters, sound booths, and audio headsets onsite. Although it will likely not replace the need for human translators for very high-end events, this opens up the opportunities to provide simultaneous translation for a much broader range of events. . Expedited, frictionless registration using facial recognition: Facial recognition is a rapidly developing field. Airlines are beginning to use this for boarding. iPhone users unlock their phones; hotels in China are using it for room check-in and more. . Companies, such as Zenus , are using AI-driven facial recognition to speed up onsite badge pick-up while improving security. As an attendee registers online, they include a photo (from a variety of sources including LinkedIn). Upon arrival at the event, cameras in the queue line recognizes the registrant and prints out the badge automatically. This speeds the process (about 7 seconds per person) while increasing security (your face is your signature). . Tracking attendee numbers, demographics and mood anonymously: AI can also be used to anonymously track a range of attendee demographics. One example is TrackMany . This system uses iPhone cameras as facial recognition data collectors to provide highly reliable anonymous estimates of the number of attendees, their age, their gender, their sentiment, the amount of time spent (dwell time), and what they are looking at in an exhibit display or other event area. To do so anonymously eliminates the concern about privacy intrusion. . Another example is the Zenus analytics camera . This system focuses on anonymous facial recognition to determine a range of demographics of an audience watching a presentation. This system can accurately count thousands of attendees (event in relatively low-light conditions), their sentiment, their age, their gender, and level of attention. This provides immediate feedback of audience sentiment to a speaker or other interested observers. . Improved support and lower staff costs with chatbots: Text is the most widely used app on most smartphones. It is a natural use this method for attendees to ask event related questions. . Chatbots such as 42Chat are computer programs that conduct conversations using text. Using artificial intelligence, these systems have become amazingly accurate in determining the sense and context of text requests and responding in a human-like way. . These systems can answer many event-related questions 24/7 with a familiar interface without the need for an app download, reducing the need for staff responses and improving customer support. . . AI Matchmaking: One good contact made at an event can often be worth the price the entire trip! . AI-powered matchmaking tools, such as Grip , can analyze registration data, social media feeds, surveys and other sources to determine quality matches for attendees, exhibitors and VIPs. Pre-event meeting scheduling, badge scanning insights, and extensive analytics can be included. Personalized recommendations to attendees on the best sessions, speakers and panels to attend will also improve attendee ROI. . Improved data collection and analytics: AI machine learning can analyze data, make assumptions, learn and provide predictions at a scale and depth of detail impossible for individual human analysts. With a broad range of data collected by event technology products, AI will prove to be immensely useful to help with customer personalization, to provide accurate data for decision-making, to streamline communications, for content creation/distribution, for better sales force support, and to enhance sales intelligence. . Sales automation tools will become standard procedures in dealing with prospective and repeat attendees and other event stakeholders affording more personalization in a substantially easier manner. . Personalization&amp;acirc;&amp;#128;&amp;macr;content distribution: Rasa.io is an example of a content aggregator using AI to communicate with association members and other groups with high-volume online content. It will remember what a user clicks on in e-newsletters and will highlight and prioritize future newsletters based on these clicks. It will also provide links to related content sources. So, in a sense, every newsletter subscriber receives a customized newsletter based on their interests. Case studies claim a doubling of the open rate and a quadrupling of the click-through rate when using these products. . These are just a few ways AI will become an indispensable tool for managing events and improving event-related processes. The major changes are yet to come! Corbin Ball, CMP, CSP, DES&amp;acirc;&amp;#128;&amp;macr; is a speaker and independent consultant focusing on meetings technology. Previously, Corbin ran international citywide technology meetings for 18 years. For the past 22 years, he has helped clients worldwide use technology to save time and improve productivity through his speaking, consulting and writing services. Corbin was inducted into the EIC Hall of Leaders in 2018, the premier recognition program for the events industry. He can be contacted at his extensive web site&amp;acirc;&amp;#128;&amp;macr; Corbin Ball &amp; Co. - Meetings Technology Headquarters ( www.corbinball.com) &amp;acirc;&amp;#128;&amp;macr;and followed at&amp;acirc;&amp;#128;&amp;macr; www.twitter.com/corbinball .&amp;acirc;&amp;#128;&amp;macr; Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;I've seen Corbin three times. No one works harder to keep his material fresh and relevant to events.&quot; Scott Stubbs President HB Stubbs Company Sensational session. Worth the entire PCMA registration fee. Bonnie Wallsh Chief Strategist Bonnie Walsh Associates Excellent session!! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE 1 2 3 &amp;Acirc;&amp;copy; Corbin Ball &amp; Co. - 506 14th Street, Bellingham WA 98225-6107 USA Ph: 360.734.8756</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

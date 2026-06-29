@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email Etiquette — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Email Etiquette</p>
+<h1>Email Etiquette</h1>
+<div class="article-body">Email Etiquette Meeting professionals are coming on-line in record numbers. In a recent MPI survey, 100% (600 of 600 said that they were online. The number of emails sent on an average day is expected to exceed 10 billion worldwide in this coming year. This exceeds the daily number of telephone calls, faxes and standard mail messages combined! If you already feel swamped by your burgeoning email box, you haven’t seen anything yet! It is expected that this number will swell to over 45 billion per day by the year 2005 Fortunately, there are ways to help remedy this situation. Email literacy We must learn, as meeting professionals, to become Internet and email literate! This begins at home and in the office – each of us should know how to send email properly to maximize impact and efficiency. How to send good email: 1. Keep it short Email is a new medium substantially different from normal writing. The rules of verbose, intricate sentence structure from Mrs. Jones’ 11th Grade English class no longer apply! Short is in. Short bullet points…short sentences…short messages are the ticket. Try to keep your messages under 25 lines (about one screen worth of words). Keep in mind that your recipient may be squinting through a variety of monitors. Long messages often won’t be read in their entirety. 2. Keep it conversational Due to its immediacy and ability for quick response, email should be as much like conversation as it is like writing. Make your comments informal, lively, colorful...and even funny! The better you are at communicating these nuances, the more likely your message will be read and remembered. However, unlike conversation, where much of the meaning is conveyed in inflection, gestures, and expression, you are dealing with text only. Therefore, use creative punctuation to help convey your meaning. For example: &quot;Please send the contract to me by *Thursday*&quot; puts the emphasis where you want it. You can SHOUT occasionally by using CAPS (Please do not overdo – as Mother said it is impolite to SHOUT!) Finally, emoticons (a.k.a. smileys) are a step to help convey feeling and informality for some occasions. The common ones when viewed from the side are :-) and :-( for happy and sad. Other emoticons as well as extensive email information can be found at the website: http://everythingemail.net . 3. Use meaningful subject lines Be descriptive with your &quot;subject line&quot; in the messages you send. This is your first, and sometimes, only chance of getting your message read. Be descriptive about what you are saying. For example: &quot;Meeting space change, ABC Co., 4/25 meeting&quot; carries much more information than &quot;Changes.&quot; If you need an immediate response to your message, start with &quot;URGENT: Respond immediately…&quot; 4. Quote the email you are responding to. Make sure that your response to an email message contains the context of the sender’s message. Don’t simply say &quot;yes&quot; or &quot;no&quot; with no context as the sender may not remember what you are saying &quot;yes&quot; or &quot;no&quot; to. Many email readers (the software that allows you to read your email) will automatically quote the sender’s message – use this feature. However, in replying, narrow down an extended message quote just to the portion you are addressing. How to protect yourself from those that don’t: Is your email box getting loaded with SPAM (unsolicited junk email)? How can you protect yourself? 1. Break the chain With its high speed and cheap broadcast capability, the Internet has been plagued by plethora of cyber chain letters. Virus hoaxes warn you not to open email messages with &quot;Join the Crew&quot; or &quot;Pen Pal Greetings&quot; in the subject line, because they supposedly contain viruses that will wreck your computer. I have received hundreds of such messages, and all, without exception, have been hoaxes. It is safe to say that just about any message that asks you to forward it to everyone you know is a hoax or a chain letter. In truth, you can’t get a virus from opening simple text email message! Break these chains! Treat all such messages skeptically. A great web site that describes the popular virus hoaxes and chain letters that are circulating is www.vmyths.com If it is a hoax, inform the sender. 2. Use filters and Anti-Spam software Some email readers allow message filtering. EudoraPro, for example, will allow you to automatically delete messages from senders that you wish never to hear from again. There are other anti-spam shareware programs available at www.download.com such as: Dead Letter, Mail Guard. and Spam Exterminator which will help you fight getting your email box clogged with this unwanted junk (search for &quot;spam filter&quot;. . 3. Consider multiple email addresses and anonymous email In the same way that some people use an unlisted phone number to guard against unsolicited phone calls, consider getting an additional email address that you give out only to your close friends or high priority contacts. Conversely, if you post messages to public email forums or bulletin boards, do not use your &quot;priority&quot; email address. These forums are often scanned by spammers, who, in turn, send you unsolicited email. If your Internet Service Provider doesn’t provide multiple email address, try a free-mail address offered by Hotmail ( www.hotmail.com ), Rocketmail ( www.rocketmail.com ) or Juno ( www.juno.com ) to name a few. If you are super cautious, use an anonymous remailer that will make your mail message completely anonymous. See www.anonymizer.com for details. We must work together, individually as we send email, and collectively as we help others in the meetings and hospitality industry, to use this increasingly mainstream method of communication effectively and efficiently. If we send effective email and guard against those that don’t, we will all be the beneficiaries. f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada Excellent session! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE Amazing! I have not learned so much in such a short time ever! I want more! Rafael Olivares Sales Executive Finnish Tourism Board 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

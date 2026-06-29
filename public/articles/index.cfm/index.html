@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corbin Ball Associates - WWW -- The World Wide Web - 16 Frequently Asked Web Questions — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Corbin Ball Associates - WWW -- The World Wide Web - 16 Frequently Asked Web Questions</p>
+<h1>Corbin Ball Associates - WWW -- The World Wide Web - 16 Frequently Asked Web Questions</h1>
+<div class="article-body">The Wayback Machine - https://web.archive.org/web/20041231023250/http://www.corbinball.com:80/articles_www/index.cfm?fuseaction=cor_av&amp;artID=437 Home Presentations Articles Clients Tips &amp; Tools Services Contact and Subscribe to TechTalk WWW -- The World Wide Web 16 Most Frequently Asked Web Questions �1999 Corbin Ball Associates (Updated October 2001) What are your burning technology questions? Listed below are the most common questions I received when speaking to groups around the country. Maybe yours will be included! 1. I am brand new to the Web � where do I start? How do I get up to speed? I recommend four ways: Everything you need to know about the Web can be found on the Web if you have enough patience to look around and find it. One good source to start is: http://lcweb.loc.gov/global/internet/training.html Look for articles in publications such as this one � new information is always being published. Check out your local community college or computer training center with a computer lab. Hands-on training with someone that can point you in the right direction can speed the learning curve considerably. Attend technology sessions at your professional association meetings. 2. The Web is overwhelming. How do I find the information I need? Learn how to use search sites and know which one to use when. For broad searches, a directory (such as www.yahoo.com ) is often the best. It yields nicely alphabetized results in an organized manner. For narrow searches, a robotic search engine is the choice --the best one out there is www.google.com . However, it is imperative that you learn the filtering functions (see the help section at the web site) in order to target the phrase you want. The third type of search site is the &quot;meta-search&quot; engine. My two favorites are MetaCrawler ( www.metacrawler.com ) and Copernic ( www.copernic.com ) which is, more accurately, a free downloadable utility that replaces the basic search functionality of your Internet Explorer browser. 3. What is the difference between a browser and a search engine? A browser is the software that you use to view the web (analogous to a using a word processor to create documents). A search engine is a web site that is similar to a card catalog of the web that helps you find web sites on topics you are interested in. 4. What is the best browser? The battle rages between Internet Explorer and Netscape Navigator. Both are excellent and have nearly the same features. It comes down to personal preference. Both are free, and the newer versions have more security safeguards and more features so upgrades are recommended. 5. What is an URL (pronounced &quot;earl&quot;)? The URL (the Uniform Resource Locator) is the web address: ie. http://www.yourname.com � like a phone number, it must be entered in exactly in order to get the site you want.) 6. How do I get a domain name for my web site (i.e. www.yourname.com) ? Does it cost? The first step is to see if the &quot;URL&quot; you want is unique by going to Network Solutions ( www.networksolutions.com ) to do a search. The next step is that you must get a web hosting service to give you an internet protocol (IP) address � this is a series of numbers that uniquely identify your domain (you can also do this at Network solutions). The final step is to reserve the domain name by going back to www.networksolutions.com and fill out the form. The cost for your domain registration is $35 per year or $63 for two years. Other lower cost sites are beginning to offer these services as well. 7. What are the top three characteristics to attract people to your web site? Content, Content and Content! Aside from that, ease of use (with good navigation), design consistency, speed and ability to be found by the search engines are important considerations. 8. How can I get my web site to the top of a search engine? This can be nearly an impossible task if you are using a common search phrase such as &quot;meeting planning&quot; as you are competing with tens of thousands of sites vying for that same position. There are many variables that deal with content, meta tags (keyword tags), site title, and much more � and each web site deals with it differently. A complete answer would to this question take volumes � and much of it is spelled out at an excellent site: searchenginewatch.com . Two important steps, however, are: A. Build your site so that it is search engine friendly (use meta tags, meta descriptors, and meta titles). B. Register with the search engines � see next question for how to do this. 9. How do I register with a search engine? The top 6 search engine (Yahoo, AltaVista, Excite, HotBot, Infoseek, Lycos, WebCrawler) generate at nearly 90% of all web site search traffic. Go to each of these sites, look for &quot;submit URL&quot; or &quot;submit a site&quot; and follow the directions. 10. What are some of the top sites for meeting planning information? The two most complete databases of meeting facility information are: www.mpoint.com and www.eventsource.com . A great database of meeting industry news is: www.meetingsnet.com . A good commercial source with a wide variety of meeting industry links is the Meetings Industry Mall � www.mim.com 11. How can I locate a person�s telephone number? Address? Email address? One of my favorites is www.anywho.com . It is like a searchable, national phone book that will not only find you (if you have a listed phone number), but will draw a map to your house. You can also reverse search by telephone number. Email is more difficult as there is no centralized database of email addresses. Try www.theultimates.com which interfaces with some of the better email search sites. Corpernic ( www.copernic.com ), once downloaded and installed, will search all of major email sites with one search. 12. How dangerous is the Web? The Web is not a technical phenomenon � it is social one. The technology is merely the enabler. It can be compared to a large city with concert halls, museums, theaters and schools. However, in this city there are bad parts of town as well. In the same way parent would not drop their child off unescorted in the worst part of the city, you should protect them from the seamy side of the Internet with protection software. The Web and the Internet will bring quantum shifts in how we communicate, collaborate, and consume. There will be potholes along the way as we, as a society, figure things out. Privacy concerns, security issues as our society becomes almost completely dependent on computers, scams and new variations of destructive computer viruses will be just a few of the challenges. Listed below are some of the commonly expressed concerns. 13. Is it dangerous to use my credit card on the Web? The transaction process is much safer on the web than in face-to-face transactions as long as you deal with a secure site (make sure the web address line starts with &quot;http s ://&quot; not just &quot;http://&quot;). However, know with whom you are dealing � it is possible to set up a legitimate looking storefront in cyberspace and be a scam. Worst case scenario: the credit card companies protect you with a maximum liability exposure of $50. 14. What are cookies? Are they dangerous? Cookies are small strings of text that web sites place on your hard drive to &quot;remember&quot; when you return. If a site greets you by name when you return, for example, this is usually done by cookie technology. Cookies are not destructive nor will they give away the secrets on your hard drive. However, if your are concerned about anonymity and you don�t mind re-entering preferences and passwords, you can refuse cookies by setting your browser options. On PCs, you can view your cookie files by looking in your &quot;C:\Windows\Cookies&quot; directory 15. Do web site owners know who I am when I visit a web site? You are to a significant degree anonymous to a Web site, unless you tell them who you are by, for example, filling out a form. Site owners can tell, however, when you come; what internet service provider you are using; what domain/country/continent your are coming from; what type of computer/monitor/browser/operating system you are using, and what search engine and key words you used to find them. However, it is very important that either you use a firewall or you turn off the Windows default settings which can give information out to hackers about you and your computer. Go to Gibson Research Corporation ( www.grc.com ) to check and easily fix these settings. A free, effective and easy to install personal firewall can be found at ZoneLabs ( www.zonelabs.com ). 6. How can I protect myself from SPAM (unsolicited junk email)? Spam may simply be a part of the email environment in the same way the old-fashioned junk mail fills your &quot;atom-based&quot; mail box. About 25% of the 100 email I receive each day are Spam. My response? I simply highlight these titles and delete without reading in a very similar manner to how I toss paper junk mail into the recycle bin. There are a few things, however, to reduce the amount of Spam you receive: Be careful of the mail lists on which your participate (often the email addresses are collected by software programs that roam list serves and web sites). Use free mail accounts such as www.hotmail.com for email lists and other on-line forms, keeping your primary email address for your clients (similar to an unlisted phone number). Use filtering programs in your email reading software to automatically dump repeat offending messages into the recycle bin. Use free anti-spam software such as SpammerSlammer ( www.spammerslammer.com ). Use remote filtering sites such as BrightMail ( www.brightmail.com ). This and other similar filtering programs are often provided through you internet service provider ( ISP ). Brightmail, for example, works seamlessly with my traveling Earthlink account and filters our more than 300 messages per month. Do not reply to spammer message (even if they give you the unsubscribe option). This merely confirms to them that your are an active account that is reading your email. Do not ever buy from spammers � let�s not encourage them. These are some of the questions I have been asked. If you have others, please contact me via email and I will do my best to answer them and, maybe, add them to a future article with the next 16 questions. If you find this article helpful, please let me know by signing the Guest Book in the Contact Corbin Section. BACK TO ARTICLES LIST Home &gt; Articles &gt; 16 Frequently Asked Web Questions back to top</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

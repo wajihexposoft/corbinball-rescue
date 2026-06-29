@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Event Chatbot 101 - Essential Questions Answered — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Event Chatbot 101 - Essential Questions Answered</p>
+<h1>Event Chatbot 101 - Essential Questions Answered</h1>
+<div class="article-body">Event Chatbot 101 - Essential Questions Answered ©2018 Guest post by Mark Kao, COS Rental Chatbots aren’t new. Joseph Weizenbaum created a prototype in 1966 and named it ELIZA. But the idea didn’t catch on until 50 years later. Today, chatbots are the talk of the event planning and marketing town. If you’ve wanted to know more about these talking pieces of software and how they can make your events better, you will want to read the rest of this basic guide. Chatbots Explained in a Nutshell A chatbot is a service or tool built to mimic human conversation. The programs powering these bots can be a simple compilation of rules and workflows. These chatbots are easier to build than their AI-powered counterparts. On the other hand, they cannot adapt to questions and conversations that are not hard-coded into them. More complex chatbots which use AI and natural language processing are harder to build. But this combination of technologies allow bots to boost machine parsing accuracy and their understanding of text-based requests. But even better: Sophisticated chatbots learn and adapt - all without tinkering with code. So long as you teach one the correct output for a certain input, the bot will get better at doing its job. Chatbots live in just about every major chat application - from Facebook Messenger, Twitter, Skype, to Slack and more. A chatbot can even sit in your event’s website, ready to take on and answer questions from attendees 24/7. The Major PROs and CONs of Chatbots So why would you want to build a chatbot for your conference or exhibit? Here are some of the major advantages (and disadvantages) of this trending event technology . The PROs Chatbots help you reach more customers and provide a better experience. App fatigue is real and the dipping number of app downloads and usage serve as proof. Meanwhile, messaging platforms are on the rise, with 25% of global users expected to subscribe to one by 2016. Apps are out . Messaging is in . And chatbots help you reach attendees where they want to be reached. Chatbots are ubiquitous and available 24/7. A chatbot can take inquiries from Facebook fans, SMS users, and event website visitors simultaneously . The bot won’t tire nor would its level of service dip. They make for a cost-effective solution. Make no mistake. Real people are still the best customer service representatives. But you don’t want to waste your team’s brainpower on FAQ-style questions (ex: What’s the Wi-Fi password? Who’s giving the talk at 4:30pm?) when a chatbot can handle such inquiries perfectly. And with production costs decreasing, chatbots for events become more appealing. The CONs Chatting with a bot can be inefficient. Talking to a chatbot means a lot of typing, which is slower than our speaking pace. And when a bot doesn’t understand a query, more of the user’s time is wasted. Creating a bot that can handle all of the common questions from potential attendees takes a lot of time and testing, bringing us to the next point. Chatbots are only as good as the programmers behind them. For example, a potential attendee may ask for “multiple ticket discounts” when what he meant was “group discounts.” The chatbot won’t come up with the right answers if you haven’t equated “multiple ticket discounts” with “group discounts” in the code. The customer leaves frustrated, and you lose a ticket sale. On the other hand, learning bots may pick up things they’re not supposed to, like Microsoft's Tay . Some people just don’t like talking to bots. Certain visitors of your website or fans of your event’s Facebook page prefer interacting with a human. Someone who breathes and exhibits emotions. And speaking of emotions, most chatbots are terrible at detecting sarcasm! Virtual Assistants Making Real Impact at Events - The Chatbots of SXSW, IMEX, And Bizbash Florida Yes, chatbots have their PROs and CONs like any business technology. But several events around the world have shown that, when built right, the advantages of chatbots far outweigh the potential cons. IMEX Frankfurt 2017 not only gathered 8,885 attendees from around the globe but also unveiled Frank the chatbot . Frank handled 3,600 messages from 780 users - plus more. The bot was also instrumental in pinpointing issues with the event website’s FAQ. And for complex questions beyond his scope, Frank was quick to forward the contact details of the appropriate customer service representatives. If IMEX had Frank, SXSW 2017 had Abby . The female bot carried the entire event database in its program, including the 6000+ sessions across 600 venues. And to turn Abby to a talking knowledge center for all-things SXSW, the event’s help desk staff also chipped in with the most common questions they get from attendees. Abby streamlined SXSW’s customer service by taking on 56,000 unique questions from 16,000 unique users. And the bot also generated high levels of engagement, with the top 1,000 users submitting 17 questions each while usage time grew 20% every day. Completing our short list of successful event chatbots is Betty of BizBash Florida , a tradeshow and conference for event professionals. The bot processed 1,300 messages from 300 attendees and produced a 57.9% engagement rate during the one-day event But Betty also proved immensely valuable during emergencies. When Bizbash’ event website went down, Betty was up and running handling customer service questions, reducing direct calls to the event’s team by about 20%. Want A Chatbot For Your Event? Here Are Two Ways To Get One So, you’ve decided you want a chatbot for your conference or tradeshow. But how do you get one? You have two options, and we’ll look at each of them - along with their advantages and disadvantages - in this section. Build the Bot from Scratch Creating an event chatbot from scratch requires excellent programming skills. But if coding isn’t a prominent skill in your resume, know that you can hire a software development team to handle the job. You need to consider a few core skills when hiring a chatbot development team. Knowledge and skill in using the right programming language is a must of course. But make sure the team can also integrate natural language processing (NLP) to your bot. NLP is the branch of artificial intelligence and computational linguistics which deals with interactions between computers and human language. Thanks to NLP, today’s chatbots can understand a question even if it’s not hard-coded into its program and give appropriate answers. Hiring a team to build a chatbot from scratch affords many advantages. For starters, the developers are specialists. These people build amazing web and mobile applications for a living, and you can count on them to add complex and unique features to your event chatbot. Developers are also up to date with the latest technologies and most efficient methods for building applications, guaranteeing your chatbot a solid foundation. And since they’re in charge of integrating the bot into the chat product, they also update the bot to keep up with the frequent changes. However, this approach also has downsides. Building a chatbot from the ground and up takes more time than using a self-service platform. Moreover, you will need to have a server infrastructure to host the bot, which can add up to your costs. Use A Chatbot Platform If hiring a development team seems too daunting and expensive, building your bot through a platform is your other option. Ease of use is perhaps the biggest draw of bot platforms. A user can start building their application all through the simple user interface and without writing a line of code. You still need to learn how to use the platform of course, but getting to know the ropes may only take as much as 5 hours depending on your current technical skill. Lower costs are another major benefit. Developing your bot in a platform means you won’t have to worry about the hosting environment nor the ideal server configuration as the service provider takes care of those. Even better, most platforms offer a free plan so you can test out their interface before committing. On the other hand,... Scaling your chatbot may prove challenging as you are not in charge of the interface. If you decide to add unique features to accommodate attendees, you’re bound to run into problems. Note, too, that updates and new versions of chat channels like Facebook Messenger and Slack can be problematic for platform users. Whenever these channels roll out changes, you will have to wait for the bot platform to integrate the changes before you can make the adjustments. Important Reminders For Event Chatbot Success Whichever development route you take, from scratch or through a platform, turning your chatbot to a success is a huge undertaking. But you can cover a lot of ground by keeping the following best practices and tips in mind. First, give your bot a personality, and make sure it aligns with the event’s brand. SXSW, BizBash Florida, and IMEX Frankfurt didn’t add names and faces to their chatbots for the sake of it. These big events know that even a virtual member of their team - such as a chatbot - can make for a fine ambassador. Think about your event: What does it stand for? Why do people attend and how do you want them to view your event? Answer these questions and you’ll have a better idea of how to breathe life into your bot. Launch the chatbot on all available channels. Start with your event website. It’s where people can learn more and register for the event. They will come to your site with questions, and your chatbot needs to practice helping attendees on the big day. Launching on your website will also give you a clearer picture of the types of questions people type in. The early exposure of the bot lets you tweak it, ensuring it has all the information it needs to answer the most common inquiries from users. After a soft launch of sorts, you can put the chatbot live on other channels potential attendees use and add SMS capabilities. Promote your bot. You may have built the best chatbot ever . One that holds conversations like a human and understands whatever question people throw at them. But if nobody uses it, building it in the first place is a big waste of money. So, let your attendees know about your bot! You can integrate the bot into your event registration, so you can welcome your attendees with a message. In the welcome message, be sure to teach them how to use the chatbot and provide plenty of examples. During the event, adding kiosks and customer service counters where event guests can access the bot is also an excellent idea. Attendees get fast answers to their questions, and you get to increase the awareness for your bot. And last but not the least: Measure your results! You’ve spent a lot of time and money for your event chatbot. To make sure you’re getting ROI to justify the expense, you need to measure the performance of your bot. For example: The number of questions answered and engaged users are two major KPI’s to measure. The more questions the bot answers, the lighter the burden for the customer service team. Just imagine the 56,000 questions asked to SXSW’s Abby being thrown to the customer service team. Handling such a humongous amount of inquiries efficiently will most likely require extra staff, increasing costs. Will your chatbot enhance your event the same way Abby did for SXSW? You’ll never know unless you measure your results! Conclusion And now we wrap up this event chatbot 101! Of course, you’ll need to do more reading (especially stuff from Corbin) to fully understand these bots and their impact on the meetings and events industry. But we hope this brief guide gave you a clearer picture of how chatbots function and how they can work wonders for your event. Mark Kao is the department manager for COS Rental , an A/V and event equipment provider. Always keen to learn more about the ever-changing tech landscape, he’s a regular visitor to blogs and websites like CorbinBall.com to keep up with the trends. f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Security and Privacy Issues Site Inspections and Evaluation Social Media - Web 2.0 Speakers and Presentation Skills Surveys and Audience Polling Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration WWW -- The Web What The Audience Is Saying Your session blew me away. I could easily listen to your information all day. This was incredibly informative. Michael McNutt Human Capital Manager Information Experts Amazing! I have not learned so much in such a short time ever! I want more! Rafael Olivares Sales Executive Finnish Tourism Board &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

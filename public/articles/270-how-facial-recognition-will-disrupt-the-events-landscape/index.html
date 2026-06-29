@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Facial Recognition Will Disrupt the Events Landscape — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; How Facial Recognition Will Disrupt the Events Landscape</p>
+<h1>How Facial Recognition Will Disrupt the Events Landscape</h1>
+<div class="article-body">How Facial Recognition Will Disrupt the Events Landscape ©2020 Electro-Media Design, Ltd . By Sara Friedman Facial recognition technology has the ability to transform the events industry, but it remains to be seen how attendees will respond to the biometrics solutions coming onto the market. Potential uses for facial recognition include simplifying the on-site registration process, tracking attendee facial expressions to gauge interest in programming, enhancing security and providing more personalized attendee interactions. For now, the growth in facial recognition is mostly focused on improving the registration process. Event attendees have the ability to opt-in to share a photo when registering and personal identifiable information is only stored for a limited period of time. Zenus and Expo Logic are both offering services that can help to improve the attendee experience using biometrics. When attendees register for an event, the registration process using Zenus asks users to upload a picture or take one using a personal device and each photo is assigned a quality score using artificial intelligence. Once a user authorizes consent, the image is converted to biometric data based on facial characteristics and deleted from Zenus servers. At the event, Zenus has kiosks where users can verify their identities and check-in. The company also works with vendors to incorporate their registration process into other devices. “Our software works on virtually every device that has a browser window,” said Zenus CEO Panos Moutafis. “Everything is customizable and we have fallback options where users can check-in using their name and email address.” The goal is to provide a check-in service through an easy user interface. Initially, 30 percent to 40 percent of event attendees opted-in to use the Zenus software. Now, Moutafis said adoption rates are above 65 percent. Zenus also plans to introduce personalized messaging at the kiosks this year to help attendees check-in for specific sessions and get information on seating arrangements at meals. These services will compliment traditional solutions, such as badge scanning for attendees who do not opt-in to the use of their biometric data. Event planners can also gain insights on how attendees engage with programming at their events. Audience messaging and networking tools are two ways that event planners are using today to enhance the attendee experience, but facial recognition can provide insights into how attendees are responding to specific sessions or presentations. Zenus has developed an analytics solution that can detect the emotions of conference attendees as a group. The service can detect facial expressions and determine positive and negative reactions. “We can breakdown sentiments based on demographics so the event organizer knows which sessions and topics appeal to different groups of people,” said Moutafis. “We can also put cameras in [expo halls] to determine which booths are attracting the most attendees and how long the attendees are staying at different booths.” The goal is to provide aggregated statistics that event planners and companies can use to get a better idea of how audiences are responding to programming and information displays. Keller Williams tested the Zenus facial recognition software at Keller Williams event in 2018 and found the technology increased the speed of check-in by nine seconds per person. Each kiosk at the conference was able to check-in 400 people per hour. Companies who are interested in using facial recognition need to consider several factors when exploring if the technology will meet their conference needs, according to a market research report from Forrester . Report encourages companies to utilize solutions with: Strong liveness detection and anti-spoofing measures that provide ease of use with fast authentication and identification methods. Image portability mechanisms to enable cross-device and cross-channel functionality. Methods to reduce image discrepancies based on race, gender and age. Ways to incentivize users to utilize facial recognition and ease privacy concerns. Event planners also need to keep in mind the privacy implications that arise with facial recognition. In Europe, technology providers must comply with personal privacy protections outlined in GDPR. But the regulatory landscape in the U.S. is more complicated. Amazon and Microsoft are asking the federal government to provide guidelines for facial recognition technology after civil rights groups expressed concerns on how law enforcement could use facial recognition for surveillance. At a House Oversight and Reform Committee hearing on Jan. 15, Chairwoman Carolyn Mahoney (D-NY) announced bipartisan facial recognition legislation will be introduced in “the very near future.” There are also issues with the accuracy of the facial recognition algorithms to identify individuals based on race, sex and age. A recent study from National Institute of Standards and Technology used operational databases from the State Department, Department of Homeland Security and the FBI to test 189 software algorithms from 99 developers. Researchers found false positive rates are highest in West and East African and East Asian people, and lowest in Eastern European individuals. False positives are also higher in women than men across all algorithms and datasets used. These issues need to be addressed before facial recognition can be used effectively. Capabilities and adoption of facial recognition technology is still a nascent industry when it comes to events, but the potential to improve the attendee experience shows signs of promise. Bio: Sara Friedman is a freelance writer based in the Washington, D.C area. She can be reached at This email address is being protected from spambots. You need JavaScript enabled to view it. or on Twitter @SaraEFriedman . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying Corbin, ALWAYS a homerun presentation of great info! Peter O’Brien Marriott Global Sales Your session blew me away. I could easily listen to your information all day. This was incredibly informative. Michael McNutt Human Capital Manager Information Experts Sensational session. Worth the entire PCMA registration fee. Bonnie Wallsh Chief Strategist Bonnie Walsh Associates 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

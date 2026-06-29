@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blockchain and Ethereum -- How Can They Be Used for Events? — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Blockchain and Ethereum -- How Can They Be Used for Events?</p>
+<h1>Blockchain and Ethereum -- How Can They Be Used for Events?</h1>
+<div class="article-body">Blockchain and Ethereum -- How Can They Be Used for Events? ©2018 Corbin Ball, CMP, CSP, DES, MS What is blockchain? According to Don &amp; Alex Tapscott, authors Blockchain Revolution (2016),“blockchain is an incorruptible digital ledger of economic transactions that can be programmed to record not just financial transactions but virtually everything of value.” Blockchain is a means of managing electronic cash without a central administrator. Based on the crypto-currency Bitcoin, it uses a distributed database. This means than no central entity such as a government or bank manages the transaction. Instead, the transaction is handled by thousands of volunteer-run computers (nodes). The blockchain is a chain of information including the transaction information with a timestamp that cannot be altered once it is recorded. How does blockchain work? These are the basic steps: Someone requests a transaction (for example, to buy a ticket to an event). The requested transaction is represented online as a ‘block.” This block is broadcast to these thousands of independent computer nodes, each with a copy of the entire blockchain database. This network of nodes validates and approve the block using an advanced series of algorithms. This verified information, the new ‘block’ is added to the existing chain in a way that is timestamped, permanent and unalterable The transaction is then complete and the money moves from person A to person B. Often this will be in the form of a barcode/QR code on a mobile app. What is Ethereum? An additional open-source technology, Ethereum, adds to blockchain capabilities to create smart contracts, which allows specifying conditions under which a person will be paid, such as management of issuing tickets, recording the transactions, verifying authenticity, enabling resale/exchange of tickets and under what conditions. It can limit the number of sales to one customer. There are even capabilities of hiding ticket barcodes before the event or while the user is away from the event venue. The smart contracts can allow for reward-based event promotions and event community building. For example, a reward system can be built in to reward users who invite friends. What are the benefits for events? In the near-term, the major use for meetings will be for large sporting and music events where scalping and ticket fraud is common. Here are some of the direct benefits: Elimination of ticket duplication and counterfeit tickets : Blockchain and Ethereum are counterfeit-proof, highly secure methods of money transaction. Once an amount of Bitcoin is transferred from one address to another, it cannot be replicated. Elimination of scalpers: Ticket-bots and touts can often buy up large blocks of tickets as soon as they go on sale and resold at exorbitant costs. Under systems using blockchain and Ethereum, organizers can set clear rules on dealing with ticket reselling, even setting limits on secondary sales commissions. Completely centralized ticket sales: Although the verification nodes are completely decentralized, blockchain/Ethereum ticketing system manages the complete process in a uniform and transparent process. Blockchain technology can create uniform standards of communication among the parties and make the ticket booking process more transparent. Uniform resale and refund system: Every event can be governed by a smart contract, such as ticket issuing, payment processing, refunds and resale. Potential lower costs: Although this technology will likely be resisted by the 800-pound gorilla ticketing companies such as Ticketmaster, the process is more secure and efficient. As society moves to accept cryptocurrencies (despite the seemingly explosive bubble Bitcoin is experiencing currently), the process can disintermediate ticket sales eventually leading to lower costs. What are the companies offering Blockchain/Ethereum-based ticketing? As mentioned, these technologies are in their infancy. Here are some of the companies developing these products: BlockTix: https://blocktix.io/ Citizen Ticket: https://www.citizenticket.co.uk/bitticket/ Lava: http://www.lavamovement.com/ CryptoTickets: https://crypto.tickets HelloSugoi: https://www.hellosugoi.com/ Caveat Emptor: Bitcoin and other crytocurrencies are very much in their infancies. There will be hacks, winners, losers, technology developments and more in these highly volatile and unregulated asset classes. Although this technology will very transform the financial world, investments in this area are risky. Buyers should proceed cautiously. Although these technologies are developing for large, ticketed events, eventually, with the higher security, greater control, and inherently more efficient processes, it is possible that this eventually be the standard to e-currencies for events and society in general. Corbin Ball, CMP, CSP, DES is a speaker and independent third-party consultant focusing on meetings technology. With 20 years of experience running international citywide technology meetings, he now helps clients worldwide use technology to save time and improve productivity He can be contacted at his extensive web site Corbin Ball Associates - Meetings Technology Headquarters ( www.corbinball.com) and followed at www.twitter.com/corbinball . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Security and Privacy Issues Site Inspections and Evaluation Social Media - Web 2.0 Speakers and Presentation Skills Surveys and Audience Polling Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration WWW -- The Web What The Audience Is Saying Corbin, ALWAYS a homerun presentation of great info! Peter O’Brien Marriott Global Sales &quot;I've seen Corbin three times. No one works harder to keep his material fresh and relevant to events.&quot; Scott Stubbs President HB Stubbs Company &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

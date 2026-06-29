@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meetings and Marketing Meet: Three Ways Events Are Becoming Central to an Overall Marketing Effort — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Meetings and Marketing Meet: Three Ways Events Are Becoming Central to an Overall Marketing Effort</p>
+<h1>Meetings and Marketing Meet: Three Ways Events Are Becoming Central to an Overall Marketing Effort</h1>
+<div class="article-body">Meetings and Marketing Meet: Three Ways Events Are Becoming Central to an Overall Marketing Effort ©2017 Corbin Ball &amp; Co. Events and tradeshows have posed a significant challenge to marketers. Although events are proven promotional tools, they have lacked detailed data collection and analytics capabilities found with other marketing vehicles such as email campaigns and websites. Much of what happened at the event or tradeshow, stayed at the event or tradeshow! However, this is changing. With the recent explosion of onsite data collection and analytics tools, meetings will no longer be the “black hole” of marketing analytics. Events and tradeshows are beginning to provide a goldmine of data detailing attendee preferences, interests, movements and interactions. These data can help meeting planners make mid-course corrections on existing events and improve future ones; they can provide significantly more value for exhibitors; they can provide attendees with a much richer and more personalized experience. With the integration of sales automation tools and CRM systems, customer behavior at events can now be tracked in precise detail. Event analytics are moving to a central position in the marketing mix and can help planners using these tools take a seat a C-Level table with sales and marketing executives. New corporate positions such as VP of Sales Analytics and SVP of Sales Effectives point to this shifting trend towards the importance of analytics. Event planners and marketers can work together to improve the event and provide a much more detailed profile of the attendee (customer) interests and desires while elevating the importance of events within the organization. There are three trends that are making this possible: 1. The explosion of onsite data collection tools: The past few years have seen very significant increase in onsite data collection tools: Mobile event apps : Mobile event apps have become the norm at many events and provide participants with rich detail about the event and a range of networking tools. As every touch in the app can be trackable, a wealth of data about user interests, likes, dislikes and interactions can be gleaned. The mobile app providers are beginning to refine the data analytics within their products to provide significant marketing insight. Fixed beacons: BLE (Bluetooth Low Energy) devices (known as iBeacons or beacons) working with mobile event apps can measure crowd flow and individual participant movements. Interactions are based on location. With beacon technology, not only is every touch trackable, every movement can be. Some of the capabilities include: Heat maps : the measurement of crowd flow through an exhibit hall to see where the hot spots are and where they are not. Dwell times: Beacons cans measure the time an attendee stands in front of a booth – if an attendee spends 15 minutes in a booth, they are likely more interested in the product than if they were just walking by. This list of interested booth visitors is very valuable to the exhibitor, but, from the other side, a list of the exhibitors and the time spent would be useful to attendees as well. Session attendance for CEU (continuing education units) tracking: This is very important for medical, pharmaceutical, some financial events and other meetings requiring continuing education, but is also valuable information about attendee interests in general. Networking: It is possible using this technology for attendees to detect people of like interests who are near them for networking purposes. These interests are also a valuable component of attendee interest profiles. Wearable beacons: Wearable beacons can do everything that fixed beacon can do and more. About the size of a U.S. quarter, they are inserted or attached to badges and can work independently from mobile apps. So, the attendee doesn’t need to download a specialized app and have their mobile device charged with Bluetooth on for them to work. The result often is a much higher use utilization rate, but at a higher cost. Mobile polling, survey and social Q&amp;A applications: Mobile event apps and standalone apps have made surveys and audience polling much easier and cheaper for an event planner to manage… and at a small fraction of the cost of renting polling keypads. The results can give immediate feedback to planners and speakers about attendee thoughts and sentiment. Social Q&amp;A tools, where attendees text and up-vote questions, facilitate group interaction and point to what matters to the audience. Second screen technology: Second screen technologies, such as Educational Measures , allow attendees to interact with onscreen visuals on individual tablets and other mobile devices. This technology can provide very precise detail of engagement, of individual attendee interests and responses to built-in polling and survey data. Gamification: Gamification tools, increasingly found as part of a mobile event app, create better and more meaningful experiences. These data points are also very useful for adding to attendee profiles. NFC badges and NFC USB sticks: Although NFC (near field communication technology) has been around for some time, the ability to quickly exchange contact and other data between attendees and exhibitors with a tap of a badge or a standalone NFC device (such as Poken ) is extremely helpful as well as valuable from a marketing perspective The myriad of data collection tools listed above provide very precise detail of attendee actions, behavior and interests. This starts to become actionable when combined with the increased analytic capabilities of registration, mobile event app and standalone engagement technologies combined with interoperability with sales force automation and CRM and marketing automation systems (see next sections). 2. The rise of data integration capabilities: Data management systems are maturing to where integration is a much simpler task. With state-of-the-art cloud-based event technology systems and advanced APIs ( application programming interfaces ), it is now possible to collect and analyze onsite data and connect them with CRM tools such as SalesForce.com – closing the loop from a marketing standpoint. Interoperability is at the center with much of the change that is happening. One example is Eventbrite , a basic consumer-oriented event invitation, registration and ticketing system. This San Francisco based company has been built from the start to be interoperable with others and lists hundreds of software products that it integrates with in its Eventbrite Spectrum page. Consortiums of newer cloud-based event technology companies are working together to share data and work as one. For example, Swoogo (event registration), Hubb (abstract collection/exhibitor management/scheduling/task management), InGo (social marketing), DoubleDutch (mobile event app), and InsightXM (data analytics and marketing) work together integrating data as if they were a single platform providing rich data and marketing capabilities among them. Other options for planners are integration platform-as-a-service products such as Built.io , providing solutions to more easily integrate a wide range of software systems into CRM and marketing automation tools. Features include workflow maps, ties to enterprise collaboration tools such as Cisco Spark or Slack, data mapping, activity triggers for complex workflows, mobile app integration, API builders, API debugging and testing tools and more. In essence, they make the process of integrating modern software products much simpler. The benefit for meeting planners is that they can choose a assortment of specialized event software products and figuratively bolt together to work together seamlessly. Meeting planners will be able to find highly customized solutions using multiple technology products with the ability to extract valuable marketing data is if they were a single platform. This rich interoperability makes it much easier to analyze the data and bring it back to CRM systems. Customer behavior and interests expressed at meetings can, therefore, be tied to customer profiles allowing for much better marketing intelligence and more customized sales communication. 3. Advances in analytics and marketing automation systems: Marketing automation refers to technology used streamline, automate, and measure marketing tasks and workflows to increase operational efficiency and grow revenue. Companies such as Marketo , Eloqua , SilverPop and HubSpot have been evolving progressively capable marketing automation products over the past few years. Finally, with advances in cloud-based computing and APIs , event technology companies have been able to integrate with these companies to greatly improve marketing efficiency. We now have the technology to make data actionable. Events and exhibitions can now be integrated into a unified marketing program. Here are some examples: Vista Equity Partners ’(owners Lanyon and Cvent – the world’s two largest event technology firms) purchase of marketing automation firm Marketo for US$1.8 billion is an example of how the big players are recognizing that live events are a significant component of a broader marketing landscape. The ability to wed live event data with customer (attendee) profiles is a major step forward for combining the data flow from all sources to provide a much more targeted relationship. Ties to marketing automation platforms and CRM systems are a natural step forward. DoubleDutch , one of the leading mobile event app companies, integrates with Eloqua, Marketo and Salesforce. Their homepage emboldened title is “LIVE ENGAGEMENT MARKETING” without even a mention of mobile technology indicating the importance of using onsite technology in a marketing campaign. Certain Software has been an industry pioneer with marketing automation. This major attendee management software firm has had ties with Eloqua and other related companies for the past several years. The opening page of their website now proclaims “Enterprise Event Automation Software” with a white paper on Integrating Marketing Automation and Events indicating a significant corporate move in this direction. Certain’s new “Event Intelligence” functionality allows marketers to tie event data within a marketing automation platform. Onsite attendee activity can be scored within the marketing platform allowing marketing campaigns to connect more directly to attendee needs. Etouches , another major attendee management company, provides an “all-in-one event management platform” with 16+ modules to perform a wide range of event technology tasks. They have allied with Silverpop , part of IBM Marketing Solutions portfolio, for marketing engagement and acquisition services. Feathr , originally a mobile event app company, promotes “Feathr’s Marketing Cloud,” a set of digital marketing tools to track event websites, publications, and newsletters to analyze more than twenty features for every action registrants perform – including time of day, session length, platform (mobile vs. desktop), browser, screen size, cursor position, geographic location, and more. Splash markets as a “one-stop event shop” to provide “all the tools Event Marketers need in one place.” They provide a range of guest list management, web design tools, email marketing tools, mobile apps and more with integration to Marketo, Salesforce, and Microsoft Dynamics. Future Trends: Financial services, pharmaceutical and technology companies are some of the key vertical markets pushing the events analytics envelope. And the efforts are paying off! Tracking the wealth of onsite behavior and incorporating into customers’ profiles allow a more precise measure of the event ROI and helps companies make marketing decisions with a better view of customer needs and preferences. As the trends mentioned above mature, we will see costs come down and become more accessible and routine for a wider range of events. Additionally, new data options including artificial intelligence and predictive analytics (making statistically-based predictions of behavior through analyzing current and past behavior) will becoming available. Event planners and marketers will be able to make the best choices based on the data. As meeting planners are often intimately involved in the onsite technology purchase decisions, they can help to elevate their events marketing impact with the right technology choices. This is a rapidly changing area, but there are many good choices to make now. Event planners should embrace these new onsite data collection, integration and analytic tools to figure out which ones are most applicable for their events. They, then, can work with their event marketers and other C-suite executives to grasp the true power of face-to-face marketing. Corbin Ball, CMP, CSP, DES, MS is a speaker and independent third-party consultant focusing on meetings technology. With 20 years of experience running international citywide technology meetings, he now helps clients worldwide use technology to save time and improve productivity He can be contacted at his extensive web site Corbin Ball Associates - Meetings Technology Headquarters ( www.corbinball.com) and followed at www.twitter.com/corbinball . Subscribe to Corbin's free every-other-month, high-content TechTalk Newsletter/Blog at www.corbinball.com/techtalk . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Security and Privacy Issues Site Inspections and Evaluation Social Media - Web 2.0 Speakers and Presentation Skills Surveys and Audience Polling Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration WWW -- The Web What The Audience Is Saying Your session blew me away. I could easily listen to your information all day. This was incredibly informative. Michael McNutt Human Capital Manager Information Experts Amazing! I have not learned so much in such a short time ever! I want more! Rafael Olivares Sales Executive Finnish Tourism Board Corbin, ALWAYS a homerun presentation of great info! Peter O’Brien Marriott Global Sales 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technology Resource Guide to Manage Attrition and Group Blocks — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Technology Resource Guide to Manage Attrition and Group Blocks</p>
+<h1>Technology Resource Guide to Manage Attrition and Group Blocks</h1>
+<div class="article-body">Technology Resource Guide to Manage Attrition and Group Blocks The Internet has changed the way people are buying hotel sleeping rooms. Consider these facts: Travel is the number one sales item in dollars spent on the Web representing more than 41% of all online spending (Forrester Research, 2003). The number of hotel bookings coming via the Web this coming year will represent a 5-fold increase from 2000. ( PhoCusWright Inc . 2003) For nearly a third of planners, between 10 percent and 19 percent of their attendees book outside the block. More than 13 percent lose upwards of 20 percent to 29 percent of the block. ( PCMA 2003 Housing Survey ) Although the Internet has helped attendees find bargain rates, it has been a major headache to meeting planners. Planners are being slapped with attrition penalties when their room blocks are not filled due, in significant part, to attendees using the Internet to find lower price rooms outside of the block. Part of the Problem: The Major Travel Sites (Expedia, Travelocity, Orbitz) There are quick, easy-to-use and easy to find lower-cost housing alternatives. With Travelocity, for example, one can find alternative hotels by search on the address of a “headquarters” hotel. The results will rank the hotels by distance from that address. It has never been simpler for attendees to find less expensive housing alternatives. The Auction Sites (Priceline.com) Hotels have been able to dump excess inventory at lower costs than the published rate by using the obscure channel sites. As the agreed upon price is not published (it is between the hotel and the buyer), they can stay true to their contact agreements and still get revenue from last minute inventory. A problem is that sites such as BiddingForTravel.com are now posting the most recent rates that people are getting from these discount and auctions sites, exposing even these obscure channels. The Cyber Poachers (DiscountMeetings.com and others) Some companies are obtaining membership or registration lists (either by signing up as a member or as an exhibitor), and then e-marketing to potential attendees rooming availability. Only by reading the very fine print, does one find out that these rooms are not within the official hotel room block. These poachers have attacked many of the major meetings this past year including MPI’s World Education Conference in San Francisco. Parts of the Solution: Attrition is a complex issue and no one solution to handle all of the challenges. Here are some attempts portions of the issue. ResPath by Cardinal Communications ResPath provides an integrated means of managing housing, registration, education and incentives to book inside the block. This is one of the strongest technology solutions to address the attrition issue that I have seen. ResPath combines several tools together: Online registration Online housing Personalized email invitations that tie together registration and housing and track attendee responses. An event Website that displays meeting information, reasons to book inside the block and offers incentives (registration discounts, hotel incentive plans, etc.) for those that book inside the block. Housing management tools for the planner and, with administrative access, for the hotels. Additional marketing tools that capture information from attendees not staying in the group block Key component here are the means to educate the attendee of the implications to the association of booking outside the block and a means to motivate them through incentives to book inside the block. Emeetings Online This product allows attendees to book within contracted room blocks, as well as to view other Internet rates that can be found on other travel sites, such as Travelocity. Show management can optionally permit attendees to check and book overflow hotels or other city hotels for the best deals. It can allow meeting hosts to know where attendees are staying and if their negotiated rate was really the best one. Event hosts can use the system to view other rates offered by that hotel. When attendees make a reservation through the system, it is made directly with the hotel and they receive a hotel-issued confirmation rather than a service-provider confirmation number. The technology uses the Pegasus Reservations to provide access to more than 45,000 hotels from more than 200 chains around the world. Passkey Passkey is the largest online housing provider in the business with more than 250 cities having hosted Passkey-enabled events. Passkeys approach is simply that, with better block management tools more rooms will be booked inside the block. With shoulder dates more easily managed and hotels having the ability to manage their inventories online, the increased efficiencies increase online bookings. Major meeting industry hotels chains including Hyatt, Hilton, Marriott and Starwood regularly use Passkey and have entered into cooperative agreements with them. The challenge, however, for Passkey, is that attendees are voting with their pocketbooks and finding better deals outside the block. It doesn’t matter that it is easy to book inside the block – it matter that they can save hundreds of dollars by going the Travelocity or the others. Travel Technology Group (TTG) and ResQuest In a “if you can’t beat ‘em, join ‘em approach, these product provide a link directly to Internet booking engines such as TravelHero with their online registration/housing offerings. If attendees choose lower price housing outside the block, at least the planner can track it. They offer a number of options such as the ability to exclude the blocked rooms from the public listings, and open up the Internet rooms after the cut-off date. The idea is that the planner might as well get credit for this outside-the-block booking activity instead of letting it happen behind their pack back. This strategy may work for city-wide meetings where municipal convention center space is booked on the basis of the overall value to the city. However, the majority of meetings are held in hotels rather than convention centers. A hotel is interested in filling their “beds with heads” – the most profitable component of their business income stream. The main reason hotels have meeting space is to attract people to stay in their sleeping rooms. The hotels frankly don’t care if the planner can track rooms booked outside of their property. DOME - Data on Meetings and Events An additional way of tracking housing (and airline usage) is provided by DOME. This product is a private, not-for-profit research foundation and comes from a consortium of IACVB, ICCA, BestCities.Net, Reed Travel and others. The strategy is to link the online registration with a questionnaire asking what airline and hotel the attendee used for the meeting. Using a database developed by Amlink Technology , it is very quick and easy to use. Those that do not divulge this information online, are flagged and asked again on-site. DOME pointes to remarkably high response rate (92% in the 2003 AIME meeting) from which total city-wide hotel usage can accurately be extrapolated. This product is being used for a variety of marketing applications. As with TTG and ResQuest, however, the applicability for tracking housing to manage attrition would be much more applicable for city-wide events, rather than for individual properties. Chicago CVB Convention and Visitor Bureaus are very much interested in knowing how many attendees come to the city, both inside and outside the block. The CVB needs to demonstrate to economic value of a meeting to their members and, often, to justify booking space for future meetings at the city-managed convention center. The Chicago Convention and Tourism Bureau plans to beta-test a system to do just that in February 2004. To be used only for city-wide events exceeding 5,000 room on the peak night for a start, this solution will track the number of rooms used for a meeting regardless if they book inside the block or not. Using and in-house system called CityLink, already in use to be able to check on future sleeping room availability for conventions, they will track these data through the electronic connection established between the CVB and the hotels. Proprietary financial data will not be provided, but the “heads in beds” counts will help all sides to demonstrate the value of the meeting and point out to the planner highly utilized hotels that are not within the block. As not all the hotels are linked up at the present time and matching with an attendee list will be required with each hotel, some of the processing will be manual and the cost to do this has not been established at this time. Feedback will be solicited from the groups and from their client advisory board before full implementation will happen. Hilton Hotels Hotels want happy clients. They do not wish to financially harm them or to create hard feelings from running a meeting at one of their properties. It is in their interest to work out the attrition issue as well. Part of the problem with people booking outside the block is they may simply find a lower Internet rate online within the same hotel. As the booking comes through a channel other than the one the meeting planner provides, these attendees often have not been counted, and, therefore, the meeting planner does not receiving the credit. Other than manually checking hotel registration/arrival lists with the attendee list, a time consuming and tedious task, there has been little help for the planner to get full credit for the people they bring to the hotel. To help with this, Hilton Hotels, with more than 2,000 hotels in 50 countries, has just announced that they will be rolling out this year to thirty of its largest convention hotels its Group Reservations Identification Program (GRIP). This software will allow meeting planners to access an automated cross-reference of group registration lists against hotel rooms. The system creates an interface between a planner's Excel-formatted registration list and a hotel's reservation system, identifying attendees who booked their housing outside the official room block. The GRIP reports provide detailed summaries of attendee booking activity, which can be accessed anytime after the reservation has begun through a post meeting at no charge to the planner. This will greatly reduce the time-consuming process from what could have been days with the old manual process, to minutes with the fully automated and integrated GRIP. Another major benefit of GRIP is the ability to provide accurate historical data that the planner and hotel can capture to assist in making future business decisions. According to Steven Armitage, senior vice president, sales – Hilton Hotels Corporation, “Hilton is committed to working closely with meeting professionals to help them manage the reservation process for their meeting or event.” As there are many sub-issues involved with attrition, there have been many paths to address aspects of the problem. As we get used to this “new normal” of the way people buy sleeping rooms for conferences, these problems will diminish. Certainly, the solutions mentioned above will reduce some of the friction. Helpful Links: Project Attrition The Convention Industry Council (CIC) Project Attrition program is the largest effort to date to define the problems and provide ideas for answers. This should be the first stop for anyone wanting more information about attrition. Checkout the Project Attrition Resource Guide with its many links and insightful articles Mpoint.com Mpoint.com provides a number of links dealing with attrition, including several articles on attrition suggested attrition clauses and Attrition Calculators PCMA 2003 Housing Survey The survey from the Professional Conference Management Association is very enlightening about housing and attrition trends. MeetingsNet Attrition Busters A collection of excellent articles addressing this issue from Primedia Business Magazines. Sample Attrition Clauses: CIC Project Attrition Conferon John Foster, Esq. f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada Fantastic seminar! Very exciting advances to come. Your enthusiasm is contagious. Michele Mamacos Manager of Events Services Northlands Excellent session! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

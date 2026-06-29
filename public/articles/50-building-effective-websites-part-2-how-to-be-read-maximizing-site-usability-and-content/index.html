@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building Effective Websites, Part 2: How To Be  Read -- Maximizing Site Usability and Content — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Building Effective Websites, Part 2: How To Be  Read -- Maximizing Site Usability and Content</p>
+<h1>Building Effective Websites, Part 2: How To Be  Read -- Maximizing Site Usability and Content</h1>
+<div class="article-body">Building Effective Websites, Part 2: How To Be Read -- Maximizing Site Usability and Content This article is available in Spanish. Este artículo está disponible en español. This is the second article in the Building Effective Websites series, covering key design and content issues that will draw customers into your site. The three articles are: 1. How to be found 2. How to be read (this article) 3. How to be bookmarked .This article will cover the Section 2 of these three crucial design elements with loads of suggestions and tools for improvement. These articles will give you the tools to analyze your site and talk intelligently with your web designers to improve it. Section 2: How To Be Read (How to Help Visitors Explore Your Site) If you followed the suggestions listed in Section 1 , you should be experiencing increased traffic to your site. Now the question becomes, how do you draw site visitors in? How do you encourage them to explore around to find all the wonderful content you are offering? Or, in other words, how can you get them to read what you have? Content is King People seek solid content when surfing the Web. Your site should be a source of solid, helpful content if you wish to draw people in. Uniquely define this content, your service and/or your product in terms that people will be searching for is the first step in drawing people in. Content will almost always be more important for traffic than style. Finding the Content A significant challenge with many web sites, however, is that it is difficult to find the content. There are several things to consider in assisting site visitors to do so. State your unique selling proposition in the opening paragraph of your home page. Many sites are not clear about their purpose. If you force to visitor to search around to find what you are offering, many will not stay around to find it. Pictures are nice, but they serve to add to or reinforce the content you must have. For example, the first line of the first paragraph of the www.corbinball.com web site is: “Meetings Technology Headquarters – the world’s most comprehensive site about meeting planning and events technology.” It is very clear about what you will find there, defining it with key words that people use to find this information. In other words, answer within seconds the question “What’s in it for me (the site visitor)?” This same question should be answered for every significant content page on your site as well. Navigation A poor navigation scheme is probably the biggest hindrance to people finding the site content you are offering. I recommend the following to help: Navigation bar consistency: Keep your navigation scheme the same on every page and place it as a bar on the top of the page or on the left side. Many sites move or change the navigation elements from page to page making it difficult for visitors to figure out where to go. The 3-Click Rule: One part of your web site should not be more than 3 clicks (or 4 clicks maximum) from any other part of your site. Make sure a link back to home is included on every page to help with this. No more than seven primary navigation items recommend: The human mind on average does not remember more than seven items easily. More than seven navigation items (nine maximum) will cause confusion, and, therefore, will not explore your site as thoroughly. If you have more than seven items, consider consolidating or using sub-navigation items. Avoid splash pages: Splash pages (often animated) are commonly seen as you enter a site. Not only do they add load time and serve as a hindrance for the visitor to see your content, they typically do not have a navigation scheme, breaking the above recommendation about navigation bar consistency. Don’t hot-link the current page in the navigation scheme. If you are on your home page, the “home” button should appear selected (a different color usually) and nothing should happen if you click on it. This is a very common error which hinders site ease of use. Design Web site building involves an interesting mixture of art and technology. Many web design firms do not balance these “right-brain vs. left brain” functions well. The content and navigation mechanics involve the “left-brain” technology side. This must be balanced with the “right-brain” artistic side. An attractive design portrays you corporate image, establishes a “feel” to your site and should be carefully considered. Recommendations: Common look-and-feel: Your site should have the same design and consistent feel on every page of your site. Focal points: In English-speaking countries, people read from the top-left across and down. We instinctively look to the upper right-hand portion of a page when reading. Consequently, this is a great place for a focal point. I recommend logos as an excellent way of branding. Also, it is recommended to tie it into the navigation bar -- linking the logo back to the home page is often a good idea. Don’t litter your site with animated GIFs or multiple focal points. Avoid the “dancing hamsters” The blinking graphics seen at many sites only serve to draw attention away from what should be your principle focal point. Legibility Reading on the web is about 40% slower than reading text on a printed page. If you make it easy for the visitor read the site, the chances are the more they will read and the longer they will stay. Keep the following in mind when using text: Keep it short: A typical Web page should be 50% shorter than paper-based promotion. A lengthy page of straight text simply will not be read. Consider every word used and omit the unnecessary ones. An exception, perhaps, would be content articles such as this one where people often will print out to review. Focus on what is above the scroll: This is an adaptation of the newspaper term “above the fold.” What appears when the web page first loads is far more important that what visitors have to scroll down to see. If at all possible, keep your pages short enough where down scrolling will be required much. Write for scannability; People read web pages in a manner similar to reading newspapers. They scan the headlines and focus in on what is of interest. In the same way, use headlines, bullets, and summaries. Use hyperlinks liberally as a means of reducing text. Use visuals: A picture is worth a thousand words. Use pictures and graphs to assist in showing what your mean. Don’t SHOUT! Avoid the use of ALL CAPs as it hinders reading and is considered shouting. Also, avoid the use of exclamation marks as it also is considered shouting. Use a basic dark font one a light screen: I recommend a black or dark blue san-serif font (Arial recommended) on a white or light field. San-serif fonts are handled better by computer monitors and also embolden well. People are used to reading black characters on a light field – so keep with what people are used to. Avoid background images or complex wallpaper as they conflict with the text people are trying to read. More information about writing for the Web can be found at: Testing of Optimal Performance Not all browsers, computers and Internet connections are the same. Your site may look great on your computer, your browser and your Internet connection but may not work well on another system. Fortunately, there are many tools available that can help you determine if your site is working well across platforms. Overall tester: One of the best ones out there is: www.netmechanic.com/cobrands/zd_dev/ This will test for free any Web page entered, and will give an analysis and specific recommendation for improvement in the following areas. Bad links: (hyperlinks that do not work) HTML design (errors in your HTML code) Browser compatibility (how well your page appears under different versions of the major browsers) Load time (how quickly your page loads at several common modem speeds. Spell check (possible spelling errors on your page). Speed optimization: If your site doesn’t load quickly, people will not hang around to wait. You should be very cautious about page size, especially if a significant portion of your clientele using the site is accessing it with a dial-up connection. The primary cause of slow loading is from images. Pictures and other images are very important to an effective web site. However, I recommend the following to help minimize their impact: Resize and scan your graphics for no more than 75 dpi : This is the maximum resolution that Web browsers can display. Higher resolution slides will only serve to slow the load time. Size it so that you can see the image clearly, but no larger if load time is a problem. Crop your image: Use only the essence of the image you need, cutting down the size. Use thumbnail images : Thumbnail images are small images that, when clicked, open to a larger, higher resolution image. The thumbnails are small, load quickly and let the visitor scan the images of interest and click on the one s/he would like to see in full size. Use Alt tags: Alt tags are the web code that reserves space for your images, then loads the text, and finally loads the images. This allows the visitor to start reading the text before the images are fully loaded. The tester listed above will tell you in the HTML checker if your site is using Alt Tags correctly. If your text seems to load and bounce around when the site loads, then it is likely that your web programmers have not done this properly. My recommendation for page size (especially your home page) is 45Kb (about 15 seconds using a 28.8kb/sec modem). You can test it using the above overall tester listed above. Another site to help you analyze your site graphics and tell you if you need to resample and resize them is: www.netmechanic.com/accelerate.htm Web Use Statistics: the overall report card. Web use statistics are provided in a variety of forms free for the asking from your web hosting service. Although overlooked by many, this information is extremely informative about your web performance. Among the statistics to look for: User sessions: How many times have people come to your site this past month? Is this increasing over the previous month? Are your web marketing programs having and affect? User sessions is a much more accurate predictor than “hits” as a hit can include any graphic item on a page (one page may have many hits.) Time spent per session: How long do they hang around? If you have a predominance of 30 second or less viewers, this should raise a red flag. Top entry page: This will give an indication of how are people finding you. Top exit page: This will tell you where they “give up.” Most popular pages: What do visitors want? Least popular pages: What are they not interested in or what can’t they find because it is buried in the navigation scheme? Top referral pages: How are people finding your site? From search engines or by links from other sites? Which ones? Key word phrases: What key words are being used to search to find your site? What is of interest to your visitors? Network location: How international is your viewership? What countries? What states? Theses are just a few of the statistics that commonly are offered and can provide significant information about the how well you are drawing in and keeping people at your site. Other articles in the series: 1. How to be found 2. How to be read (this article) 3. How to be bookmarked . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying Sensational session. Worth the entire PCMA registration fee. Bonnie Wallsh Chief Strategist Bonnie Walsh Associates &quot;I've seen Corbin three times. No one works harder to keep his material fresh and relevant to events.&quot; Scott Stubbs President HB Stubbs Company Excellent session! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Face-to-Face Vs. Virtual Meetings: Which is Better? — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Face-to-Face Vs. Virtual Meetings: Which is Better?</p>
+<h1>Face-to-Face Vs. Virtual Meetings: Which is Better?</h1>
+<div class="article-body">Face-to-Face Vs. Virtual Meetings: Which is Better? &amp;Acirc;&amp;copy;2020 Corbin Ball This is a trick question. Actually, both face-to-face (F2F) and the range of virtual meetings have their strengths and weaknesses depending on the length and goals of the event. This article will cover them. Virtual Event Types: With the COVID pandemic shutting down nearly all F2F events, virtual events of all types have seen very significant growth. Listed below are the main virtual event categories. The companies sited in each generally fit in with the features, strengths and weakness mentioned, although specific features may differ and some providers fit into multiple categories. Webinars: A webinar is simply a seminar conducted over the internet. Typically, the webinar size ranges from dozens to a few hundred people. There are many software options in terms of pricing and capabilities with a variety of presentation options including sharing of PowerPoint slides, screen sharing, polling, Q&amp;A functionality, audio/video streaming, level of security and some type of registration automation. Strengths: Webinars are good for relatively short information exchanges with some attendee interactivity. They are less expensive than F2F with no room rental, catering, AV and travel costs. Unlike F2F events, they usually do not require significant preparation and promotion time. Also, in these days of significant pandemic concerns, a big benefit is that they do not require travel and possible exposure to contagions. Weaknesses: Major weakness are the lack of visibility of the attendees with some of the systems and time limitations. As the attendees can be invisible to the presenter and to each other with some of these companies, there is no social contract to even look like they are paying attention, unlike F2F events. Due to increasingly shorter attention spans, webinars generally should last no more than one hour. In today&amp;acirc;&amp;#128;&amp;#153;s distracted office environment, it is difficult to keep a viewer&amp;acirc;&amp;#128;&amp;#153;s attention fixed on a screen for longer than this. Some of the major players are: ClickMeeting GoToWebinar ReadyTalk Zoho Webinars Zoom Webcasts: A webcast is a video distribution of a presentation via the internet. Similar to a television broadcast, it is usually a one-to-many format, similar to a large lecture hall with little or no interactivity between the presenter and the attendees. Typically, there are recording functions for on-demand playback at a later time. Strengths: Webcasts are good for presenting short, time-sensitive, urgent or highly-valued information to a large number of people such as a CEO address to a corporate-wide news announcement. Built-in on-demand playback provides round-the-clock access capabilities for those not able to attend the live webcast. Like webinars, they are less expensive than F2F meetings and do not require travel. Weaknesses: Similar to webinars, there are time limitations based on how long you can hold a passive viewer sitting behind a screen with, usually, very little audience interactivity. The major players are high-volume video steaming services and/or learning management systems. These systems can also be used for high-end webinars as well and include the following: Some of the major players are: Digitell INXPO ON24 Sonic Foundry Vimeo LiveStream Zoom Enterprise Video Conferences: A video conference is when participants in different locations are able to communicate with each other with online video and sound. Video conferences are the virtual equivalent of a group of people sitting around a conference table. Strengths: As everyone is visible to each other in a video conference, there is a social contract to look like you are paying attention leading to less distraction and more group involvement. Higher-end telepresence systems represent participants in high-definition and often life-size as if they were sitting across the conference table. These systems are the closest approximations to boardroom-like F2F meetings and can last as long as material needs to be discussed. There is much competition in this space with many of the providers offering these services for free or very low cost and they do not require travel. Also, unlike F2F, they do not require significant advance preparation. A notable example is Zoom, which has grown more that from 10 million users to 340 million users since the start of this year, and is free for basic use and has impressive range of options including breakout rooms, polling, screen sharing, and recording capabilities. Weaknesses: Video conferences are usually limited in the number of people and locations that can be accommodated and do not work well for large group training or interaction. Some of the major players are: Facebook Messenger Rooms Google Meet Lifesize Microsoft Teams Skype WebEx Zoom Virtual Event Platforms and Production Companies: There are several event technology companies offering full-featured virtual events suites in an attempt of recreate multiple features of F2F events. These features can include a full event website with registration payment processing, an event mainstage for keynote addresses, multiple breakout rooms, networking options, exhibitor booths, attendee profiles, sponsorship options, engagement/gamification options, social media connectivity, and others. These features vary substantially among companies. Strengths: Some of these companies come from the event world with an understanding of the complexities of large F2F events. Several have provided online registration, payment processing, event metrics, event apps and other event details for years. Some are full-time virtual event production companies that can guide you to the most effect range of products based on your needs. As event planners pivot from F2F events to virtual due the pandemic, these companies bring multiple elements found in F2F events into a unified virtual suite making this transition more complete and easier. Unlike webinars and webcasts, they focus on the event rather than the presenter. Additionally, they provide many of the benefits listed in the next section. Challenges: This pivot to virtual is new to many of these companies, with some forced there by the impact of COVID-19. Best practices are still being worked out and the effectiveness of the elements can vary from platform to platform and also when compared to a F2F event. Some of the major players are: 6Connex ATIV Software Communiqu&amp;Atilde;&amp;copy; ExpoPlatform GTR HelloEndless Hexafair Hopin.to Hubb Hubilo MeetingPlay Pathable Social27 So cio Spotme General benefits of virtual meetings over face-to-face: Lower cost: Most virtual events are substantially less expensive that their F2F counterparts. There are no travel costs, catering expenses, and other onsite expenses such as staff, security, audio visual equipment, and room rental. Lower environmental impact: Virtual events eliminate the need for air travel and ground transportation making them much more environmentally friendly. Speed: F2F meetings usually require several months, if not years, of advanced planning and negotiation. Virtual events can be set up in much less time. Easy recording and online distribution: May virtual meeting platforms have recording capabilities built in making it very easy to distribute this content online on demand. Greater and more international attendance: Many event hosts have been forced to move the F2F meeting to a virtual event due to the COVID-19 pandemic. Several have found much larger audiences in doing so. One extreme example is Microsoft, which has banned all F2F meetings greater than 50 persons until June 2021. Their recent Build developer conference drew more than 230,000 registrants, up from 6,000 who attended in person last year with 65% of the attendees coming from outside the U.S. compared to only 20% last year&amp;acirc;&amp;#128;&amp;#153;s F2F event. Better metrics: Many of the virtual event platforms have excellent online metrics measuring attendance numbers, time spent online, sessions attended, text chat comments/questions, polling counts and more. An inherently online platform makes this easier to do than in the F2F world. Free from Covid-19 contagion: During this pandemic, the major reason for the explosion of virtual meetings is the travel shutdown for F2F events and the fear of contagion in group gatherings. Virtual events of all types have seen explosive growth due to the travel restrictions imposed by the pandemic. During this time, we are seeing much innovation as people of all ages and backgrounds get used to these formats. Many best practices are being worked out during this time. When F2F events reemerge after the pandemic passes, it will be likely that virtual events will play a substantially larger market share in how people will meet. Hybrid Events: A hybrid event is a meeting that combines a &amp;acirc;&amp;#128;&amp;#156;live&amp;acirc;&amp;#128;&amp;#157; in-person event at a physical location with a &amp;acirc;&amp;#128;&amp;#156;virtual&amp;acirc;&amp;#128;&amp;#157; online component for remote attendees. Many virtual event platforms will likely expand and build out their hybrid options as a bridge back to F2F events as we reemerge from the pandemic. Strengths: Hybrid events can be the best of both worlds. All the cost and effort put into bringing speakers and attendees together in the same place for a live event, can be spread out to a much larger audience at comparatively not much additional cost. As F2F events slowly reemerge after the pandemic, it is likely that hybrid meetings will be a significant part of many events. Until there is a widely dispersed, effective COVID-19 treatment or vaccine, there will be many people that will be unwilling to attend events for lack of travel funds and/or a fear of contagion to themselves or loved ones. A hybrid component can fill a need for these individuals. Challenges: A challenge for hybrid events is that a F2F audience attendee is likely to have a very different experience than the virtual attendee. The sensory input is and the networking opportunities are much greater with F2F than virtual. Attention spans for remote attendee interacting with a screen tend to be much shorter. In order to keep their attention, the production values should be excellent with television show production values as a model. In essence, the challenge for the event designer is making a satisfying, compelling event for two very different audiences. This makes for a more complex meeting taking more time and resources. Some event organizers have expressed concerns that hybrid events will cannibalize there F2F event; the hybrid event will reduce the onsite event attendance. However, studies indicate that this is not the case. Often times, the attendees would not come anyway due to cost or travel concerns. Hybrid events can greatly expand the audience size, and can even increase attendance future events by increasing visibility. Face-to-Face (F2F) Events: As the name implies, this involves meetings where people meet together in the same physical location. Strengths: Meetings take people to a more focused environment with fewer distractions. As long as attendees are informed, entertained and fed, event hosts can keep them engaged for days. At the minimum, we share a social contract to at least look like we are paying attention at a F2F event. The opportunities for networking, brainstorming, and relationship building are usually far greater at F2F events than online. For an exhibitor, it is often the best way to meet so many qualified buyers in such a short time. For buyers, it is a great chance to meet vendors of interest &amp;acirc;&amp;#128;&amp;#147; all together in one location, categorized and mapped for your choosing. Meetings provide a richer, more targeted, and more focused learning experience than nearly any virtual meeting. Challenges: There are costs involved with F2F events such as travel, room rental, AV, catering, onsite staff and more. Additionally, there are environmental impacts due to travel. As mentioned, there are concerns regarding disease exposure. F2F events can also be affected by weather, strikes, riots and other types of social discord. However, after the disruptions from the COVID-19 pandemic have passed, the benefits mentioned above can often be very well worth the costs. F2F meetings bring people together, provide significant points of business interaction, and very significant economic benefit to venues and event stakeholders. Because of this, F2F in some form will remain a viable option well into the future. Corbin Ball, CMP, CSP, DES&amp;acirc;&amp;#128;&amp;macr; is a speaker and independent consultant focusing on meetings technology. Previously, Corbin ran international citywide technology meetings for 18 years. For the past 22 years, he has helped clients worldwide use technology to save time and improve productivity through his speaking, consulting and writing services. Corbin was inducted into the EIC Hall of Leaders in 2018, the premier recognition program for the events industry. He can be contacted at his extensive web site&amp;acirc;&amp;#128;&amp;macr; Corbin Ball &amp; Co. - Meetings Technology Headquarters ( www.corbinball.com) &amp;acirc;&amp;#128;&amp;macr;and followed at&amp;acirc;&amp;#128;&amp;macr; www.twitter.com/corbinball . &amp;acirc;&amp;#128;&amp;macr; Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada Your session blew me away. I could easily listen to your information all day. This was incredibly informative. Michael McNutt Human Capital Manager Information Experts Amazing! I have not learned so much in such a short time ever! I want more! Rafael Olivares Sales Executive Finnish Tourism Board 1 2 3 &amp;Acirc;&amp;copy; Corbin Ball &amp; Co. - 506 14th Street, Bellingham WA 98225-6107 USA Ph: 360.734.8756</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pt.1: Building Effective Websites: Search Engine Optimization - Getting to the Top — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Pt.1: Building Effective Websites: Search Engine Optimization - Getting to the Top</p>
+<h1>Pt.1: Building Effective Websites: Search Engine Optimization - Getting to the Top</h1>
+<div class="article-body">Pt.1: Building Effective Websites: Search Engine Optimization - Getting to the Top Building Effective Websites Part 1: Search Enginge Optimization - Getting to the Top This article is available in Spanish. Este artículo está disponible en español. Your Web site should be central to your company or association’s marketing effort. When built and managed properly it will offer you the world as your market and lots of clients. Built incorrectly and your efforts are wasted. This is the first article in the Building Effective Websites series, covering key design and content issues that will draw customers into your site. The three articles are: 1. How to be found (this article) 2. How to be read 3. How to be bookmarked . These articles will give you the tools to analyze your site and talk intelligently with your web designers to improve it. 1. How To Be Found – Making your Web Site Search Engine Friendly Search sites such as Yahoo ( www.yahoo.com ) and Google ( www.google.com ) are the card catalogs of the Web – it is how people will find your site by using search terms they are interested in. If you do not rank at the top 10 on the results lists with your key words, you are not there. People will generally not go to the effort of searching multiple pages of results. Getting to the top will take some work, but the efforts will be more than worth it. Here are the key things to know: Getting Listed with Yahoo Yahoo, unlike most search sites, is a human complied directory of websites. Yahoo is currently the second most popular search site (behind Google) and should be your number one primary cyber marketing objective. This is because of its exclusivity – it currently lists less than 10% of all web sites. Your site has to pass content and design standards to get in. Most other search sites (Google, AltaVista, MSN) use secret automated software algorithms to rank sites – there is no human review. These sites catalog nearly every page on the Web (Google for example catalogs more than 2.5 billion pages). The key is that many of these automated ranking sites use Yahoo as a weighting factor. The logic is that if you have jumped through the hoops of getting a Yahoo listing, that you are in the “top 10%” and, therefore, should rank higher on their results list than other sites that don’t. Before you ever even think of submitting to Yahoo, however, you must get your site in good shape (no broken links, no construction zones, good content, easy navigation) and then carefully follow the directions at the Yahoo web site: http://docs.yahoo.com/info/suggest . Before you do that, however, read the following articles that describe in details the procedures and protocol in increase your chances of getting this listing: http://www.marketingapprentice.com/marketing/search12.htm http://www.akamarketing.com/Yahoo-submitting-tips.html http://www.webpositiongold.com/submissionguide/SubmittingtoYahoo_.htm Getting Listed with the Other Search Engines Although there are literally thousands of specialty search engines out there, roughly 70% of all searches run through just a few major sites. Submitting to these sites is a simple procedure usually requiring going to the “add a site” page on the individual search engine site, and entering your web address (URL). The key ones to list with are: Google: www.google.com/addurl.html Inktomi: www.inktomi.com/products/web_search/submit.html Overture: www.alltheweb.com/add_url.php Teoma: (AskJeeves) www.teoma.com/ AltaVista: http://addurl.altavista.com/ ) There are submission sites that collect money to get your site submitted to up to 5,000 different search engines. It is recommended that you save your money as many of these will simply result in Spam messages back to you. Most are very specialized and represent a very small fraction of the searches preformed. You have covered most of the traffic by submitting to the links above. Every time you have a new page of content, go to these sites and enter that specific page. Although, most of the sites come back and re-index every page on your site automatically, this will expedite the process. Meta Tags Before you submit to the sites above, however, you should include your meta tags, the hidden code one each web page that provides the site title, description, and keywords as described specifically below. These meta tags are used by search sites to catalog and rank your site, Every page of significant content should have a full set of meta tags. If you are wondering what your meta tags are, submit you web address to the following meta tag tester site: http://www.scrubtheweb.com/abs/meta-check.html Meta Title The blue bar at the top of your browser shows the meta title for every web page. For example, at my Web site, www.corbinball.com , my title is “Corbin Ball Associates – Meetings Technology Speaking &amp; Consulting” The meta title is perhaps the most crucial of all the meta tags. Most of the search engines rank the words included in this area very highly. The following rules should be used with your meta title: This is your main headline. It is used as the link to click on by the search engines. It should entice people to click. It should contain no more than 60 characters including spaces It should include your company or product name It should start with the word you wish to be alphabetized by as Internet Explore alphabetizes any site added to your favorites list. It should not contain the words “welcome” or “home.” These are an absolute waste of your 60 characters, are completely superfluous and, if used as the first word, alphabetizes your site under “W” or “H” Use one to thee key words Meta Description The meta description is the two sentence description that appears under the title on search engine results page. Thease are also inded by the search engines and are &quot;free advertising&quot; giving the site visitor a reason to click on your link. To maximize search engine use, do the following: Up a maximum of 150 characters should be used in a short keyword-loaded descriptive paragraph Only about 130 characters are displayed so write your content accordingly. Accurately describe your site Sell your site – give viewers a reason to click Meta Keyword Tags Most search engines currently do not use meta keyword tags, but a few of the key players still do and, therefore, it is worth the effort. Here are the rules: The can contain up to 874 characters (including spaces) Do not repeat words more than 3 times as this may result in lower ranking. Include common misspellings of the key words Alt Description Tags Alt description tags are the words behind the pictures – the ones that will appear in a box if you hover your mouse pointer over the top of a Web image. As search engines catalog only text and not images, this is a way that you can let them know what the pictures are. They also use this text in their ranking systems. This is another place where your key words should be inserted. Body Text Search engines will catalog every word on your site that is listed as is in HTML, the basic text on web pages. Images, including pictures of words, are not included unless they have alt description tags mentioned above. However, many of the search engines will rank some parts of the page higher than other parts. Usually, the first paragraph at the top of the page is weighted more heavily, so the key words there are more important than others buried down in the page. Also, avoid the words “welcome” and “home page” as these are highly overused and are wasted real estate. Hyperlinks and Headlines Many of the search engines will rank words included in hyperlinks and emboldened in headlines more highly than standard text. Try to include your keywords in these areas. Determining your Key Words It is crucial that you build your site in a way that optimizes the use of keywords your customers will likely use when trying to find you. Here are a few ideas of how to determine which ones to use: Survey your best clients asking what words they would likely use to find you. Look at your web use statistics provided by your web hosting service to see what key words are being used now to find you. Look at your competition's web sites (especially the ones that rank higher than yours). Check out their meta tags to get ideas of key words to include. However, do not copy meta tags directly as this is a copyright violation (meta-jacking). Use the following free key word suggestions tool: http://inventory.overture.com/d/searchinventory/suggestion/ to get ideas. When you enter a key word or phrase at this site, it will provide a list of other key words and phrases that have been used in similar searches. Try to define your uniqueness. For example, for professional speakers, there is a lot of competition for speakers in the area of “customer service” or “leadership.” Include words that will narrow this down. For example, a key phrase that I use at my site is “meetings technology” – narrowing my focus from the many speaker that focus on technology in general. Link Popularity Increasingly, search engines will rank your site based on how many other web sites are linking to yours. Sites such as Google weigh heavily on this link popularity with the logic that, if other sites take the time to link to yours, you must have something valuable to offer. You can determine the link popularity of your sites with many of the search engines by entering your web address at: http://www.linkpopularitycheck.com http://www.linkpopularity.com/ One way to increase link popularity is to work out reciprocal link agreements with colleagues and allies. The more you can convince others to post an incoming line to your site, the better. However, it must be kept in mind that that the quality of the link is also used. Your incoming Yahoo link weighs more than low-trafficked links. Paid Rankings As the web grows and as it becomes increasingly central to a marketing strategy, paying for ranking is increasingly becoming a popular way to get to the top of the search engine pile. This generally involves bidding on word or phrase such as “leadership training” or “sales training” meaning that you would pay an agreed amount ranging from 5 cents to 50 dollars depending on the bid price. You would then pay that amount every time someone clicks through to your web site using that link. This becomes especially important when you have lots of competition in your field, such as with the phrases listed above. The two major sites for paid ranking are: Overture: www.overture.com (search engines included: Yahoo, MSN, Lycos, AltaVista, InfoSpace) Google: https://adwords.google.com (search engines included: Google). Paid ranking terms should be very carfully considered. Broad terms may build traffic but at potentially significant cost without targeting your true customers. They should be carefully monitored for traffic and quality. More About Search Engines Search engine ranking is a very complex issue. The best site around about search engines and how they work can be found at searchenginewatch.com with hundreds are articles, tips and tools for maximizing your ranking with the major search engines and directories. If you use Following the recommendations in this article will help you be found and get to the top of the major search engines. This is the first step in building and effective Web site. Next articles: 1. How to be found (this article) 2. How to be read 3. How to be bookmarked . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;I've seen Corbin three times. No one works harder to keep his material fresh and relevant to events.&quot; Scott Stubbs President HB Stubbs Company Corbin, ALWAYS a homerun presentation of great info! Peter O’Brien Marriott Global Sales &quot;Way beyond the best I could have imagined!&quot; Russell Clark Environmental Protection Specialist, U.S. Environmental Protection Agency 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

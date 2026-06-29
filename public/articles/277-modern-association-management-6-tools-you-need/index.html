@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modern Association Management: 6 Tools You Need — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Modern Association Management: 6 Tools You Need</p>
+<h1>Modern Association Management: 6 Tools You Need</h1>
+<div class="article-body">Modern Association Management: 6 Tools You Need ©2020 Guest post: Jake Fabbri, Vice President of Marketing at Fonteva A new decade brings new association advancements that can help increase member retention and acquisition rates. However, coping with technology change can be daunting— especially if you suddenly find yourself with outdated tools. With new online solutions and digital resources popping up, it’s hard to gauge whether your association is investing in the right tools to maximize success and increase membership in the long run. Many modern associations rely on more comprehensive association management solutions that grow and adapt as the organization does. This way, all of your data stays centralized and your membership effectively stays engaged. Not every association management system (AMS) will be the best fit for you and your members. You need a modern solution that anticipates needs and provides your members with digital tools to engage with your association and each other. Take a look at your own management system and toolkit to determine if you have these essentials: Online member portal Member self-service tools Online learning opportunities Discussion forum eCommerce capabilities Mobile event app Modern associations know how to expertly leverage tools that provide optimized engagement opportunities. Take it one step further by ensuring your members can further their education and empower them to collaborate and control their own experience. Ready to learn more? Let’s get started. 1. Online member portal to host engagement. Historically, individuals join associations to meet other like-minded people to network, learn, and advance in their field. To convince members to renew their memberships, your association has to offer something that provides more value than paying dues, like live events or other in-person experiences. However, as your membership begins to grow, you need to prioritize your online community as well . Not everyone can attend meetings and events, so it’s crucial that you have a dedicated online space for members to gather and get to know each other With the prevalence of social media platforms and online activity, organizations who don’t have a solid web presence are already missing out. These days, modern association members expect a tool like an online member portal to host these engagements . According to Morweb , your best bet is to invest in a website builder that specializes in membership-based organizations. This way, you can leverage your association management tools to let members access the membership portal from your main website. Within the membership portal, let members browse through a navigable directory. Each member should get their own profile with basic details, accreditations, and even a photo. This is an easy way to get to know the community without directly engaging in-person. 2. Self-service tools to empower members. To make sure that your association provides a rewarding experience, empower your members to control their own experience with self-service tools. Simply letting members control their initial impressions of the community can go a long way. This is easily accomplished by allowing members to self-edit their profiles and update their membership statuses. This not only empowers your members, but also saves time for your staff. Instead of spending time catering to each profile change through long email chains or multiple phone calls, you and your team can focus on engaging members and planning compelling events. Consider how self-service features can refine the following areas: Member profile. Let your members control how they present themselves. If they have any recent changes, like an update to their home address, they can just make the change themselves. This removes any unnecessary back and forth communication between a member and a staff member. Membership status . If your association has different membership levels that correlate to additional capabilities, let your members edit this as they please. It shouldn’t take multiple phone calls and emails just to increase their membership. Program or event registration. Your association likely often hosts programs and events to provide meaningful experiences. Even as event tech gets more advanced , your registration process should remain streamlined and simple to avoid overwhelming or confusing registrants. Easily let attendees upgrade their registration as well as cancel it if needed. Members want a careful balance between the association anticipating their needs and maintaining the freedom to control their experience. By offering self-service tools, members can easily refine their membership and have all the more reason to renew. 3. Online learning opportunities to further education. Another way to provide meaningful experiences for your members is to offer online learning opportunities. People often join associations to advance in their field, so investing in continuing education for your members is a great idea. Many associations turn to learning management systems (LMS) to help them form online courses that their members are genuinely interested in. Members can sign up, take classes from the comfort of their own home, and gain official accreditations. To make sure you’re fully taking advantage of your LMS: Let members post these accreditations on their member profiles. This way, they can let the entire community know how they’re advancing. Notify members each time a new course is available. Integrate your LMS with your AMS in order to automate this process and ensure all your members are in the know. Encourage members to also attend live learning sessions. If you’re planning a live learning opportunity that is related to a past online course you’ve hosted, send those participants an email letting them know. With a capable LMS at your side, your members have access to a resource of learning opportunities. Most modern associations offer continuing education courses, so ensure you’re effectively doing so as well. 4. Discussion forum to encourage conversation. In order to further encourage association member engagement , especially between members, consider providing a discussion board or another type of forum. Members can communicate on relevant topics, brainstorm ideas, and simply get to know each other. Your best bet is to make your message boards accessible from your online member portal. This ensures that only members can access them and online engagements are centralized in one place, making it easier to track certain metrics and make sense of your data. In addition to providing an incredible opportunity for your members to engage with each other, learn, and speak their minds, discussion forums give you a first-hand look into the things your members are interested in! The next time you’re forming an online learning course or an in-person event, take a look at your association’s message boards. For instance, you might learn that your members are really interested in one specific speaker or that they really disliked a specific part of a previous event. Keep this in mind as you plan your next event and make sure your members are always your top priority. 5. eCommerce capabilities for non-dues revenue and brand awareness. As you already know, the majority of your association processes are financed by your members’ dues. This is why you need to put in extra effort to increase non-dues revenue. A great way to grow that revenue source and raise awareness of your association’s mission is to implement an online merchandise store. According to Fonteva , the best AMS will include eCommerce capabilities. That means you should have the following features: An online storefront to host your merchandise. A fully integrated shopping cart that updates as members click on products they’re interested in. Full revenue accounting to ensure that you have a comprehensive knowledge of your sales and how much profit you’re making. Connections to all the popular payment gateways so that you’re able to process anyone’s financial information safely and securely. Discount/source codes that are exclusive to certain members. In addition to helping you raise additional funds, investing in an online store can also drive community-building and inspire your members. Sell association-branded t-shirts and other products to get members excited and spread the word on your mission. 6. Mobile event app to elevate the event experience. As discussed earlier, live events are likely one of the highlights of your association. These are meaningful experiences that no online community can imitate. Live, in-person experiences are much more memorable and the information sinks in better. Many organizations provide their attendees with mobile event apps in order to elevate the experience. This is an example of second screen technology and is a growing trend for events. Not only does it keep guests engaged throughout the event, but it does so in a convenient way that meets your attendees where they’re already active— their phones. 96% of Americans own a mobile device , so you know that guests will appreciate this tool. Your mobile event app should: Let staff and attendees easily access all necessary event details. This includes location, date, and even a contact section for questions. Keep guests updated throughout the event with real-time notifications like announcements and surveys. Empower your guests to build their own schedule. If your event is made up of multiple speakers and activities (especially if they’re happening at the same time), it’s a good idea to let your attendees pick and choose their agenda so they know exactly where they want to go and when beforehand. Then, during the event, they can reference their agenda with ease. Provide networking opportunities with a discussion board. A mobile event app allows users to engage with each other digitally by providing an extra platform on top of the actual event. If you’re still curious about mobile event apps, read this guide of top mobile event apps. Your best bet will be to invest in a comprehensive association management solution that also includes an event app. This way, you know your data is centralized and accurate for each attendee. Keep up with the trends and ensure that your association is effectively taking advantage of all opportunities. Hopefully, this guide gave you some helpful tips on top tools and features to look into. Good luck! Jake Fabbri is the Vice President of Marketing at Fonteva with over 18 years of experience working in marketing management. He has experience with lead generation, content marketing, marketing automation, and events f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada &quot;Way beyond the best I could have imagined!&quot; Russell Clark Environmental Protection Specialist, U.S. Environmental Protection Agency Corbin, ALWAYS a homerun presentation of great info! Peter O’Brien Marriott Global Sales 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

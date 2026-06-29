@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moving from Virtual to Hybrid Events: 37 Tips and Ideas on How to Maximize your Success — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Moving from Virtual to Hybrid Events: 37 Tips and Ideas on How to Maximize your Success</p>
+<h1>Moving from Virtual to Hybrid Events: 37 Tips and Ideas on How to Maximize your Success</h1>
+<div class="article-body">Moving from Virtual to Hybrid Events: 37 Tips and Ideas on How to Maximize your Success A hybrid event is one that combines a face-to-face (F2F) event at a physical location with a “virtual” online component for remote attendees. Hybrids will likely see widespread adoption as F2F meetings reemerge from the pandemic for a number of reasons: Some attendees may not wish to travel to the event for fear of contagion or other health and safety concerns There will likely be reduced travel funds available for event attendance due to economic downturns. Some attendees may simply accept remote event attendance as an acceptable substitute with no travel time, no travel costs and reduced environmental impact. A virtual component offers the possibility of opening up to a much larger audience with new and/or geographically dispersed markets not easily available at a F2F event. There may not be enough space to hold large events at venues due to reduced occupancy from onsite physical distancing guidelines. As F2F events reemerge, meeting designers will face a dilemma: How do you arrange an event with two radically different audiences? The onsite group has social connectivity, focus, and high sensory input. On the other hand, the virtual audience, often times interacting individually on screens, will likely have shorter attention spans, may be in different time zones and with a limited sensory experience usually just looking at a screen. . Here are several ideas and suggestions for event designers and planners to consider to address this dilemma and other issues when planning hybrid events: . Choosing a Hybrid Event Platform: Choose a hybrid event platform from a provider with significant event planning experience, that thoroughly understands the complexities of a wide range of events, and has lots of experience running digital and hybrid events. Choose a hybrid event platform that can also manage virtual and F2F events to standardize your process and data collection. One of the strengths of the online component of a hybrid event is the opportunity for detailed analytics. Nearly every remote attendee’s actions (clicks, poll responses, texts, feedback, time spent and more) can be tracked. Choose a hybrid platform that can provide these detailed analytics. Look for a hybrid event platform that provides all attendees with personalized agenda setting. For remote attendees at larger events, have a separate “help” button different from the chat area going directly to technical help support. A hybrid event is more complex that a F2F event with many actions and deadlines expected. Use an event platform or project management system that can help manage these actions. Look for a platform that allows remote attendees to interact with speakers, exhibitors, each other and F2F attendees as well. Look for a platform that Integrates with a mobile event app providing another channel for interactivity including remote polling, chat, push notifications, networking and gamification options. Look for a platform with strong privacy and security provisions including PCI and GDPR compliance. Promotion: As you start to promote the event, make it very clear that it will be a hybrid event and what the specific offerings for the F2F and digital components will be. Distribute a detailed online schedule with specific presentation start and stop times with local time zone adjustments for geographically dispersed remote attendees. As soon as your full schedule goes online, consider building viewer interest through regular, timed releases of content building up to the event. When done properly, this can build both the virtual and the F2F audiences. Be flexible in your registration offering allowing attendees to switch to a F2F or the digital component depending on changing circumstances. Promote the event on the social media before the event and encourage social media hashtags during the event to build networking for all attendees. Many virtual events held in the past few months have seen audience counts that were many times larger than the F2F events they replaced. If you feel confident of a large remote audience for your hybrid event, then sponsorship revenue could increase substantially. Look for ways to highlight them including banner ads, acknowledgements, short sponsor videos, sponsor-hosted sessions, an event website sponsor page, and lead generation options. Best Practices: Consider using an experienced emcee for the remote attendees to provide a unified voice throughout the event, to explain how to use the system and to create continuity. Use online moderators to manage the chat rooms and encourage discussion and input. Invest in speaker and moderator training focusing on including remote attendees in polls, Q&amp;A, and in other comments during the presentations. Questions from remote attendees should be recognized by name and location from the stage and included as much as those in the room. Consider shorter presentation times and sessions – most remote viewers simply have shorter attention spans than those sitting together in F2F meeting rooms. For larger events with multiple sessions and viewers from disparate time zones, consider prerecording some the presentations and bringing both the F2F and the remote audiences together during a keynote address or general sessions. For repeat sessions, consider playing the prerecorded session at designated times for different time zones and asking the presenters to go live at the end of the recorded presentations for Q&amp;A. Punctuality of presentation start/stop times is crucial for hybrid events. If your hybrid event includes an exhibition, provide a tour of the exhibit hall specifically for remote attendees. Educational sessions streamed from the show floor are also a possibility. Consider developing separate content for remote attendees. There are times at the F2F event that may not be well suited for remote attendees including receptions, exhibition breaks, and coffee breaks. Interviews with speakers and thought leaders and exhibit tours are among the possibilities. Also, leave blank times for remote attendee breaks. Attendee Engagement: Audience engagement for remote attendees is probably the biggest challenge in hybrid or virtual meetings. Methods for keeping and measuring their attention should be high on the desired features list for your hybrid event platform. Make sure that both the F2F audience and the remote audience use the same polling system with combined tallies. Also, text-based Q&amp;A with social upvoting should be available for all attendees as well. In addition to chat and text Q&amp;A, look for a platform that provides real-time presentation feedback from remote attendees similar to social media functions such as: like, applause, standing ovation, don’t understand, etc. Analytics that track these and related items such as length of viewing and when an attendee leaves can be very useful in gauging speaker effectiveness and attendee engagement. High production values with good graphics, videos, and presentation visuals are especially important to keep remote audience interest. Train speakers and set expectations for them to fully utilize these interaction tools. High-energy speakers are always good, but especially so to help keep a remote audience engaged. Break up the presentations with different format types. For example, consider incorporating breakout sessions similar to Zoom breakout rooms for your virtual attendees. Discussing events content with small groups of other remote attendees can be effective ways of engagement and learning. Onsite: Use a production or AV team that has significant experience with video streaming and running hybrid events. As the sessions streamed to remote attendees can be recorded easily, this can be a benefit to F2F attendees who missed a session or would like to see the session they attended again. It also provides a menu of on-demand viewing options and times for remote attendees. Make sure that the venue has sufficient bandwidth, technical support and fail-safe backup options to manage multiple video streams. 7Mb/second upload speed is a minimum for a quality video stream. After the Event: Use the recorded content generated during the event to promote future events, to build membership, and/or to create online community. Promote future events to online attendees encouraging them to become F2F attendees in the future. Offer your content on-demand after the event. This is especially helpful for remote attendees with shorter attention spans allowing the freedom to access the content at convenient times. Face-to-face in-person meetings will reemerge after this pandemic passes. As they do, hybrid meetings will be a bridge for those not able or wanting to attend the event in person. In the long term, hybrid meetings will likely remain a significant component for many events as we all learn best practices and benefit from the many innovations currently being developed at this time. Corbin Ball, DES, CMP, CSP is a speaker and independent consultant focusing on events technology. Previously, Corbin ran international citywide technology meetings for more than a decade. For the past 23 years, he has helped clients worldwide use technology to save time and improve productivity through his speaking, consulting and writing services. Corbin was inducted into the EIC Hall of Leaders in 2018, the premier recognition program for the events industry. He can be contacted at his extensive web site Corbin Ball &amp; Co. - Meetings Technology Headquarters ( www.corbinball.com) and followed at www.twitter.com/corbinball . f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying Your session blew me away. I could easily listen to your information all day. This was incredibly informative. Michael McNutt Human Capital Manager Information Experts &quot;Way beyond the best I could have imagined!&quot; Russell Clark Environmental Protection Specialist, U.S. Environmental Protection Agency &quot;I've seen Corbin three times. No one works harder to keep his material fresh and relevant to events.&quot; Scott Stubbs President HB Stubbs Company 1 2 3 Member Affiliations © Corbin Ball &amp; Co. - 506 14th Street, Bellingham WA 98225-6107 USA Ph: 360.734.8756</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building Effective Websites, Part 3: How to be Bookmarked – How to Bring Customers Back to Your Site Again and Again — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Building Effective Websites, Part 3: How to be Bookmarked – How to Bring Customers Back to Your Site Again and Again</p>
+<h1>Building Effective Websites, Part 3: How to be Bookmarked – How to Bring Customers Back to Your Site Again and Again</h1>
+<div class="article-body">Building Effective Websites, Part 3: How to be Bookmarked – How to Bring Customers Back to Your Site Again and Again This article is available in Spanish. Este artículo está disponible en español. This is the third and last article in the Building Effective Websites series, covering key design and content issues that will help to bring your customers back to your site on a regular basis. It is written for the web site owner/stake holder to be help analyze your site and talk intelligently with you web designers. The three articles are: 1. How to be found 2. How to be read 3. How to be bookmarked (this article). Bringing Customers Back to your Site Again and Again Web sites exist for a number of reasons: to sell product, to make money, to increase customer awareness, to provide customer service are a few of the reasons. However, I believe that a principal goal of many web sites should be to increase awareness of your company’s goods/services and to convert site visitors into long-term customers. In order for a web site to help to do this, you need to make your site “sticky” – one that people will want to come back to on a regular basis – that people will want to “bookmark” or add to their favorites file. What Brings People Back: Content Content is king. People surf the web for content. So your site should, in most cases, be more than a brochure – it should provide useful content that people will want to refer to again. This content may include articles, interviews, surveys, online tools, downloadable tools, helpful links, streaming audio/video, frequently asked questions (FAQ) files, PowerPoint slides, news, newsletters, and just about anything that will help your clients. Examples can be found at my web site: Article database Corbin’s Favorites File Excel Meeting Planning Tools Streaming Video Corbin’s Presentations with Learning Objectives FAQ file Testimonials Corbin’s Speaking Calendar News Newsletters This content should be added to regularly. I recommend highlighting the new content on the home page – giving the impression that your site is maintained, cared for, and not a “ghost site” (one where the content does not change). What Brings People Back: Other Items Gistics , a company that examines best-practices for interactive marketing, conducted and extensive survey a while ago asking web surfers why they would bookmark a site and came up with some interesting observations, including four principal reasons: 1. Relevant, personalized information The number one reason was that it provided relevant, personalized information. This ties directly to the content section listed above. A good example of providing relevant, personalized information is Clinque’s well designed site for cosmetics. If you are wondering what the best product for you, fill out the Clinique Personal Consultation page to find out your skin type. Only after giving you that information, do they ask for personal information so that they can “remember” you. Of course, the classic example if this is Amazon . This content rich site provides reviews, liner notes, excerpts, and more about any book you can think of. Not only does it do this, it makes suggestions based on your past buying habits (“others that have bought this book, also buy ____…”) 2. Immediate and gratifying results Providing the information wanted quickly is a key goal. A sound navigation structure ties in strongly here (see the previous article, for more details on this). An excellent example of a good navigation structure as well as gratifying results is the BMW USA site. In their “Virtual Center” you can “Build Your BMW.” The interactive site allows you to choose your model, exterior/interior colors, and accessories. Each choice shows a the image of those choices (a red, Z4 convertible with a hard top for example) with a running total of the cost based on the options selected. Only after providing this (immediate and gratifying results) does it ask if you would like to explore financing options). 3. Experience of belonging If there is an opportunity to develop an online community, this will drive people back to your site on a regular basis. For example, the BMW site above provides an “Owner’s Circle” section providing technical support. Of course, they provide a “Guest Tour” because they want new owners. Other examples are associations. MPI welcomes member back by first name. They are working to build their “Communities of Interest” to bring back people on a regular basis. Another excellent example is the MeetingNews site that offers the MIMList moderated by Joan Eisenstodt. Although, technically an online mailing list, this is content that is provided through MeetingNews. Through cross promotion, the activity of both are enhanced. 4. Fun and entertaining Although it does not fit well for all sites to focus on fun and entertainment, this is an area that does bring people back again and again. Budweiser is a site that is fun, entertaining, and content rich. Not only can you find all you would like to know about their beer, you can play online music and sports games, download music files, see film previews, find out about Budweiser sports events, and even send a talking email to your friends using your uploaded image as the “star.” This site is all about fun, and it brings people back again and again. Avoiding the Immediate Turn-Offs: Your site may have tons of content and may be worth of being bookmarked. However, if you turn off the site visitor from the start, your chances of this happening will be lowered. Here are some of the things to avoid: Music A site that plays music when opening the home page tops my list of pet peeves. Not only does it slow the loading time, it assaults the visitors’ senses. We have our own music preferences, thank you, and they almost never are the ones that the web site plays. Interstitial Ads Interstitial ads are those annoying pop-up windows that automatically open when you go to a site. I would rather spend my time getting information rather than closing these distracting and unnecessary windows. Extreme slowness If the home page does not open in 20 to 25 seconds with reasonable phone connection, forget it. This especially applies to splash pages (those graphic-intensive opening pages that some sites use) before you can even get to the real home page. User-hostile password protection If a site won’t let you see at least a portion of what it has to offer before requiring personal information, or if the site does not let you choose and change both your user name and password in the restricted area, I move on. There are plenty of good sites that are not unnecessarily restrictive or user-hostile. Don’t “strip-search” the customer just to allow them in the front door. Conclusion Effective web sites effectively combine design and content to make a site easy to find, easy to read and make it so desirable that they visitors will want to come back regularly. By using the tips listed in three articles in this series, you will know: How to be found, how to be read, and how to be bookmarked. Other articles: 1. How to be found 2. How to be read 3. How to be bookmarked (this article). f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying Sensational session. Worth the entire PCMA registration fee. Bonnie Wallsh Chief Strategist Bonnie Walsh Associates Corbin, ALWAYS a homerun presentation of great info! Peter O’Brien Marriott Global Sales &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How 5G Will Revolutionize the Event Industry — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; How 5G Will Revolutionize the Event Industry</p>
+<h1>How 5G Will Revolutionize the Event Industry</h1>
+<div class="article-body">How 5G Will Revolutionize the Event Industry ©2019 Ralf Llanasas, Whatphone 5G and the International Rollout The highly anticipated fifth generation of wireless network technology is finally a reality in countries around the world. Statistics predict that 5G networks will be full in use by 2020, with over 1 billion users connected to the technology by 2025 . Ericsson predict 5G subscriptions will reach 1.9 billion, with coverage spanning 65% of the world’s population, by 2024. Right now, according to Ookla , 20 network operators have provided the technology across 294 locations in continents including the Americas and Australia 5G is a global phenomenon that will quickly change the way most industries operate. The International Event Industry Globally, the events industry is thriving. It is was valued at $1,100 billion in 2018 by Allied Market Research and is expected to grow at a Common Annual Growth Rate (CAGR) of 10.3%, reaching $2,330 billion by 2026. IMEX and The Meeting Professionals International (MPI) Foundation place the worth of the global event industry at $1 trillion . This figure reflects direct expenditure in relation to planning and hosting events including: Conferences Meetings Conventions Festivals Travel At these figures, the event sector ranks closely to that of consumer electronics in terms of scope and size. How Will 5G Revolutionize the Event Industry It’s likely, that within a small number of years, even the most basic prepaid plans will enable the right phones to connect at breakneck speeds.5G will support the technology that will radically change most industries as we know them, and of course, the event industry is no exception. There are numerous benefits from this latest upgrade to mobile networks, some of which include: Lightning fast speeds Lower latency Increased bandwidth Increased network coverage These improvements on the current 4G networks support the development of improved technology and new innovation that will help the events industry to take a large leap forward. Here are some of the areas that will benefit from 5G technology. A Greater Propensity for Live Streaming 5G networks are expected to work at lightning speed – in fact, 5G networks could run up to 1,000 times faster than current 4G/LTE networks. For the event industry, where live streaming has become a necessity, this will mean improved streaming services and new ways to provide streamed events to remote audiences. Currently, events that offer live streaming are able to increase their audience and include groups that would be otherwise unable to attend. Live streaming is now available on all major social media platforms alongside many other event media platforms. 5G networks will offer live-streaming processes that will be far more seamless. With the advent of this network, there are greater possibilities of including technologies such as AR (Augmented Reality) and VR (Virtual Reality). Increased Opportunities for Event Attendees With 5G networks, event planners will be able to give their attendees more value and a viable experience. Already, events utilise many technological features including computerized festival coins wristbands and many others. With 5G networks these perks can be greatly improved upon. From pre-ordering refreshments to curating the ultimate festival experience for social media, event attendees will be offered smarter, better curated events that can be accessed through their mobile phone. 5G can significantly improve on current network services because of its ability to support events in remote locations, faster data transfer, and improved graphics and streaming. The apps and tech that are currently being used will be able to be improved, and others that are not currently possible will begin to make their appearance with the support of this lightning-fast network. Superior Security The safety of attendees at any event is an integral aspect of any event. 5G networks will support an increased connectivity between security personnel, ensuring effective communication in the state of an emergency. Devices can be optimized to analyze security threats easier and faster, and then security personnel can be quickly dispatched to deal with any issues. Attendees will also have quicker, more reliable options to call for help if necessary. 5G will be particularly helpful in any areas that require collection and analysis of large amounts of data. Security can be supported by this kind of high-level data collection, and the ability to respond quickly and communicate efficiently will help assist with keeping event Event Planning with 5G The internet is quickly becoming inseparable from all aspects of event planning, such as data collection, live-streaming, communication, security, and countless other areas. Having a network that is accessible, reliable and extremely fast will help support the current technologies and processes that help make events stand out, and will drive innovation with new and exciting ideas for the events of the future. 5G looks set to transform the world as we know it, and the latest network will help the event planning industry to take the next leap forward into new and exciting avenues that will revolutionize the current way we plan events. Ralf Llanasas is Content Marketing Lead at WhatPhone , a phone plan comparison site that explores and explains the technical jargon in easy-to-understand terms. We examine the trends in the industry and offer real advice about mobile phone plans and technology that best fit individual needs, giving our readers all the facts so they can make informed choices. f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada Sensational session. Worth the entire PCMA registration fee. Bonnie Wallsh Chief Strategist Bonnie Walsh Associates Excellent session! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

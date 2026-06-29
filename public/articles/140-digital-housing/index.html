@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Housing — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Digital Housing</p>
+<h1>Digital Housing</h1>
+<div class="article-body">Digital Housing Reprinted with permission from Technology Meetings [ www.meetingsnet.com ], May 2002. Copyright 2002 PRIMEDIA Business Magazines &amp; Media Inc., Maynard, MA. In the six years since event organizers started using the Internet for housing, usage has crept from the single digits to an average of about 35 percent, according to major players in the online housing market. Even in the high-tech sector, large-scale events report widely varying adoption — from 20 percent for the 2001 International Consumer Electronics Show, to 60 percent for SIGGRAPH 2001, to 80 percent for corporate events such as PeopleSoft Connect 2001. “In the early days, expectations were sky high,” says Ed Harris, president, ExpoExchange, Deerfield, Ill., which is providing online registration and housing for the 30,000 attendees expected at SIGGRAPH 2002, July 21 to 26 in San Antonio. “Not only were there expectations of what could be done, but there was the expectation that absolutely everyone was going to use it.” In reality, the majority of attendees still make hotel reservations the old-fashioned way — by calling the toll-free number. People still want to talk to people when they can't get the hotel they want on the dates they want it. And if they don't like the rates, they surf the Net for better ones. In that regard, the Internet is its own worst enemy — the more savvy the shopper, the harder it is for planners to entice registrants to book in the blocks reserved for them. The good news is, meeting planners are using online housing services to do things they couldn't do just a year ago. Enhanced functionality, customization, and end-to-end integration have made these Web-based applications an essential tool to improve customer service and maximize return on investment. And high-tech events have been the early adopters, pushing the technology envelope and driving developments. Enhanced Functionality Whether they're third-party providers with proprietary software or application service providers that license their technology, online housing services have added new functionality in direct response to user requests. Recent enhancements include: Designation of authorized users for block and sub-block management (planners, housing managers, hotels, exhibitors, etc., can be authorized); Room selection, arrival/departure dates, and payment policies that can be customized based on attendee type (VIP, staff, exhibitor, etc.); Sub-blocks that can be opened or closed (made unavailable to registrants) at will by event management; Wait-listing for preferred hotels; Roommate selection from pick lists or automated roommate-matching systems based on preferences; Reservation changes can be made online even if the initial reservations were made by phone; Live online chat with customer-service representatives; Automated e-mail acknowledgements that include event news; User-defined reports, as well as automated e-mail reporting and pick-up alerts at scheduled intervals. Although not every supplier offers every feature at this time, housing services are converging on a common tool set. Like other enterprise applications, “they all tend to have the same features in time,” says Steven Koltai, chairman and CEO of Event411, Marina del Rey, Calif. “One thing that will distinguish the product is client service.” Custom Fit Technology is, after all, a tool for serving customers, and customers want housing managed their way. That means customizing the tool to meet the needs of each event, according to Christine Berthet, CEO, b-there.com, Westport, Conn. “Planners should be able to totally control their storefront on the Web without any compromise, neither to time because they have to wait for technology, nor to cost because they need new technology developed, nor to flexibility because they can't change a field or change a price or open or close a hotel or block,” she says. The ability to easily customize an application is often a deciding factor in its use. PGI Housing, Registration &amp; Travel, Las Vegas, selected b-there.com for its flexibility in meeting the needs of clients such as CES, which had record attendance of 126,730 in 2001. (PGI also recently announced a partnership with Passkey to give clients a choice of providers.) SIGGRAPH selected ExpoExchange in part because the look and feel of the site could be customized. EMC Corp., Hopkinton, Mass., a leader in information storage systems, works with seeUthere.com, which developed an automated roommate matching feature at its behest. In fact, housing applications have evolved in response to the market segment they serve. An ASP that services Fortune 1000 companies, such as Event411, has different capabilities than one that handles large association meetings, such as Passkey, the Quincy, Mass.-based ASP that “enabled” more than 600 citywide meetings in North America last year. “When it comes to citywide meetings, they [Passkey] are the experts,” says Rodman Marymor, CEO and founder, Cardinal Communications, the Berkeley, Calif.-based developer of Internet applications such as RegWeb. Although RegWeb has a housing module, it interfaces with Passkey for citywide events. Real but Not Live Despite the ability to adapt to most customer demands, housing providers still struggle to educate clients about what is possible. “There is a feeling among customers that these systems should do what they want them to do,” says Marymor. “That's fallacy No. 1. Just because you can think it doesn't mean it will be that way.” Reporting “live” hotel inventory is among the features that still elude all the housing providers. In online housing parlance, “real time” does not equal “live inventory.” With most systems, the user defines blocks at each hotel, and reservations — whether made online or through a call center — pull from those blocks. Planners, housing providers, CVBs, and hotels all access the same database, which they can query about pick-up rates and generate reports. Authorized users can open and close blocks up until 24 hours before an event starts. That way, last-minute changes are in the database. But inventory isn't live until the housing list is transferred to the hotel on the cutoff date. Tech planners are “used to having the information they want at the tip of their fingers, and what they want is real-time inventory from hotels,” says Edward Mahoney, president, Registration Unlimited, a San Jose, Calif.-based registration, housing, and lead retrieval firm that handles the Informix User Conference and other events. End-to-End Integration Today's housing applications are flexible up to a point, but in the end, they work the way they work. It's up to planners to select the provider that's right for them. A major distinction among housing services is whether they integrate registration and housing. One-stop shops have the advantage. If a housing provider doesn't also handle registration, it's a safe bet that it has developed a way to transfer real-time data from the registration provider. Passkey did. Its RegLink product launched in April, allowing integration with any registration system. “From the attendee standpoint, it looks like one point of entry,” says Tim Durant, vice president, global sales and marketing. Data transfers automatically, so forms are prepopulated with pertinent information. The integrated database allows planners to do cross-platform reporting, such as how many are registered versus how many reserved rooms. Travel Technology Group, Chicago, works with five registration vendors to enable data transfer. Even phone-in registrations will be transferred with the rollout of its Focus Telemarketing Module in June. “They call in to the call center at a registration company, that call center passes the call to our call center, and data is transferred immediately from their registration system to our reservation system,” explains David Grissom, vice president, information technology. Registrants who haven't reserved a room automatically receive an e-mail or fax, and if they don't make a reservation within 48 hours, they get a telemarketing follow-up. The sweet spot is where the same data transfer seamlessly to the hotel, eliminating data re-entry and the errors that come with it. For meeting planners, the benefit of electronic data transfer is getting a cutoff date closer to the meeting date. That means more time to fill rooms, reduce attrition, and maximize earned comps. Housing providers are still negotiating for electronic transfer of data to property management systems, but in general, only major chains can accept it. Passkey is the acknowledged leader, laying claim to more than 3,000 hotels in North America. Even so, 60 percent of Passkey reservations are rekeyed; only 40 percent automatically transfer to a PMS. “We're focused on making that 100 percent,” Durant says. When full integration with hotels will happen is a matter of debate. Industry initiatives, such as the Convention Industry Council's Accepted Practices Exchange, are working toward standards for data transfer. Meanwhile, developers are forging ahead with systems, which may have to be retrofitted once standards are in place. Customer Service Room availability continues to be a challenge with online housing for citywide meetings. Registrants become frustrated when they can't get into their preferred hotels. Thanks to Expedia, Travelocity, and Orbitz, not to mention national hotel chain Web sites, they're likely to find availability, at better rates, elsewhere. “We spend a lot of time before and after our housing site opens continuously checking the Internet,” says Cindy Stark, SIGGRAPH convention manager for Smith Bucklin Associates, Chicago. “If we find a rate that is lower, we ask the hotel to turn it off.” Housing managers also spend time answering calls and e-mails from attendees who are confused by the array of choices, want a room in a closed block, or need shoulder dates that aren't available. For people who want to talk to people, call centers remain a mainstay of citywide housing. Phone, fax, and mail options are a necessity for international events whose attendees may have limited Internet access. Still, usage is shifting toward the Web. Conference Planners, a San Francisco-based event management company that serves companies such as Cisco Systems, IBM, and PeopleSoft, reports that 80 percent of housing reservations were made by phone in 1995. By 2001, 80 percent were made on the Web. But their high-tech clients are the trendsetters. Among association meetings, numbers are much lower. Housing managers are trying to drive more reservations online by e-mailing reminders and offering incentives, such as registration discounts, gift certificate drawings, Palm Pilot giveaways, and bonus air miles. PGI sees 3 percent to 5 percent more online reservations when they use incentives. Enhancements that create a positive user experience also help motivate registrants to book online. Making shoulder dates available from commissionable inventory ensures that they get the dates they want. Guiding users from registration to housing to travel works best. “The most successful sites are the ones that take you all the way through the transaction in one shot,” says Berthet of b-there.com. However, if attendees have to navigate through several pages online, they may give up and pick up the phone. Durant admits Passkey's seven-page sequence needs to be redesigned. ROI Calculator Housing providers now have ROI calculators that allow planners to plug in their costs and compute the savings achievable using a Web-based system. Anecdotal evidence indicates significant savings are possible: A corporate Event411 client cut labor and overhead for registration and housing by 78 percent. A third-party provider realized savings of 3:1 using Passkey. TTG eliminated attrition on 80 percent of its housing contracts, thanks in part to its proprietary system. Using seeUthere in house, EMC can do more with 50 percent fewer people. It can set up registration and housing for an event within 24 hours of a request. Deciding which housing service delivers the most savings is problematic. Pricing structures range from 10 percent hotel commissions for third-party providers, to licensing fees plus $3 to $5 transaction fees for ASPs, to lump-sum contracts for full-scope management services. CVBs typically weigh in between ASP and third-party prices. And included services are all over the map. One thing housing providers agree on is that costs will remain stable. Shouldering the bulk of the development costs for the rapidly evolving technology, they are unlikely to reduce rates any time soon (although high-volume customers can negotiate lower transaction fees). “I don't think at this point — at 40 percent utilization — that we're seeing substantial cost benefits that we can pass along to customers,” says Harris of ExpoExchange. He and others set 60 percent to 70 percent of reservations made online as the target for achieving ROI and passing on cost savings. Many experts believe that target is achievable. “More people are looking at it, considering it, and wanting it,” says Cardinal Communications' Marymor. “As we deliver higher levels of functionality, more people with have confidence in it.” Cathy Chatfield-Taylor covers meeting technology as a freelance writer and editor. You can send e-mail to her at This email address is being protected from spambots. You need JavaScript enabled to view it. . © 2002, PRIMEDIA Business Magazines &amp; Media Inc. All rights reserved. This article is protected by United States copyright and other intellectual property laws and may not be reproduced, rewritten, distributed, redisseminated, transmitted, displayed, published or broadcast, directly or indirectly, in any medium without the prior written permission of PRIMEDIA Business Magazines &amp; Media Inc f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Security and Privacy Issues Site Inspections and Evaluation Social Media - Web 2.0 Speakers and Presentation Skills Surveys and Audience Polling Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration WWW -- The Web What The Audience Is Saying &quot;Way beyond the best I could have imagined!&quot; Russell Clark Environmental Protection Specialist, U.S. Environmental Protection Agency Excellent session! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

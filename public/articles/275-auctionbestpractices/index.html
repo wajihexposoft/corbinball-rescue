@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planning an Auction: 4 Best Practices For a Smooth Event — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Planning an Auction: 4 Best Practices For a Smooth Event</p>
+<h1>Planning an Auction: 4 Best Practices For a Smooth Event</h1>
+<div class="article-body">Planning an Auction: 4 Best Practices For a Smooth Event ©2020 Guest Post: Joshua Meyer, Director of Marketing for OneCause . As your organization prepares to host a charity auction, you’re handling a lot of moving parts. Tracking everything can be overwhelming, even if you’ve already put together a stellar team to run the event. However, there are many ways you can streamline your planning process, especially with effective event technology . Following certain best practices will help your event run as smoothly as possible and reduce the stress associated with hosting an auction. We’ve outlined our top 4 best practices for running your auction: Choose the right type of auction. Use auction software Procure great items Promote the event. The success of your auction is largely dependent on your planning process. Be sure to follow these strategies to make your event the best it can be. Let’s take a closer look! 1. Choose the right type of auction. In order to successfully plan and host your charity auction , you’ll need to identify the type of auction you want to run. There are a few formats you can consider, including live auctions, silent auctions, online auctions, and penny socials. Here’s a breakdown of each auction format: Live Auctions Live auctions involve an auctioneer who’s in charge of calling out auction items and moderating the bidding. Attendees place their bids by shouting out their amounts, raising paddles, or capturing the auctioneer’s attention in other ways. Advantages of running a live auction include: High level of engagemen Friendly competition A stronger sense of urgency Consider this type of auction if you’re looking to actively engage your guests and leverage a more structured format. Silent Auctions During a silent auction, items are displayed on tables around the room for attendees to browse. Mobile bidding software is the most efficient software used to place bids, though paper bid sheets are still an option. Advantages of running a silent auction include: The ability to interact with donors and mingle A more casual environmen A less hosted event where guests can socialize and bid as they please Though silent auctions have a lesser sense of urgency associated with them, they’re a great way to allow your staff to interact on a more personal level with your guests. Online Auction An online auction is essentially a digital silent auction. Photos of the items are featured on an auction site so bidders can browse through them. Participants are typically required to register and submit their payment information before they can bid. Advantages of running an online auction include: A more cost-effective format that doesn’t require a physical even Flexibility in timeline and what types of events the auction is part of Seamless data collection through your event planning software Consider an online auction if you’re looking for a more flexible and cost-effective format. Make sure your auction website is also mobile responsive so participants can easily view it from their phones. Penny Socials A penny social is an event that combines elements of raffles and silent auctions. Guests will buy tickets that they use to bid on items and prizes. Each ticket equals one bid, and the winning ticket will be drawn at random. Advantages of running a penny social include: A relatively easy planning process High level of engagement for guests Easy to adapt with additional fundraising ideas and themes A penny social can be a standalone event or part of a larger affair. Consider this type of event if you’re looking to engage your guests and encourage socialization. Learn even more from the guide to penny socials by OneCause . These popular types of auctions can be very effective and help raise a lot of revenue for your organization. Weigh the pros and cons of each format and determine which one is right for you. 2. Use auction software. If you want to streamline both the planning and execution process for your charity auction, leveraging auction software is an effective approach to take. Auction software includes mobile bidding capabilities, registration and checkout tools, item management, reporting and other elements that make running your event much easier. When you leverage auction software, you can: Reach more participants. If you incorporate mobile bidding into your event, guests won’t have to get up to check their bids at a silent auction and can instead bid from their phones. Even more, participants who aren’t present at the event can place their bids remotely, generating more revenue Automate your tasks. Seamlessly capture guest information during the registration process, including payment information, and eliminate long lines during the checkout. Guests receive their receipts via email and complete the checkout process on their phones. Get detailed reporting . When your auction software integrates with your CRM, you can keep all of your information together and access what you need, when you need it. In addition, reporting and analytics will give you a big picture of your event so you can make it the best it can be. From tracking registrations to making the checkout go quickly, your guests will appreciate the streamlined process. And when your guests don’t have to deal with the frustrations of long lines or sloppy bidding, they’ll have a positive experience and be more likely to support you again in the future. 3. Procure great items. We’ve covered some of the ways in which auction software can help run your event, but one of the most impactful features you should take advantage of is item tracking. Regardless of the type of auction format you choose, your auction items will be the center of your event. That’s why it’s important to procure items that will appeal to your guests and bring in the revenue you need. As you begin your procurement process, think about: Your guests’ interests. What will appeal to your supporters’ interests? What will they find useful or unique? Your guests’ price ranges. Make sure your items fall within your guests’ budgets so they’ll be more likely to bid on your items. From there, you can use your auction software to manage the status of each auction item you solicit . Consider highly popular items like: Travel packages Sporting events Concert tickets Arts and cultural events Gift baskets Looking for more ideas get you started? Check out this list of auction item ideas from OneCause . Ensuring you procure items that will appeal to your donor base can help you raise more from the event. Leverage your auction software to track the process and organize your items so they’ll be ready for the big day! 4. Promote the event. Promoting your auction is one of the most time-consuming undertakings of your event. Even after you’ve compiled a guest list, you still need to consider several other factors, such as managing your registration and promoting your items. Auction software can help streamline all of this by: Helping you set up an online auction site. Your auction site will serve as a catalog for your event, including information like event details, the schedule, where the proceeds are going, rules for bidding, and how to use the mobile bidding platform. Be sure your website is designed to bring visitors back again and again . Highlighting your items. Your catalog should also highlight the items you’re putting up for auction. Include the name and number of each featured item, a brief description, the starting bid amount and market value of each item, and high-quality photos. As you market your event, be sure to also take a multichannel marketing approach. This means using several types of channels to appeal to a wider range of donors. This can include: Direct mail (find some great letter templates here !) Email Social media And others Your auction items won’t take you far if you don’t promote the event to your guests. Be sure to leverage multiple channels for promotion and set up an online site so everyone can find the information they need about your organization and your event. From there, you’ll be ready to execute your event and make it as smooth as possible! Run a great auction event and avoid hiccups by choosing the right kind of auction format, leveraging software, and promoting excellent items that will boost your revenue. From there, you’ll be ready to tackle the planning process and focus more on your guests and your cause. Joshua Meyer brings over 14 years of fundraising, volunteer management, and marketing experience to his current role as the Director of Marketing for OneCause . Currently, as a member of the OneCause sales and marketing team, Josh manages all of the firm’s marketing efforts. He has a passion for helping to create positive change and loves that his current role allows him to help nonprofits engage new donors and achieve their fundraising goals. f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Social Media - Web 2.0 Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada Corbin, ALWAYS a homerun presentation of great info! Peter O’Brien Marriott Global Sales &quot;I've seen Corbin three times. No one works harder to keep his material fresh and relevant to events.&quot; Scott Stubbs President HB Stubbs Company 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>

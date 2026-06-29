@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Event Planning Technology: 6 Essential Features to Use — Corbin Ball &amp; Co.</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/master-d28aa4aa3484309d74c168c805de9fd5.css">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/mediaqueries.css">
+<style>
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #rt-logo { background: url(/images/corbinballONLY_logo.jpg) no-repeat left center; width: 221px; height: 58px; display: block; text-indent: -9999px; }
+  #rt-header { background: #1a1a1a; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  #rt-header-surround { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  #rt-nav { background: #333; }
+  #rt-nav ul { list-style: none; margin: 0; padding: 0; display: flex; max-width: 1200px; margin: 0 auto; }
+  #rt-nav ul li a { display: block; padding: 12px 18px; color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  #rt-nav ul li a:hover, #rt-nav ul li.active a { color: #fff; background: #e84545; }
+  #rt-nav ul li.has-dropdown { position: relative; }
+  #rt-nav ul li.has-dropdown .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #444; min-width: 220px; z-index: 100; list-style: none; padding: 0; margin: 0; }
+  #rt-nav ul li.has-dropdown:hover .dropdown { display: block; }
+  #rt-nav ul li.has-dropdown .dropdown li a { padding: 10px 16px; font-size: 12px; display: block; color: #ccc; white-space: nowrap; }
+  #rt-nav ul li.has-dropdown .dropdown li a:hover { background: #e84545; color: #fff; }
+  #rt-showcase { background: url(/images/banners/corbin_star_background-waycropped.jpg) center center / cover no-repeat; min-height: 280px; display: flex; align-items: center; }
+  #rt-showcase .rt-showcase-inner { max-width: 1200px; margin: 0 auto; padding: 40px 20px; color: white; }
+  #rt-showcase h1 { font-size: 2.2rem; font-weight: 700; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); margin-bottom: 10px; }
+  #rt-showcase p { font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); max-width: 600px; }
+  #rt-main-body { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+  .rt-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+  .rt-block { background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .rt-block img { width: 100%; height: 160px; object-fit: cover; }
+  .rt-block-content { padding: 16px; }
+  .rt-block-content h3 { font-size: 1rem; margin: 0 0 8px; color: #222; }
+  .rt-block-content h3 a { color: #e84545; text-decoration: none; }
+  .rt-block-content h3 a:hover { text-decoration: underline; }
+  .rt-block-content p { font-size: 0.88rem; color: #555; line-height: 1.5; margin: 0; }
+  .article-page { max-width: 800px; }
+  .article-page h1 { font-size: 1.8rem; color: #222; border-bottom: 2px solid #e84545; padding-bottom: 10px; margin-bottom: 20px; }
+  .article-body { white-space: pre-wrap; font-size: 1rem; line-height: 1.8; color: #333; }
+  .breadcrumb { font-size: 0.82rem; color: #888; margin-bottom: 20px; }
+  .breadcrumb a { color: #e84545; text-decoration: none; }
+  #rt-footer { background: #1a1a1a; color: #888; text-align: center; padding: 24px 20px; font-size: 0.82rem; margin-top: 40px; }
+  #rt-footer a { color: #aaa; }
+  .archive-notice { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 10px 16px; margin-bottom: 20px; font-size: 0.85rem; color: #856404; }
+  .section-title { font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #333; border-bottom: 2px solid #e84545; padding-bottom: 8px; margin-bottom: 20px; }
+  .section-title span { background: #fff; padding-right: 10px; }
+  .rt-home-columns { display: grid; grid-template-columns: 1fr 300px; gap: 32px; }
+  .news-item { display: flex; gap: 14px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+  .news-item img { width: 80px; height: 80px; object-fit: cover; flex-shrink: 0; border-radius: 3px; }
+  .news-content h4 { margin: 0 0 6px; font-size: 0.95rem; }
+  .news-content h4 a { color: #e84545; text-decoration: none; }
+  .news-content h4 a:hover { text-decoration: underline; }
+  .news-content p { font-size: 0.85rem; color: #555; margin: 0; line-height: 1.5; }
+  .latest-articles { padding-left: 20px; }
+  .latest-articles li { margin-bottom: 8px; font-size: 0.9rem; }
+  .latest-articles li a { color: #333; text-decoration: none; }
+  .latest-articles li a:hover { color: #e84545; }
+  .testimonial { background: #f9f9f9; border-left: 3px solid #e84545; padding: 12px 14px; margin-bottom: 14px; border-radius: 0 4px 4px 0; }
+  .testimonial p { font-style: italic; font-size: 0.88rem; color: #444; margin: 0 0 8px; }
+  .testimonial strong { font-size: 0.85rem; color: #222; }
+  .testimonial small { font-size: 0.78rem; color: #777; }
+  @media (max-width: 900px) {
+    #rt-nav ul { flex-wrap: wrap; }
+    #rt-showcase h1 { font-size: 1.4rem; }
+    .rt-grid-2 { grid-template-columns: 1fr 1fr; }
+    .rt-home-columns { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .rt-grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div id="rt-header">
+  <div id="rt-header-surround">
+    <a id="rt-logo" href="/">Corbin Ball &amp; Co.</a>
+  </div>
+</div>
+<div id="rt-nav">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/news/">News</a></li>
+    <li><a href="/about/">About Corbin</a></li>
+    <li><a href="/articles/">Articles</a></li>
+    <li class="has-dropdown"><a href="/tools/">Tips &amp; Tools</a>
+      <ul class="dropdown">
+        <li><a href="/tools/">Meeting Planning Software Tools</a></li>
+        <li><a href="/links/">Corbin's Link List</a></li>
+      </ul>
+    </li>
+    <li><a href="/newsletter/">TechTalk Newsletter</a></li>
+  </ul>
+</div>
+
+<div id="rt-main-body">
+<div class="archive-notice">&#128274; This is an archived version of corbinball.com, preserved by Exposoft Solutions.</div>
+<div class="article-page">
+<p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/articles/">Articles</a> &rsaquo; Event Planning Technology: 6 Essential Features to Use</p>
+<h1>Event Planning Technology: 6 Essential Features to Use</h1>
+<div class="article-body">Event Planning Technology: 6 Essential Features to Use ©2019 Guest Post: Callie Walker, ePly Event planning technology can be a broad subject, but it can be boiled down to this definition: Any technology that helps you plan, manage, and organize data when putting on an event. Different types of organizations put on different events, but all organizations can benefit from making smart use of event planning tools. As technology evolves, we can (and should) evolve with it . This means training with new software and making sure we have a handle on how best to utilize it for our intents. In the case of event technology, it’s especially important to be familiar with both newer and more established features and use them to our advantage. When considering the features you should have available in your event planning technology, take a look at the following: Registration forms Attendee data management and reporting eTickets and event apps Security Marketing capabilities Support It’s clear that event planning technology has many components and features that you should take into consideration when planning an event. Let’s take a closer look at each of these and get your event underway! . Your event attendees’ first impression of your event technology will be your registration form. Because of that, you’ll want to ensure that it’s professional, simple to use, and reflects your branding. However, there are a few caveats you should consider, as creating a simple form won’t necessarily be a simple process. Ask for the appropriate information. Be sure to obtain the required information from your registrant, but don’t list so many fields that the registration process becomes overly tedious. Only capture what you need! Be customizable. If you can customize your form, you can make it consistent with your organization's branding and use any combination of field types and categories. Branding your form is important for providing consistent user experience. Be mobile friendly. Don’t lose a registrant because they couldn’t sign up on their smartphone. Make sure your form builder can be optimized for mobile. Your event registration software should offer the ability to create a registration form that allows you to customize your branding and fields, work on mobile devices, and streamline your process overall. Once you make a great first impression with your registrants, you’ll be on your way to a successful event. Managing your attendee data is very important because there’s a lot of information that typically needs sharing and organizing. For example, if you have a change of plans in your event, you can easily send an update to your attendees. With attendee data management and reporting features incorporated into your event software, you can: Process refunds and receipts. Automate this process to avoid errors and keep your registrants happy. Keep your data organized. Efficiently manage the information you receive from the registration forms. For instance, let’s say you’re selling t-shirts for your event . Use your data management feature to keep track of the number of orders and sizes that registrants have requested. Access reports and share them between planners. View and edit registration information, track registrations that have been deleted, and create custom reporting. Integrate with your CRM system. Find event management software that allows you to pull registration data into your CRM system. If you’re unfamiliar with CRMs, you can read a great explanation here . By pulling data into your CRM system, you can more efficiently keep track of individuals who attend your event and keep their information organized for future reference. Keeping track of your attendee data and reports can help streamline your event planning process, and these are features you shouldn’t compromise. By keeping your information organized, you can easily reach out to attendees with updates, share reporting information with your fellow planners, and reduce the risk of human error. With the rise of mobile technology, it’s more important now than ever that you take advantage of eTickets and event apps when you can. By adding these extra features onto your software, you’re not only offering convenience to your attendees, but also making the process simpler for yourself. By offering eTicket capabilities, you can: Automatically generate and send tickets to attendees via email Allow attendees to display tickets on their mobile devices for added convenience Include a barcode so that tickets can be easily scanned By creating an event app, you can: Directly engage your attendees Customize the app with your branding Provide event details and updates Connect attendees with one another Allow attendees to create their own itinerary By using this technology, your event planning process gets even more streamlined and easy to oversee. Event management software comes with many features , but utilizing this mobile technology is an added convenience for both parties. Of course, if you’re capturing your attendees’ information, you want their data to be secure. If you’re not using secure measures to collect personal information, as well as payments, this could cause issues with registrants’ trust and lower your attendance number. Even more, it could hurt your reputation in your industry. When looking at features in your event technology, you should make sure they incorporate: Secure payment processing. Use event management software that is PCI-compliant, which means that it meets the security standard for organizations that handle credit cards. Make sure receipts are automatically sent to registrants and the records are updated whenever a payment occurs. SSL encryption. Make sure your event software uses secure encryption when collecting all registration data, in addition to credit card information. For example, if you’re also incorporating a fundraising campaign into your event and attendees have the option to donate online, you’ll want to ensure that the fundraising event software you use is encrypted. By ensuring each individual's information is securely obtained, you reduce the risk for a data breach and will maintain a high level of trust with your registrants. This is the best way to maintain a good relationship with your attendees and encourage them to register for your events in the future. As technology continuously changes, it’s important to remember how these changes can help further streamline your process. Event technology could even help save your job when other resources are limited, such as marketing. For example, when you have limited resources for marketing, strong event technology should be able to step up to the plate and allow you to: Set up an email template, load in contacts, and send emails inviting people to register for your event Track open and click-through rates (CTRs) of the emails that are sent out Create name badges, certificates of completion/attendance, and other documents Send out follow-up surveys By taking advantage of the technology available, you can consolidate your process into one system that tracks, organizes, and updates your data when you need it to. Taking this route can not only be more cost-effective but also help save you some headaches, too. If you’re still looking to promote your event outside of your event management software, there are ways to use your blog or website to promote events , as well. . As can occur with technology, it sometimes requires training and support. It’s important to consider the support features available when you invest in event management technology. Look for a provider that offers one-on-one support, and even support experts who can give you tailored advice about your specific event. The benefits of having additional support include: Having an easily accessible source of information to troubleshoot any issues with your software Receiving helpful advice that is specific to your industry Ensuring everyone using the software is well-trained and ready to use it efficiently Even so, as technology changes, there will be some things that remain the same . Be conscious of where technology is needed most in your planning, and where you can add in a bit of a human element, as well. After all, technology and humans work well together, so it’s important to determine how each can complement the other! Because technology is constantly evolving, there are many opportunities to take advantage of both new and established features alike when planning an event. However, it’s also important to consider the most important features that can help streamline your planning process and make the entire event easier for both the planners and the attendees. Look out for these features when shopping around for event planning technology and ensure your event is the best it can be. Callie Walker is a writer in the membership management software and event registration software space. She attended the University of Georgia, graduated with a Bachelor’s degree in Public Relations, and went on to pursue a career in PR and digital marketing. She loves writing, event planning, and engaging with others on social media. f Share Tweet Article Categories Latest Associations &amp; Foundations Email and eMarketing Exposition, Tradeshow and Onsite Management Futurism Hotels and Venue Technology Liability and Legal Issues in Meeting Planning Meeting Planning Meeting Planning Software and Online Products Mobile and Wireless Technology Security and Privacy Issues Site Inspections and Evaluation Social Media - Web 2.0 Speakers and Presentation Skills Surveys and Audience Polling Technology - How to Use It Better Travel Virtual Meetings, Web Meetings, Video and Collaboration WWW -- The Web What The Audience Is Saying &quot;On a scale of 1 to 10, your session was a 20!&quot; Joanne Langevin Manger of Meetings and Events College of Family Physicians of Canada Sensational session. Worth the entire PCMA registration fee. Bonnie Wallsh Chief Strategist Bonnie Walsh Associates Excellent session! Best one I have attended at PCMA. Needed to be 2 hours! Bring it back in 2014. Marguerite Leishman Meetings Manager ACTE 1 2 3 Member Affiliations TechTalk Newsletter Corbin's high-content meetings technology newsletter.</div>
+</div>
+</div>
+<div id="rt-footer">
+  &copy; Corbin Ball &amp; Co. &nbsp;|&nbsp; 506 14th Street, Bellingham WA 98225-6107 USA &nbsp;|&nbsp; Ph: 360.734.8756<br>
+  Archived and preserved by <a href="https://exposoft.com">Exposoft Solutions</a>. Original site: corbinball.com
+</div>
+</body>
+</html>
